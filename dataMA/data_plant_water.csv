@@ -1,4 +1,4 @@
-author,year,journal,species,d18O_permil,d2H_permil
-Querejeta,2007,Oecologia,Brosimum alicastrum,-2.052307692,-18.97790055
-Querejeta,2007,Oecologia,Enterolobium cyclocarpum,-2.661538462,-17.67955801
-Querejeta,2007,Oecologia,Talisia olivaeformis,-2.8,-20.96685083
+author,year,journal,species,d18O_permil,d2H_permil,xylem
+Querejeta,2007,Oecologia,Brosimum alicastrum,-2.052307692,-18.97790055,yes
+Querejeta,2007,Oecologia,Enterolobium cyclocarpum,-2.661538462,-17.67955801,yes
+Querejeta,2007,Oecologia,Talisia olivaeformis,-2.8,-20.96685083,yes
