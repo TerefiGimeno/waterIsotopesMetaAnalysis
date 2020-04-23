@@ -1,497 +1,493 @@
-author;year;journal;species;label;date;season;plot;d18O_permil;d2H_permil
-Querejeta;2007;Oecologia;;groundwater;;;;-4.3;-23
-Querejeta;2007;Oecologia;;bedrock_200cm;;;;-3.2;-21
-Querejeta;2007;Oecologia;;bedrock_20cm;;;;-1.2;-13
-Querejeta;2007;Oecologia;;Soil_10cm;;;;0.730948833;-9.978142077
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-2.819415689;-31.42857143
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-2.37221072;-37.14285714
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-1.448355187;-38.41269841
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-1.555095468;-35.23809524
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-1.779618127;-32.6984127
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-0.2778928;-34.6031746
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;-0.049689441;-35.87301587
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;0.202438463;-28.88888889
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;0.093857833;-26.34920635
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;0.32942259;-25.07936508
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;0.77478721;-31.42857143
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;1.014032666;-28.88888889
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;1.367379802;-26.98412698
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;1.59742351;-27.61904762
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;3.09547;-30.79365079
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jul;NA;NA;2.642742121;-26.98412698
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jul;NA;NA;-3.8647343;-32.06349206
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jul;NA;NA;-4.195997239;-26.34920635
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jul;NA;NA;-3.504025765;-27.61904762
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Jul;NA;NA;-3.625488843;-29.52380952
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Jul;NA;NA;-3.389924086;-28.25396825
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;-2.19168;-34.83871
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;-0.92006;-36.12903
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;-0.79476;-32.90323
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;-0.79289;-32.25806
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;-0.4245;-25.16129
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;0.27676;-23.22581
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;0.38149;-27.09677
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;0.84525;-27.09677
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;0.85273;-24.51613
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;0.86209;-21.29032
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;1.56522;-18.70968
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;2.0346;-16.77419
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;2.84806;-16.12903
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;2.84058;-18.70968
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;3.53436;-19.35484
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;4.80598;-20.64516
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;1.77466;-26.45161
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;1.78027;-24.51613
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;1.55213;-23.22581
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Jun;NA;NA;1.78588;-22.58065
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jun;NA;NA;-4.14475;-26.54443
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jun;NA;NA;-3.02471;-25.11149
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Jun;NA;NA;-3.6325;-27.49972
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Jun;NA;NA;-3.63803;-29.4103
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Jun;NA;NA;-3.81386;-30.84324
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-1.473892601;-26.9586736
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-1.385795595;-25.55308092
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-1.971789161;-20.97005692
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-1.457065083;-19
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-1.113585746;-17.61445187
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-0.946300421;-18.99034892
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;-0.250433061;-11.93268993
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.120514724;-7.587230883
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.116555308;-9.448156397
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.199703044;-10.36872061
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.537243257;-11.72482059
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;2.048997773;-11.20019797
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.969809453;-8.418708241
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;1.888641425;-6.567681267
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;2.146003464;-5.60752289
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;2.89532294;-13.42736946
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;2.91512002;-4.122741896
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011May;NA;NA;3.601088839;-1.717396684
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011May;NA;NA;-3.601088839;-26.74090572
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011May;NA;NA;-3.264538481;-28.56223707
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011May;NA;NA;-3.522890374;-29.98762683
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011May;NA;NA;-3.351645632;-29.50259837
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011May;NA;NA;-3.354615194;-30.8982925
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011May;NA;NA;-3.781242267;-31.41301658
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;-1.620390992;-33.7342242
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;-1.603563474;-25.82529077
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;-0.802771591;-29.45310567
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;0.086117298;-31.67532789
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;0.0989854;-25.62731997
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;-0.228656273;-19.61890621
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;0.872061371;-22.28161346
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;1.039346696;-23.65751052
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;0.775055679;-27.87428854
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;1.280871072;-30.14105419
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;1.288789903;-26.41920317
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;1.545162089;-25.92427617
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;2.143033902;-24.92452363
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;2.244988864;-17.00569166
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;2.170749814;-11.89804504
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;4.984904727;-9.245236328
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;-1.101212571;-29.72036625
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2011Apr;NA;NA;0.603810938;-28.359317
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Apr;NA;NA;-3.132887899;-24.60777035
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Apr;NA;NA;-3.563474388;-26.98341995
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2011Apr;NA;NA;-3.311061618;-28.34941846
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Apr;NA;NA;-3.060628557;-30.64587973
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Apr;NA;NA;-3.489235338;-32.09106657
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2011Apr;NA;NA;-3.568423658;-29.30957684
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-2.140512821;-26.11794872
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-1.289230769;-26.01538462
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-1.301538462;-31.8
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-1.190769231;-19.73846154
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-0.851282051;-20.17948718
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;-0.510769231;-20.13846154
-Moore;2016;Ecohydrology;Arundo donax;Soil_surface;2010Aug;NA;NA;0.418461538;-23.4
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-2.295384615;-18.90769231
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-2.73025641;-23.2974359
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-3.075897436;-25.74871795
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-2.823589744;-27.16410256
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-3.424615385;-29.64615385
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-3.596923077;-30.63076923
-Moore;2016;Ecohydrology;Arundo donax;Groundwater;2010Aug;NA;NA;-3.601025641;-32.55897436
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2010Aug;NA;NA;-3.005641026;-32.72820513
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2010Aug;NA;NA;-3.855384615;-32.10769231
-Moore;2016;Ecohydrology;Arundo donax;Riverwater;2010Aug;NA;NA;-3.605128205;-34.48717949
-Moore;2017;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-3.405117811;-36.44793514
-Moore;2018;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.977451229;-35.4446415
-Moore;2019;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.974410945;-34.01570813
-Moore;2020;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.290347099;-32.50570053
-Moore;2021;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.371421333;-30.61059032
-Moore;2022;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-3.481124905;-32.17126932
-Moore;2023;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-3.136559412;-30.22548771
-Moore;2024;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.961236382;-27.82366354
-Moore;2025;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-3.218647074;-28.80668862
-Moore;2026;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.276159108;-25.83734482
-Moore;2027;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-2.183937167;-22.49303268
-Moore;2028;Ecohydrology;Arundo donax;Soil_surface;2010Jun;NA;NA;-1.668102356;-20.0506714
-Moore;2029;Ecohydrology;Arundo donax;Groundwater;2010Jun;NA;NA;-2.950088675;-22.5842412
-Moore;2030;Ecohydrology;Arundo donax;Groundwater;2010Jun;NA;NA;-3.554091715;-26.46567013
-Moore;2031;Ecohydrology;Arundo donax;Groundwater;2010Jun;NA;NA;-3.641246516;-27.42842665
-Moore;2032;Ecohydrology;Arundo donax;Groundwater;2010Jun;NA;NA;-3.81960983;-31.25918419
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;1.737556561;-27.04980843
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;1.574660633;-23.0651341
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;1.447963801;-22.14559387
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;1.918552036;-21.53256705
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-0.65158371;-12.33716475
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-0.904977376;-15.09578544
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-1.176470588;-14.17624521
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-1.375565611;-18.46743295
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-1.411764706;-20.91954023
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-1.212669683;-23.0651341
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-2.117647059;-25.21072797
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_10cm;NA;NA;NA;-2.298642534;-25.51724138
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-2.588235294;-31.95402299
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-2.805429864;-31.95402299
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-2.932126697;-33.18007663
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-3.63800905;-38.08429119
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-3.981900452;-43.29501916
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-4.162895928;-43.60153257
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-4.162895928;-45.13409962
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-4.597285068;-43.29501916
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-4.687782805;-46.36015326
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-5.701357466;-51.26436782
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-6.081447964;-48.50574713
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_25cm;NA;NA;NA;-6.389140271;-53.7164751
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-6.895927602;-60.1532567
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-8.054298643;-63.52490421
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-8.760180995;-69.65517241
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-9.339366516;-76.39846743
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-10.00904977;-77.62452107
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-11.25791855;-87.7394636
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_50cm;NA;NA;NA;-11.29411765;-77.93103448
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-9.230769231;-73.02681992
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-10.62443439;-83.75478927
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-10.47963801;-80.68965517
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-10.53393665;-78.23754789
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-10.78733032;-79.77011494
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-10.87782805;-84.36781609
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-11.94570136;-90.49808429
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-12.25339367;-88.04597701
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_75cm;NA;NA;NA;-12.56108597;-94.17624521
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-8.760180995;-72.72030651
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-10.28054299;-80.68965517
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-10.80542986;-81.6091954
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-10.8959276;-79.46360153
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-11.11312217;-84.98084291
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-11.45701357;-86.20689655
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-11.45701357;-84.6743295
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-11.2760181;-83.75478927
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-11.74660633;-88.04597701
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-12.32579186;-90.8045977
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_100cm;NA;NA;NA;-13.53846154;-103.0651341
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-10.22624434;-76.70498084
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-10.35294118;-74.86590038
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-10.95022624;-83.44827586
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-11.36651584;-80.68965517
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-11.31221719;-80.99616858
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-11.31221719;-82.83524904
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-11.239819;-81.6091954
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-11.13122172;-80.99616858
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-12.41628959;-91.11111111
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Soil_150cm;NA;NA;NA;-15.40271493;-115.6321839
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;0.50678733;-3.448275862
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;0.470588235;-4.061302682
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;0.307692308;-4.061302682
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-3.058823529;-6.819923372
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-3.113122172;-8.045977011
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-3.330316742;-6.819923372
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-2.950226244;-16.01532567
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-3.185520362;-15.40229885
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-3.095022624;-15.40229885
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-4.036199095;-28.58237548
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-4.108597285;-31.03448276
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-4.14479638;-29.1954023
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-7.402714932;-52.79693487
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-7.619909502;-53.40996169
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-7.601809955;-52.79693487
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-9.755656109;-70.57471264
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-9.574660633;-69.96168582
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-9.900452489;-70.57471264
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-12.47058824;-86.51340996
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Rain;NA;NA;NA;-12.61538462;-86.51340996
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Groundwater;NA;NA;NA;-7.837104072;-58.00766284
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Groundwater;NA;NA;NA;-7.511312217;-58.92720307
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Groundwater;NA;NA;NA;-7.42081448;-56.16858238
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;Groundwater;NA;NA;NA;-7.656108597;-55.86206897
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;1.199635808;-10.1329073
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;0.804040473;-18.96422784
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;0.494545704;-8.934050265
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-0.479703149;-16.25912628
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-0.260363162;-27.20413668
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-0.656302073;-34.51455338
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-1.635567161;-19.63443335
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-1.959560908;-25.4221138
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-1.869612273;-23.59473868
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-1.833124324;-25.11472631
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-2.737077185;-23.61672765
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_10cm;NA;NA;NA;-2.607342255;-37.91001701
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-2.95291268;-28.18493641
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-2.878906049;-35.78762319
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-3.149851403;-36.40285628
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-3.63835014;-33.98177893
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.126024291;-35.2108708
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.306471285;-36.4321749
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.901960111;-40.4016423
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.449330882;-44.04035892
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.413186511;-44.03944272
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-4.648056209;-44.34957883
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-6.434934978;-54.43289642
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_25cm;NA;NA;NA;-7.084365498;-59.6204612
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-4.773255914;-50.13222014
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-8.0951023;-65.42554958
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-8.456202436;-66.95561549
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-8.43751181;-69.6927843
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-8.906838914;-72.13814113
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-9.034100084;-68.79535941
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-10.74745323;-84.3520984
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-10.96445689;-83.74923411
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_50cm;NA;NA;NA;-11.4700658;-85.58714561
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-10.04353129;-80.37988238
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-9.93612891;-75.81442225
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-10.65846661;-78.26619253
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-10.83822645;-82.52930431
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-11.25395544;-82.23565993
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-11.19898301;-85.58027406
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-11.74101115;-86.2023787
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_100cm;NA;NA;NA;-11.70466063;-87.1140048
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-9.431619453;-69.10961846
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-10.35254505;-72.47897018
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-10.54982735;-79.17598621
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-10.94707186;-80.70696833
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-11.01908574;-81.92552381
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-12.17398773;-89.55936163
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-12.78741131;-94.13764867
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-13.0403532;-94.44824289
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_150cm;NA;NA;NA;-14.97057257;-110.0104791
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-9.864664754;-72.16242062
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-9.756369071;-71.55131046
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.00937967;-71.55772391
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.04497432;-73.99208626
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.04442459;-76.4255324
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.29716033;-77.64866892
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.36965522;-76.73795903
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-10.40586831;-76.43469447
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-11.3440415;-83.45467352
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-11.74142344;-84.3772941
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-12.06610434;-87.12316687
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-13.83415506;-100.5520148
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Soil_200cm;NA;NA;NA;-15.8544605;-117.3332646
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;0.50678733;-3.448275862
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;0.470588235;-4.061302682
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;0.307692308;-4.061302682
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-3.058823529;-6.819923372
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-3.113122172;-8.045977011
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-3.330316742;-6.819923372
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-2.950226244;-16.01532567
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-3.185520362;-15.40229885
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-3.095022624;-15.40229885
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-4.036199095;-28.58237548
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-4.108597285;-31.03448276
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-4.14479638;-29.1954023
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-7.402714932;-52.79693487
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-7.619909502;-53.40996169
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-7.601809955;-52.79693487
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-9.755656109;-70.57471264
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-9.574660633;-69.96168582
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-9.900452489;-70.57471264
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-12.47058824;-86.51340996
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Rain;NA;NA;NA;-12.61538462;-86.51340996
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Groundwater;NA;NA;NA;-7.837104072;-58.00766284
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Groundwater;NA;NA;NA;-7.511312217;-58.92720307
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Groundwater;NA;NA;NA;-7.42081448;-56.16858238
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;Groundwater;NA;NA;NA;-7.656108597;-55.86206897
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Apr;NA;NA;2.28899626;14.93670886
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013May;NA;NA;2.262375381;27.42616034
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013May;NA;NA;-3.177068775;-7.004219409
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013May;NA;NA;-5.870968601;-38.73417722
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jun;NA;NA;-8.434293016;-59.32489451
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jun;NA;NA;-6.786460621;-40.42194093
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jun;NA;NA;-0.775466198;3.459915612
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jun;NA;NA;-0.523100268;3.459915612
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jul;NA;NA;-11.66114283;-82.61603376
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jul;NA;NA;-9.571137643;-62.3628692
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Jul;NA;NA;-6.346816808;-45.48523207
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Rain;2013Aug;NA;NA;-4.097485658;-21.1814346
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Groundwater;2013Apr;NA;NA;-8.595748646;-68.77637131
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Groundwater;2013Jun;NA;NA;-7.741351542;-62.02531646
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Groundwater;2013Jul;NA;NA;-8.438019939;-68.77637131
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Groundwater;2013Aug;NA;NA;-8.91093985;-68.10126582
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-1.504273504;-36.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-7.111111111;-53
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-7.794871795;-61
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-8.239316239;-72
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-8.752136752;-74.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-9.264957265;-77.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-9.094017094;-76.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;1;-8.478632479;-74.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;0.717948718;-31.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-7.213675214;-72.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-7.897435897;-73.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-7.965811966;-77
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-8.96E+14;-84
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-8.273504274;-74.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;1;-8.820512821;-76.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-4.820512821;-40
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-5.982905983;-48.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-6.564102564;-61.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-7.658119658;-70.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-8.41025641;-70.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-9.538461538;-86
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;1;-8.41025641;-77.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-4.683760684;-54
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-5.435897436;-53.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-7.179487179;-68.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-8.239316239;-78.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-8.752136752;-80.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-9.504273504;-77.66666667
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;1;-10.11965812;-85.33333333
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-4.478632479;-57.41573034
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-4.307692308;-60.78651685
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-5.128205128;-62.80898876
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-7.897435897;-69.5505618
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-7.555555556;-78.98876404
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-8.615384615;-87.07865169
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-8.786324786;-87.07865169
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Apr;NA;2;-9.88034188;-88.08988764
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-4.752136752;-57.07865169
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-6.871794872;-70.56179775
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-7.282051282;-63.82022472
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-7.658119658;-71.57303371
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-7.692307692;-72.24719101
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-8.034188034;-74.26966292
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-8;-77.97752809
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;2;-7.076923077;-64.49438202
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-5.709401709;-45.61797753
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-5.982905983;-54.71910112
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-6.290598291;-48.98876404
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-7.829059829;-67.19101124
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-8.136752137;-66.51685393
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-8.273504274;-68.87640449
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-8.341880342;-70.2247191
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;2;-9.264957265;-70.2247191
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-4.752136752;-51.34831461
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-4.923076923;-52.69662921
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-5.538461538;-58.76404494
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-7.282051282;-74.26966292
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-8.376068376;-82.02247191
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-8.376068376;-79.66292135
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-8.581196581;-80
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;2;-11.28205128;-91.46067416
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-3.008547009;-49.49152542
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-4.170940171;-50.84745763
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-7.452991453;-73.22033898
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-7.760683761;-72.54237288
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-8;-65.42372881
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-8.239316239;-78.30508475
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-9.299145299;-75.25423729
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jun;NA;3;-9.299145299;-82.03389831
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-4.307692308;-37.28813559
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-6.11965812;-53.55932203
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-6.564102564;-48.47457627
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-7.35042735;-63.05084746
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-7.760683761;-65.76271186
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-8.170940171;-69.15254237
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-8.444444444;-71.18644068
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-8.615384615;-73.22033898
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Jul;NA;3;-8.717948718;-72.88135593
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-2.461538462;-40
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-4.376068376;-47.45762712
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-5.948717949;-53.22033898
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-6.461538462;-64.74576271
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-7.794871795;-73.89830508
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-8.034188034;-78.30508475
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-8.41025641;-76.94915254
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-9.333333333;-76.61016949
-Zhu_Lin;2016;Journal of Arid Land;Medicago sativa;Soil_water;2013Aug;NA;3;-11.8974359;-96.94915254
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;5.913396482;43.08943089
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;1.962110961;19.51219512
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;1.285520974;16.2601626
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;1.204330176;8.130081301
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-0.473612991;0.406504065
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-1.123139378;-2.84217E-14
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-2.774018945;-6.097560976
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-3.288227334;-6.504065041
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-3.47767253;-13.82113821
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-2.774018945;-15.44715447
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-2.286874154;-22.76422764
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-1.799729364;-19.51219512
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-3.910690122;-20.32520325
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-4.343707713;-22.35772358
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-4.884979702;-26.42276423
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-4.803788904;-25.6097561
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-4.939106901;-23.98373984
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-5.128552097;-30.48780488
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-4.9932341;-32.11382114
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-5.399188092;-29.67479675
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-5.345060893;-33.33333333
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-5.723951286;-37.39837398
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-6.968876861;-47.15447154
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-7.185385656;-50.40650407
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-7.807848444;-50.81300813
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-8.403247632;-56.09756098
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-8.457374831;-57.31707317
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-8.51150203;-58.1300813
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-9.648173207;-60.16260163
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-10.37889039;-64.22764228
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-9.215155616;-64.22764228
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-8.944519621;-62.60162602
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-10.67658999;-69.91869919
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-10.81190798;-78.04878049
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-12.00270636;-88.61788618
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-12.27334235;-82.11382114
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-15.2232747;-111.3821138
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-15.95399188;-113.8211382
-Beyer;2016;Journal of Hydrology;;Rain;NA;NA;NA;-18.68741543;-136.5853659
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;7.45602E+15;-8.130081301
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;5.317997294;-28.04878049
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;4.776725304;-26.82926829
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;2.557510149;-23.17073171
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;2.47631935;-21.54471545
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;1.393775372;-26.42276423
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;0.581867388;-26.42276423
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;0.771312585;-26.01626016
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;-1.718538566;-35.77235772
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;-2.232746955;-33.7398374
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;-4.127198917;-42.68292683
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;-3.856562923;-41.46341463
-Beyer;2016;Journal of Hydrology;;Soil_surface;NA;NA;NA;-6.427604871;-36.58536585
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-4.695534506;-34.55284553
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.155615697;-37.80487805
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.155615697;-31.30081301
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.642760487;-41.05691057
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.642760487;-38.21138211
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.615696888;-37.80487805
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.751014885;-41.46341463
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.805142084;-39.02439024
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.778078484;-43.90243902
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.99458728;-44.71544715
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.102841678;-43.49593496
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-5.99458728;-41.8699187
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.265223275;-45.52845528
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.427604871;-45.52845528
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.860622463;-50
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.617050068;-45.12195122
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-6.48173207;-43.90243902
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-8.376184032;-56.09756098
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-9.133964817;-63.41463415
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-9.864682003;-70.73170732
-Beyer;2016;Journal of Hydrology;;Soil_deep;NA;NA;NA;-10.94722598;-76.82926829
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-6.589986468;-49.18699187
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-6.725304465;-49.18699187
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-8.078484438;-57.31707317
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-7.726657645;-56.09756098
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-8.863328823;-59.75609756
-Beyer;2016;Journal of Hydrology;;Groundwater_shallow;NA;NA;NA;-6.48173207;-48.37398374
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-6.319350474;-49.59349593
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-7.618403248;-56.50406504
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.294993234;-62.60162602
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.836265223;-63.00813008
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-9.215155616;-64.63414634
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.99864682;-64.63414634
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.728010825;-64.22764228
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.592692828;-63.82113821
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-8.836265223;-62.19512195
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-9.106901218;-65.44715447
-Beyer;2016;Journal of Hydrology;;Groundwater_deep;NA;NA;NA;-9.296346414;-65.44715447
+author,year,journal,species,label,date,season,plot,d18O_permil,d2H_permil
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-2.819415689,-31.42857143
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-2.37221072,-37.14285714
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-1.448355187,-38.41269841
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-1.555095468,-35.23809524
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-1.779618127,-32.6984127
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-0.2778928,-34.6031746
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,-0.049689441,-35.87301587
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,0.202438463,-28.88888889
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,0.093857833,-26.34920635
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,0.32942259,-25.07936508
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,0.77478721,-31.42857143
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,1.014032666,-28.88888889
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,1.367379802,-26.98412698
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,1.59742351,-27.61904762
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,3.09547,-30.79365079
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jul,dry,NA,2.642742121,-26.98412698
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jul,dry,NA,-3.8647343,-32.06349206
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jul,dry,NA,-4.195997239,-26.34920635
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jul,dry,NA,-3.504025765,-27.61904762
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Jul,dry,NA,-3.625488843,-29.52380952
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Jul,dry,NA,-3.389924086,-28.25396825
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,-2.19168,-34.83871
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,-0.92006,-36.12903
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,-0.79476,-32.90323
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,-0.79289,-32.25806
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,-0.4245,-25.16129
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,0.27676,-23.22581
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,0.38149,-27.09677
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,0.84525,-27.09677
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,0.85273,-24.51613
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,0.86209,-21.29032
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,1.56522,-18.70968
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,2.0346,-16.77419
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,2.84806,-16.12903
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,2.84058,-18.70968
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,3.53436,-19.35484
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,4.80598,-20.64516
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,1.77466,-26.45161
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,1.78027,-24.51613
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,1.55213,-23.22581
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Jun,wet,NA,1.78588,-22.58065
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jun,wet,NA,-4.14475,-26.54443
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jun,wet,NA,-3.02471,-25.11149
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Jun,wet,NA,-3.6325,-27.49972
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Jun,wet,NA,-3.63803,-29.4103
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Jun,wet,NA,-3.81386,-30.84324
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-1.473892601,-26.9586736
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-1.385795595,-25.55308092
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-1.971789161,-20.97005692
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-1.457065083,-19
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-1.113585746,-17.61445187
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-0.946300421,-18.99034892
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,-0.250433061,-11.93268993
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.120514724,-7.587230883
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.116555308,-9.448156397
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.199703044,-10.36872061
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.537243257,-11.72482059
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,2.048997773,-11.20019797
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.969809453,-8.418708241
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,1.888641425,-6.567681267
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,2.146003464,-5.60752289
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,2.89532294,-13.42736946
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,2.91512002,-4.122741896
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011May,dry,NA,3.601088839,-1.717396684
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011May,dry,NA,-3.601088839,-26.74090572
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011May,dry,NA,-3.264538481,-28.56223707
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011May,dry,NA,-3.522890374,-29.98762683
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011May,dry,NA,-3.351645632,-29.50259837
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011May,dry,NA,-3.354615194,-30.8982925
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011May,dry,NA,-3.781242267,-31.41301658
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,-1.620390992,-33.7342242
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,-1.603563474,-25.82529077
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,-0.802771591,-29.45310567
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,0.086117298,-31.67532789
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,0.0989854,-25.62731997
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,-0.228656273,-19.61890621
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,0.872061371,-22.28161346
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,1.039346696,-23.65751052
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,0.775055679,-27.87428854
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,1.280871072,-30.14105419
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,1.288789903,-26.41920317
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,1.545162089,-25.92427617
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,2.143033902,-24.92452363
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,2.244988864,-17.00569166
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,2.170749814,-11.89804504
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,4.984904727,-9.245236328
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,-1.101212571,-29.72036625
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2011Apr,dry,NA,0.603810938,-28.359317
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Apr,dry,NA,-3.132887899,-24.60777035
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Apr,dry,NA,-3.563474388,-26.98341995
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2011Apr,dry,NA,-3.311061618,-28.34941846
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Apr,dry,NA,-3.060628557,-30.64587973
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Apr,dry,NA,-3.489235338,-32.09106657
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2011Apr,dry,NA,-3.568423658,-29.30957684
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-2.140512821,-26.11794872
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-1.289230769,-26.01538462
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-1.301538462,-31.8
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-1.190769231,-19.73846154
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-0.851282051,-20.17948718
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,-0.510769231,-20.13846154
+Moore,2016,Ecohydrology,Arundo donax,Soil_10cm,2010Aug,wet,NA,0.418461538,-23.4
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-2.295384615,-18.90769231
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-2.73025641,-23.2974359
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-3.075897436,-25.74871795
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-2.823589744,-27.16410256
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-3.424615385,-29.64615385
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-3.596923077,-30.63076923
+Moore,2016,Ecohydrology,Arundo donax,Groundwater,2010Aug,wet,NA,-3.601025641,-32.55897436
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2010Aug,wet,NA,-3.005641026,-32.72820513
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2010Aug,wet,NA,-3.855384615,-32.10769231
+Moore,2016,Ecohydrology,Arundo donax,Riverwater,2010Aug,wet,NA,-3.605128205,-34.48717949
+Moore,2017,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.405117811,-36.44793514
+Moore,2018,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.977451229,-35.4446415
+Moore,2019,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.974410945,-34.01570813
+Moore,2020,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.290347099,-32.50570053
+Moore,2021,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.371421333,-30.61059032
+Moore,2022,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.481124905,-32.17126932
+Moore,2023,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.136559412,-30.22548771
+Moore,2024,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.961236382,-27.82366354
+Moore,2025,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.218647074,-28.80668862
+Moore,2026,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.276159108,-25.83734482
+Moore,2027,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.183937167,-22.49303268
+Moore,2028,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-1.668102356,-20.0506714
+Moore,2029,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-2.950088675,-22.5842412
+Moore,2030,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.554091715,-26.46567013
+Moore,2031,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.641246516,-27.42842665
+Moore,2032,Ecohydrology,Arundo donax,Soil_10cm,2010Jun,flood,NA,-3.81960983,-31.25918419
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,1.737556561,-27.04980843
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,1.574660633,-23.0651341
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,1.447963801,-22.14559387
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,1.918552036,-21.53256705
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-0.65158371,-12.33716475
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-0.904977376,-15.09578544
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-1.176470588,-14.17624521
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-1.375565611,-18.46743295
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-1.411764706,-20.91954023
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-1.212669683,-23.0651341
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-2.117647059,-25.21072797
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_10cm,NA,NA,NA,-2.298642534,-25.51724138
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-2.588235294,-31.95402299
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-2.805429864,-31.95402299
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-2.932126697,-33.18007663
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-3.63800905,-38.08429119
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-3.981900452,-43.29501916
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-4.162895928,-43.60153257
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-4.162895928,-45.13409962
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-4.597285068,-43.29501916
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-4.687782805,-46.36015326
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-5.701357466,-51.26436782
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-6.081447964,-48.50574713
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_25cm,NA,NA,NA,-6.389140271,-53.7164751
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-6.895927602,-60.1532567
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-8.054298643,-63.52490421
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-8.760180995,-69.65517241
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-9.339366516,-76.39846743
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-10.00904977,-77.62452107
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-11.25791855,-87.7394636
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_50cm,NA,NA,NA,-11.29411765,-77.93103448
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-9.230769231,-73.02681992
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-10.62443439,-83.75478927
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-10.47963801,-80.68965517
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-10.53393665,-78.23754789
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-10.78733032,-79.77011494
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-10.87782805,-84.36781609
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-11.94570136,-90.49808429
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-12.25339367,-88.04597701
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_75cm,NA,NA,NA,-12.56108597,-94.17624521
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-8.760180995,-72.72030651
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-10.28054299,-80.68965517
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-10.80542986,-81.6091954
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-10.8959276,-79.46360153
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-11.11312217,-84.98084291
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-11.45701357,-86.20689655
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-11.45701357,-84.6743295
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-11.2760181,-83.75478927
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-11.74660633,-88.04597701
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-12.32579186,-90.8045977
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_100cm,NA,NA,NA,-13.53846154,-103.0651341
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-10.22624434,-76.70498084
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-10.35294118,-74.86590038
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-10.95022624,-83.44827586
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-11.36651584,-80.68965517
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-11.31221719,-80.99616858
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-11.31221719,-82.83524904
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-11.239819,-81.6091954
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-11.13122172,-80.99616858
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-12.41628959,-91.11111111
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Soil_150cm,NA,NA,NA,-15.40271493,-115.6321839
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,0.50678733,-3.448275862
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,0.470588235,-4.061302682
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,0.307692308,-4.061302682
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-3.058823529,-6.819923372
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-3.113122172,-8.045977011
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-3.330316742,-6.819923372
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-2.950226244,-16.01532567
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-3.185520362,-15.40229885
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-3.095022624,-15.40229885
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-4.036199095,-28.58237548
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-4.108597285,-31.03448276
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-4.14479638,-29.1954023
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-7.402714932,-52.79693487
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-7.619909502,-53.40996169
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-7.601809955,-52.79693487
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-9.755656109,-70.57471264
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-9.574660633,-69.96168582
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-9.900452489,-70.57471264
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-12.47058824,-86.51340996
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Rain,NA,NA,NA,-12.61538462,-86.51340996
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Groundwater,NA,NA,NA,-7.837104072,-58.00766284
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Groundwater,NA,NA,NA,-7.511312217,-58.92720307
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Groundwater,NA,NA,NA,-7.42081448,-56.16858238
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,Groundwater,NA,NA,NA,-7.656108597,-55.86206897
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,1.199635808,-10.1329073
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,0.804040473,-18.96422784
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,0.494545704,-8.934050265
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-0.479703149,-16.25912628
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-0.260363162,-27.20413668
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-0.656302073,-34.51455338
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-1.635567161,-19.63443335
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-1.959560908,-25.4221138
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-1.869612273,-23.59473868
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-1.833124324,-25.11472631
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-2.737077185,-23.61672765
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_10cm,NA,NA,NA,-2.607342255,-37.91001701
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-2.95291268,-28.18493641
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-2.878906049,-35.78762319
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-3.149851403,-36.40285628
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-3.63835014,-33.98177893
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.126024291,-35.2108708
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.306471285,-36.4321749
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.901960111,-40.4016423
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.449330882,-44.04035892
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.413186511,-44.03944272
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-4.648056209,-44.34957883
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-6.434934978,-54.43289642
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_25cm,NA,NA,NA,-7.084365498,-59.6204612
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-4.773255914,-50.13222014
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-8.0951023,-65.42554958
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-8.456202436,-66.95561549
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-8.43751181,-69.6927843
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-8.906838914,-72.13814113
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-9.034100084,-68.79535941
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-10.74745323,-84.3520984
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-10.96445689,-83.74923411
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_50cm,NA,NA,NA,-11.4700658,-85.58714561
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-10.04353129,-80.37988238
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-9.93612891,-75.81442225
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-10.65846661,-78.26619253
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-10.83822645,-82.52930431
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-11.25395544,-82.23565993
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-11.19898301,-85.58027406
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-11.74101115,-86.2023787
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_100cm,NA,NA,NA,-11.70466063,-87.1140048
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-9.431619453,-69.10961846
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-10.35254505,-72.47897018
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-10.54982735,-79.17598621
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-10.94707186,-80.70696833
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-11.01908574,-81.92552381
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-12.17398773,-89.55936163
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-12.78741131,-94.13764867
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-13.0403532,-94.44824289
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_150cm,NA,NA,NA,-14.97057257,-110.0104791
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-9.864664754,-72.16242062
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-9.756369071,-71.55131046
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.00937967,-71.55772391
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.04497432,-73.99208626
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.04442459,-76.4255324
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.29716033,-77.64866892
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.36965522,-76.73795903
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-10.40586831,-76.43469447
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-11.3440415,-83.45467352
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-11.74142344,-84.3772941
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-12.06610434,-87.12316687
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-13.83415506,-100.5520148
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Soil_200cm,NA,NA,NA,-15.8544605,-117.3332646
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,0.50678733,-3.448275862
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,0.470588235,-4.061302682
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,0.307692308,-4.061302682
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-3.058823529,-6.819923372
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-3.113122172,-8.045977011
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-3.330316742,-6.819923372
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-2.950226244,-16.01532567
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-3.185520362,-15.40229885
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-3.095022624,-15.40229885
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-4.036199095,-28.58237548
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-4.108597285,-31.03448276
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-4.14479638,-29.1954023
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-7.402714932,-52.79693487
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-7.619909502,-53.40996169
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-7.601809955,-52.79693487
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-9.755656109,-70.57471264
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-9.574660633,-69.96168582
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-9.900452489,-70.57471264
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-12.47058824,-86.51340996
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Rain,NA,NA,NA,-12.61538462,-86.51340996
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Groundwater,NA,NA,NA,-7.837104072,-58.00766284
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Groundwater,NA,NA,NA,-7.511312217,-58.92720307
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Groundwater,NA,NA,NA,-7.42081448,-56.16858238
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,Groundwater,NA,NA,NA,-7.656108597,-55.86206897
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Apr,NA,NA,2.28899626,14.93670886
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013May,NA,NA,2.262375381,27.42616034
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013May,NA,NA,-3.177068775,-7.004219409
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013May,NA,NA,-5.870968601,-38.73417722
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jun,NA,NA,-8.434293016,-59.32489451
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jun,NA,NA,-6.786460621,-40.42194093
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jun,NA,NA,-0.775466198,3.459915612
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jun,NA,NA,-0.523100268,3.459915612
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jul,NA,NA,-11.66114283,-82.61603376
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jul,NA,NA,-9.571137643,-62.3628692
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Jul,NA,NA,-6.346816808,-45.48523207
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Rain,2013Aug,NA,NA,-4.097485658,-21.1814346
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Groundwater,2013Apr,NA,NA,-8.595748646,-68.77637131
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Groundwater,2013Jun,NA,NA,-7.741351542,-62.02531646
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Groundwater,2013Jul,NA,NA,-8.438019939,-68.77637131
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Groundwater,2013Aug,NA,NA,-8.91093985,-68.10126582
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-1.504273504,-36.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-7.111111111,-53
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-7.794871795,-61
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-8.239316239,-72
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-8.752136752,-74.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-9.264957265,-77.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-9.094017094,-76.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,1,-8.478632479,-74.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,0.717948718,-31.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-7.213675214,-72.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-7.897435897,-73.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-7.965811966,-77
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-8.96E+14,-84
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-8.273504274,-74.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,1,-8.820512821,-76.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-4.820512821,-40
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-5.982905983,-48.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-6.564102564,-61.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-7.658119658,-70.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-8.41025641,-70.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-9.538461538,-86
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,1,-8.41025641,-77.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-4.683760684,-54
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-5.435897436,-53.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-7.179487179,-68.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-8.239316239,-78.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-8.752136752,-80.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-9.504273504,-77.66666667
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,1,-10.11965812,-85.33333333
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-4.478632479,-57.41573034
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-4.307692308,-60.78651685
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-5.128205128,-62.80898876
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-7.897435897,-69.5505618
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-7.555555556,-78.98876404
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-8.615384615,-87.07865169
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-8.786324786,-87.07865169
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Apr,NA,2,-9.88034188,-88.08988764
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-4.752136752,-57.07865169
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-6.871794872,-70.56179775
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-7.282051282,-63.82022472
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-7.658119658,-71.57303371
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-7.692307692,-72.24719101
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-8.034188034,-74.26966292
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-8,-77.97752809
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,2,-7.076923077,-64.49438202
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-5.709401709,-45.61797753
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-5.982905983,-54.71910112
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-6.290598291,-48.98876404
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-7.829059829,-67.19101124
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-8.136752137,-66.51685393
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-8.273504274,-68.87640449
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-8.341880342,-70.2247191
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,2,-9.264957265,-70.2247191
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-4.752136752,-51.34831461
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-4.923076923,-52.69662921
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-5.538461538,-58.76404494
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-7.282051282,-74.26966292
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-8.376068376,-82.02247191
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-8.376068376,-79.66292135
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-8.581196581,-80
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,2,-11.28205128,-91.46067416
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-3.008547009,-49.49152542
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-4.170940171,-50.84745763
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-7.452991453,-73.22033898
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-7.760683761,-72.54237288
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-8,-65.42372881
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-8.239316239,-78.30508475
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-9.299145299,-75.25423729
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jun,NA,3,-9.299145299,-82.03389831
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-4.307692308,-37.28813559
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-6.11965812,-53.55932203
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-6.564102564,-48.47457627
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-7.35042735,-63.05084746
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-7.760683761,-65.76271186
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-8.170940171,-69.15254237
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-8.444444444,-71.18644068
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-8.615384615,-73.22033898
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Jul,NA,3,-8.717948718,-72.88135593
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-2.461538462,-40
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-4.376068376,-47.45762712
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-5.948717949,-53.22033898
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-6.461538462,-64.74576271
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-7.794871795,-73.89830508
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-8.034188034,-78.30508475
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-8.41025641,-76.94915254
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-9.333333333,-76.61016949
+Zhu_Lin,2016,Journal of Arid Land,Medicago sativa,Soil_water,2013Aug,NA,3,-11.8974359,-96.94915254
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,5.913396482,43.08943089
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,1.962110961,19.51219512
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,1.285520974,16.2601626
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,1.204330176,8.130081301
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-0.473612991,0.406504065
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-1.123139378,-2.84E-14
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-2.774018945,-6.097560976
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-3.288227334,-6.504065041
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-3.47767253,-13.82113821
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-2.774018945,-15.44715447
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-2.286874154,-22.76422764
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-1.799729364,-19.51219512
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-3.910690122,-20.32520325
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-4.343707713,-22.35772358
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-4.884979702,-26.42276423
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-4.803788904,-25.6097561
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-4.939106901,-23.98373984
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-5.128552097,-30.48780488
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-4.9932341,-32.11382114
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-5.399188092,-29.67479675
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-5.345060893,-33.33333333
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-5.723951286,-37.39837398
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-6.968876861,-47.15447154
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-7.185385656,-50.40650407
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-7.807848444,-50.81300813
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-8.403247632,-56.09756098
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-8.457374831,-57.31707317
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-8.51150203,-58.1300813
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-9.648173207,-60.16260163
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-10.37889039,-64.22764228
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-9.215155616,-64.22764228
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-8.944519621,-62.60162602
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-10.67658999,-69.91869919
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-10.81190798,-78.04878049
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-12.00270636,-88.61788618
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-12.27334235,-82.11382114
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-15.2232747,-111.3821138
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-15.95399188,-113.8211382
+Beyer,2016,Journal of Hydrology,,Rain,NA,NA,NA,-18.68741543,-136.5853659
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,7.46E+15,-8.130081301
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,5.317997294,-28.04878049
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,4.776725304,-26.82926829
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,2.557510149,-23.17073171
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,2.47631935,-21.54471545
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,1.393775372,-26.42276423
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,0.581867388,-26.42276423
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,0.771312585,-26.01626016
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,-1.718538566,-35.77235772
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,-2.232746955,-33.7398374
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,-4.127198917,-42.68292683
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,-3.856562923,-41.46341463
+Beyer,2016,Journal of Hydrology,,Soil_surface,NA,NA,NA,-6.427604871,-36.58536585
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-4.695534506,-34.55284553
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.155615697,-37.80487805
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.155615697,-31.30081301
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.642760487,-41.05691057
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.642760487,-38.21138211
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.615696888,-37.80487805
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.751014885,-41.46341463
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.805142084,-39.02439024
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.778078484,-43.90243902
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.99458728,-44.71544715
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.102841678,-43.49593496
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-5.99458728,-41.8699187
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.265223275,-45.52845528
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.427604871,-45.52845528
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.860622463,-50
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.617050068,-45.12195122
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-6.48173207,-43.90243902
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-8.376184032,-56.09756098
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-9.133964817,-63.41463415
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-9.864682003,-70.73170732
+Beyer,2016,Journal of Hydrology,,Soil_deep,NA,NA,NA,-10.94722598,-76.82926829
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-6.589986468,-49.18699187
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-6.725304465,-49.18699187
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-8.078484438,-57.31707317
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-7.726657645,-56.09756098
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-8.863328823,-59.75609756
+Beyer,2016,Journal of Hydrology,,Groundwater_shallow,NA,NA,NA,-6.48173207,-48.37398374
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-6.319350474,-49.59349593
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-7.618403248,-56.50406504
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.294993234,-62.60162602
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.836265223,-63.00813008
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-9.215155616,-64.63414634
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.99864682,-64.63414634
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.728010825,-64.22764228
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.592692828,-63.82113821
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-8.836265223,-62.19512195
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-9.106901218,-65.44715447
+Beyer,2016,Journal of Hydrology,,Groundwater_deep,NA,NA,NA,-9.296346414,-65.44715447

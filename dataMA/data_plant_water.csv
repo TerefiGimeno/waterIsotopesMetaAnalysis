@@ -1,172 +1,169 @@
-Author;year;journal;species;Date;season;plot;d18O_permil;d2H_permil;xylem;plant_tissue;OBS1;OBS2;OBS3
-Querejeta;2007;Oecologia;Brosimum alicastrum;;;;-2.052307692;-18.97790055;yes;xylem;;;
-Querejeta;2007;Oecologia;Enterolobium cyclocarpum;;;;-2.661538462;-17.67955801;yes;xylem;;;
-Querejeta;2007;Oecologia;Talisia olivaeformis;;;;-2.8;-20.96685083;yes;xylem;;;
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-4.35443038;-40.64516129;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-3.848101266;-40;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-3.443037975;-39.35483871;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-3.544303797;-37.41935484;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-3.443037975;-35.48387097;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-3.139240506;-30.96774194;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-2.734177215;-27.09677419;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.924050633;-26.4516129;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.417721519;-25.80645161;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.113924051;-24.51612903;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.113924051;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.620253165;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-1.82278481;-30.32258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;-2.126582278;-30.32258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;0.202531646;-25.16129032;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;0.810126582;-20;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;1.012658228;-21.93548387;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jul;NA;NA;1.417721519;-21.29032258;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-4.4;-40;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-4.2;-41.29032258;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-4.2;-32.25806452;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.9;-34.83870968;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.6;-36.12903226;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.6;-38.06451613;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-4.1;-30.32258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.3;-29.67741935;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.1;-32.25806452;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-2.8;-34.19354839;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-3.3;-34.19354839;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-2.2;-30.96774194;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-2;-30.32258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-1.7;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;-1.2;-23.87096774;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;0.1;-24.51612903;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Jun;NA;NA;2.6;-5.161290323;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-4.9;-38.125;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-3.8;-31.25;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-3.5;-35;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-3.5;-33.125;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-3.1;-30.625;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2.7;-30;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-3.2;-27.5;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2.7;-26.875;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2.4;-28.75;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2;-26.875;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2.2;-22.5;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-2;-23.75;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-0.5;-19.375;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-1;-16.25;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-0.3;-18.125;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-0.3;-15.625;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;-0.1;-11.25;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011May;NA;NA;0.7;-13.125;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-4.8;-39.35483871;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-4.1;-38.70967742;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-4.1;-37.41935484;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-4.4;-35.48387097;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-3.5;-34.19354839;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-3.5;-32.90322581;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-3.7;-30.96774194;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-3.2;-30.32258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-2.9;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-2.6;-29.67741935;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-2.2;-27.74193548;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-2.2;-25.16129032;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-1.7;-27.74193548;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-1.7;-24.51612903;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-0.7;-18.70967742;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;0.5;-17.41935484;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;2.5;-12.25806452;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2011Apr;NA;NA;-0.9;-9.032258065;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;6.7;-45.80645161;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-6.1;-47.09677419;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4.8;-41.29032258;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-5;-40;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4.5;-37.41935484;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4.7;-35.48387097;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4.2;-34.19354839;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4.1;-32.25806452;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-3.8;-34.83870968;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-4;-36.12903226;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-2.4;-33.5483871;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-1.8;-21.93548387;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-2.4;-25.80645161;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-3.4;-31.61290323;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Aug;NA;NA;-3.2;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-7.5;-45.80645161;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-7;-51.61290323;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-4.5;-38.70967742;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-4.5;-35.48387097;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-3.5;-26.4516129;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-3.9;-28.38709677;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-3.9;-35.48387097;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-3.6;-34.83870968;no;rizhome;NA;NA;NA
-Moore;2016;Ecohydrology;Arundo donax;2010Jun;NA;NA;-3.7;-31.61290323;no;rizhome;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-9.122171946;-78.5440613;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-8.524886878;-72.72030651;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-8.398190045;-69.65517241;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-7.92760181;-67.50957854;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-7.728506787;-68.73563218;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-7.547511312;-7.057471264;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-7.34841629;-64.75095785;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-7.131221719;-60.76628352;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-6.805429864;-58.92720307;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-5.357466063;-50.34482759;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix psammophila;NA;NA;NA;-5.212669683;-50.95785441;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-6.235522496;-57.16548419;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-6.524540035;-57.78117538;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-6.54309323;-55.65236811;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-6.813488859;-58.70104734;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-7.084434213;-59.31628043;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-7.42643143;-65.40859975;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-8.744189243;-72.1340182;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-9.718644242;-78.54655191;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-10.09795399;-79.46871439;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-10.60335675;-82.2191682;yes;xylem;NA;NA;NA
-Zhu_Yajuan;2016;PLOS ONE;Salix cheilophila;NA;NA;NA;-11.48772569;-87.41268832;yes;xylem;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Apr;NA;1;-8.990536278;-73.55932203;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jun;NA;1;-9.211356467;-82.37288136;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jul;NA;1;-9.432176656;-84.40677966;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Aug;NA;1;-8.517350158;-77.28813559;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Apr;NA;2;-7.287066246;-75.59322034;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jun;NA;2;-6.372239748;-73.55932203;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jul;NA;2;-6.65615142;-58.6440678;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Aug;NA;2;-8.706624606;-84.74576271;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Apr;NA;3;-5.993690852;-61.69491525;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jun;NA;3;-7.602523659;-71.52542373;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Jul;NA;3;-6.940063091;-66.10169492;yes;xylem sap;NA;NA;NA
-Zhu_Lin;2016;Journal of Arid Lands;Medicago sativa;2013Aug;NA;3;-8.391167192;-78.6440678;yes;xylem sap;NA;NA;NA
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-5.317997294;-69.10569106;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.562922869;-64.63414634;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.725304465;-63.00813008;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.562922869;-58.53658537;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.346414073;-53.65853659;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.99594046;-58.53658537;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-6.887686062;-56.09756098;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-7.077131258;-54.06504065;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-7.401894452;-64.22764228;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-7.97023E+13;-66.2601626;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-8.159675237;-63.00813008;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-8.538565629;-64.22764228;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-8.619756428;-77.23577236;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.269282815;-74.3902439;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.323410014;-67.88617886;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.48579161;-74.3902439;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.972936401;-79.67479675;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.458728011;-84.95934959;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-9.702300406;-85.36585366;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-10.51420839;-80.08130081;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-11.05548038;-84.55284553;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-11.27198917;-86.58536585;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-11.38024357;-90.24390244;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-12.27334235;-98.37398374;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-12.76048714;-93.49593496;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-12.84167794;-94.71544715;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-13.08525034;-95.93495935;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-13.51826793;-110.5691057;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-13.78890392;-109.3495935;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-14.11366712;-102.8455285;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-14.00541272;-118.2926829;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Several;NA;NA;NA;-16.65764547;-131.7073171;yes;xylem;Se asume que es una media de todas las especies (species=several?);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Baikiea plurijuga;NA;NA;NA;-7.4;-72.1;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Acacia erioloba;NA;NA;NA;-10.1;-82;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Combretum collinum;NA;NA;NA;-9.8;-73.6;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Salacia luebertii;NA;NA;NA;-8.7;-75.3;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Terminalia sericea;NA;NA;NA;-7.5;-60.9;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
-Beyer;2016;Journal of Hydrology;Erythrophleum africanum;NA;NA;NA;-10;-80.4;yes;xylem;Media para cada especie aportada por el paper (table 1);Hay mediciones para el agua transpirada que no he recopilado;Hay datos  para xylema influenciados por fuentes artificiales (globos, ver experimento) que no he recopilado
+Author,year,journal,species,Date,season,plot,d18O_permil,d2H_permil,xylem,plant_tissue,OBS1,OBS2,OBS3
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-4.35443038,-40.64516129,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-3.848101266,-40,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-3.443037975,-39.35483871,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-3.544303797,-37.41935484,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-3.443037975,-35.48387097,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-3.139240506,-30.96774194,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-2.734177215,-27.09677419,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.924050633,-26.4516129,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.417721519,-25.80645161,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.113924051,-24.51612903,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.113924051,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.620253165,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-1.82278481,-30.32258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,-2.126582278,-30.32258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,0.202531646,-25.16129032,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,0.810126582,-20,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,1.012658228,-21.93548387,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jul,dry,NA,1.417721519,-21.29032258,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-4.4,-40,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-4.2,-41.29032258,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-4.2,-32.25806452,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.9,-34.83870968,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.6,-36.12903226,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.6,-38.06451613,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-4.1,-30.32258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.3,-29.67741935,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.1,-32.25806452,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-2.8,-34.19354839,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-3.3,-34.19354839,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-2.2,-30.96774194,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-2,-30.32258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-1.7,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,-1.2,-23.87096774,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,0.1,-24.51612903,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Jun,wet,NA,2.6,-5.161290323,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-4.9,-38.125,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-3.8,-31.25,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-3.5,-35,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-3.5,-33.125,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-3.1,-30.625,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2.7,-30,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-3.2,-27.5,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2.7,-26.875,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2.4,-28.75,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2,-26.875,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2.2,-22.5,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-2,-23.75,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-0.5,-19.375,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-1,-16.25,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-0.3,-18.125,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-0.3,-15.625,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,-0.1,-11.25,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011May,dry,NA,0.7,-13.125,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-4.8,-39.35483871,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-4.1,-38.70967742,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-4.1,-37.41935484,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-4.4,-35.48387097,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-3.5,-34.19354839,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-3.5,-32.90322581,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-3.7,-30.96774194,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-3.2,-30.32258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-2.9,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-2.6,-29.67741935,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-2.2,-27.74193548,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-2.2,-25.16129032,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-1.7,-27.74193548,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-1.7,-24.51612903,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-0.7,-18.70967742,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,0.5,-17.41935484,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,2.5,-12.25806452,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2011Apr,dry,NA,-0.9,-9.032258065,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,6.7,-45.80645161,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-6.1,-47.09677419,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4.8,-41.29032258,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-5,-40,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4.5,-37.41935484,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4.7,-35.48387097,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4.2,-34.19354839,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4.1,-32.25806452,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-3.8,-34.83870968,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-4,-36.12903226,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-2.4,-33.5483871,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-1.8,-21.93548387,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-2.4,-25.80645161,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-3.4,-31.61290323,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Aug,wet,NA,-3.2,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-7.5,-45.80645161,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-7,-51.61290323,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-4.5,-38.70967742,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-4.5,-35.48387097,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-3.5,-26.4516129,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-3.9,-28.38709677,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-3.9,-35.48387097,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-3.6,-34.83870968,no,rizhome,NA,NA,NA
+Moore,2016,Ecohydrology,Arundo donax,2010Jun,flood,NA,-3.7,-31.61290323,no,rizhome,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-9.122171946,-78.5440613,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-8.524886878,-72.72030651,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-8.398190045,-69.65517241,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-7.92760181,-67.50957854,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-7.728506787,-68.73563218,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-7.547511312,-7.057471264,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-7.34841629,-64.75095785,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-7.131221719,-60.76628352,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-6.805429864,-58.92720307,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-5.357466063,-50.34482759,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix psammophila,NA,NA,NA,-5.212669683,-50.95785441,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-6.235522496,-57.16548419,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-6.524540035,-57.78117538,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-6.54309323,-55.65236811,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-6.813488859,-58.70104734,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-7.084434213,-59.31628043,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-7.42643143,-65.40859975,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-8.744189243,-72.1340182,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-9.718644242,-78.54655191,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-10.09795399,-79.46871439,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-10.60335675,-82.2191682,yes,xylem,NA,NA,NA
+Zhu_Yajuan,2016,PLOS ONE,Salix cheilophila,NA,NA,NA,-11.48772569,-87.41268832,yes,xylem,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Apr,NA,1,-8.990536278,-73.55932203,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jun,NA,1,-9.211356467,-82.37288136,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jul,NA,1,-9.432176656,-84.40677966,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Aug,NA,1,-8.517350158,-77.28813559,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Apr,NA,2,-7.287066246,-75.59322034,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jun,NA,2,-6.372239748,-73.55932203,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jul,NA,2,-6.65615142,-58.6440678,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Aug,NA,2,-8.706624606,-84.74576271,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Apr,NA,3,-5.993690852,-61.69491525,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jun,NA,3,-7.602523659,-71.52542373,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Jul,NA,3,-6.940063091,-66.10169492,yes,xylem sap,NA,NA,NA
+Zhu_Lin,2016,Journal of Arid Lands,Medicago sativa,2013Aug,NA,3,-8.391167192,-78.6440678,yes,xylem sap,NA,NA,NA
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-5.317997294,-69.10569106,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.562922869,-64.63414634,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.725304465,-63.00813008,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.562922869,-58.53658537,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.346414073,-53.65853659,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.99594046,-58.53658537,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-6.887686062,-56.09756098,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-7.077131258,-54.06504065,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-7.401894452,-64.22764228,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-7.97E+13,-66.2601626,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-8.159675237,-63.00813008,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-8.538565629,-64.22764228,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-8.619756428,-77.23577236,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.269282815,-74.3902439,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.323410014,-67.88617886,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.48579161,-74.3902439,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.972936401,-79.67479675,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.458728011,-84.95934959,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-9.702300406,-85.36585366,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-10.51420839,-80.08130081,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-11.05548038,-84.55284553,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-11.27198917,-86.58536585,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-11.38024357,-90.24390244,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-12.27334235,-98.37398374,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-12.76048714,-93.49593496,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-12.84167794,-94.71544715,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-13.08525034,-95.93495935,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-13.51826793,-110.5691057,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-13.78890392,-109.3495935,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-14.11366712,-102.8455285,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-14.00541272,-118.2926829,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Several,NA,NA,NA,-16.65764547,-131.7073171,yes,xylem,Se asume que es una media de todas las especies (species=several?),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Baikiea plurijuga,NA,NA,NA,-7.4,-72.1,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Acacia erioloba,NA,NA,NA,-10.1,-82,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Combretum collinum,NA,NA,NA,-9.8,-73.6,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Salacia luebertii,NA,NA,NA,-8.7,-75.3,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Terminalia sericea,NA,NA,NA,-7.5,-60.9,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
+Beyer,2016,Journal of Hydrology,Erythrophleum africanum,NA,NA,NA,-10,-80.4,yes,xylem,Media para cada especie aportada por el paper (table 1),Hay mediciones para el agua transpirada que no he recopilado,Hay datos  para xylema influenciados por fuentes artificiales (globos
