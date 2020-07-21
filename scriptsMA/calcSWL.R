@@ -1,5 +1,8 @@
-library(googlesheets4)
-source <- read_sheet("https://docs.google.com/spreadsheets/d/1udiv5w7YXCZXP2Pjnpshkzxsx5dxV1slG0OX7eztVq4/edit#gid=0")
+library(googledrive)
+drive_download("https://drive.google.com/file/d/1_bzWTiOK2JXatuYI4ovK7kXoSXEsRCKy/view?usp=sharing",
+               type = 'csv', path = 'dataMA/fuenteprueba.csv')
+source <- read.csv('dataMA/fuenteprueba.csv', sep = ";")[, 1:15]
+names(source)[1] <- 'author'
 source$id <- paste0(source$author, '_', source$year, '_', source$journal)
 source$id_date <- paste0(source$author, '_', source$year, '_', source$journal, '_', source$date)
 source <- doBy::orderBy(~id_date, source)
