@@ -1,0 +1,589 @@
+author,year,journal,species,other_var_name,other_var_value,other_var_units,other_var_factor_value,label,label_class,label_depth,label_pool,date,season,plot,d18O_permil_source,d2H_permil_source,item_source,OBS1,OBS2
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil15,soil,shallow,bulk,19951201,dry,site 1,-1.69955,-18.0151,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil25,soil,shallow,bulk,19951201,dry,site 1,-2.97491,-25.84414,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil35,soil,deep,bulk,19951201,dry,site 1,-2.6802,-27.30279,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil125,soil,deep,bulk,19951201,dry,site 1,-3.46651,-29.87561,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil325,soil,deep,bulk,19951201,dry,site 1,-3.25473,-31.52987,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,groundwater,groundwater,not applicable,not applicable,19951201,dry,site 1,-4.3821,-30.39443,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,drainage water,stream,not applicable,not applicable,19951201,dry,site 1,-2.98852,-19.31214,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil5,soil,shallow,bulk,19960301,wet,site 1,1.03832,-18.84007,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil15,soil,shallow,bulk,19960301,wet,site 1,-1.61391,-24.95419,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil90,soil,deep,bulk,19960301,wet,site 1,-3.2349,-35.44981,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,groundwater,groundwater,not applicable,not applicable,19960301,wet,site 1,-3.58767,-31.83465,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,drainage water,stream,not applicable,not applicable,19960301,wet,site 1,0.66222,-6.88671,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil35,soil,deep,bulk,19960901,wet,site 1,-3.30653,-26.83673,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil225,soil,deep,bulk,19960901,wet,site 1,-3.63388,-30.5102,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,soil275,soil,deep,bulk,19960901,wet,site 1,-3.87469,-30.91837,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 1,groundwater,groundwater,not applicable,not applicable,19960901,wet,site 1,-3.47061,-28.87755,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil5,soil,shallow,bulk,19951201,dry,site 2,2.45833,-10.63158,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil15,soil,shallow,bulk,19951201,dry,site 2,-1.375,-20.7193,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil35,soil,deep,bulk,19951201,dry,site 2,-2.58333,-26.10965,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil90,soil,deep,bulk,19951201,dry,site 2,-2.83333,-28.66228,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil175,soil,deep,bulk,19951201,dry,site 2,-4.70833,-33.07018,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,groundwater,groundwater,not applicable,not applicable,19951201,dry,site 2,-3.41667,-29.35526,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,drainage water,stream,not applicable,not applicable,19951201,dry,site 2,-2.83333,-18.97807,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil25,soil,shallow,bulk,19960301,wet,site 2,-2.16667,-28.66667,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil50,soil,deep,bulk,19960301,wet,site 2,-3.29167,-31.91667,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil90,soil,deep,bulk,19960301,wet,site 2,-3.54167,-31.04825,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil125,soil,deep,bulk,19960301,wet,site 2,-3.83333,-41.96491,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil175,soil,deep,bulk,19960301,wet,site 2,-4,-33.10526,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil325,soil,deep,bulk,19960301,wet,site 2,-3.66667,-38.19298,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil375,soil,deep,bulk,19960301,wet,site 2,-3.25,-35.5,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,groundwater,groundwater,not applicable,not applicable,19960301,wet,site 2,-3.375,-33.38158,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,drainage water,stream,not applicable,not applicable,19960301,wet,site 2,0.58333,-5.37719,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil5,soil,shallow,bulk,19960901,wet,site 2,-3.08247,-26.36842,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil50,soil,deep,bulk,19960901,wet,site 2,-3.3299,-27.63158,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil90,soil,deep,bulk,19960901,wet,site 2,-3.16495,-31.42105,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,soil275,soil,deep,bulk,19960901,wet,site 2,-3.65979,-33.73684,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus grandis,Site,9999,not applicable,site 2,groundwater,groundwater,not applicable,not applicable,19960901,wet,site 2,-3.10309,-30.36842,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil5,soil,shallow,bulk,19951201,dry,site 3,0.38776,-13.57143,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil15,soil,shallow,bulk,19951201,dry,site 3,-2.18367,-21.53061,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil25,soil,shallow,bulk,19951201,dry,site 3,-3.12245,-24.38776,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil35,soil,deep,bulk,19951201,dry,site 3,-2.7551,-28.67347,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil70,soil,deep,bulk,19951201,dry,site 3,-3.08163,-25.20408,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil225,soil,deep,bulk,19951201,dry,site 3,-3.2449,-29.4898,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,groundwater,groundwater,not applicable,not applicable,19951201,dry,site 3,-3.28571,-28.67347,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,drainage water,stream,not applicable,not applicable,19951201,dry,site 3,-2.79592,-19.08163,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil5,soil,shallow,bulk,19960301,wet,site 3,2.57768,-11.73469,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil15,soil,shallow,bulk,19960301,wet,site 3,-1.23948,-22.14286,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil175,soil,deep,bulk,19960301,wet,site 3,-3.45939,-29.89796,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil425,soil,deep,bulk,19960301,wet,site 3,-3.29279,-28.26531,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,groundwater,groundwater,not applicable,not applicable,19960301,wet,site 3,-3.66264,-29.4898,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,drainage water,stream,not applicable,not applicable,19960301,wet,site 3,0.47272,-3.16327,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil15,soil,shallow,bulk,19960901,wet,site 3,-3.8,-29.10526,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil25,soil,shallow,bulk,19960901,wet,site 3,-3.04,-24.05263,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil70,soil,deep,bulk,19960901,wet,site 3,-3.32,-28.47368,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil175,soil,deep,bulk,19960901,wet,site 3,-3.36,-31,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil225,soil,deep,bulk,19960901,wet,site 3,-3.32,-30.36842,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,soil420,soil,deep,bulk,19960901,wet,site 3,-3.4,-30.78947,Fig 6.,NA,NA
+Feikema,2010,Plant and soil,Eucalyptus camaldulensis,Site,9999,not applicable,site 3,groundwater,groundwater,not applicable,not applicable,19960901,wet,site 3,-3.4,-25.10526,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-1,-4,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-1,-9,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-2,-18,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-3,-16,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-3,-23,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-3,-24,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-3,-23,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-4,-16,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-4,-19,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-5,-23,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-5,-23,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-5,-21,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-5,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-6,-32,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-5,-34,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (0-30cm),soil,shallow,bulk,20100505,dry,Mature,-6,-38,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,shallow,bulk,20100505,dry,Mature,-7,-48,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-46,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-47,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-7,-44,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-7,-46,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-41,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-39,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-33,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-37,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-30,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-5,-27,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-5,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-5,-25,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-3,-51,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-7,-50,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-7,-50,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-8,-52,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-8,-55,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-8,-61,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-8,-63,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-9,-60,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-9,-61,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-9,-64,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-11,-74,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil (35-100),soil,deep,bulk,20100505,dry,Mature,-6,-37,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-1,-14,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-1,-23,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-2,-25,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-2,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-2,-20,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-3,-30,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-3,-34,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-3,-36,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-4,-37,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-4,-39,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-4,-34,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-4,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-4,-31,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-3,-30,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-5,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-5,-28,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-5,-31,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-5,-33,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-6,-33,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-6,-36,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-6,-44,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-6,-43,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-7,-45,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-7,-48,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-7,-50,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-7,-55,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-7,-60,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-8,-63,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-8,-60,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-11,-72,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (0-10cm),soil,shallow,bulk,20090301,dry,Secondary,-6,-47,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-6,-63,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-8,-60,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-9,-64,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-8,-61,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-8,-66,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-7,-68,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-9,-79,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-9,-71,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-9,-69,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-10,-78,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-10,-79,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-10,-76,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-10,-67,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-11,-74,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-12,-83,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil (35-100cm),soil,deep,bulk,20090301,dry,Secondary,-12,-82,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil lysimeter,soil,unknown,mobile,20100505,dry,Mature,-8,-45,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil lysimeter,soil,unknown,mobile,20100505,dry,Mature,-5,-23,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil lysimeter,soil,unknown,mobile,20100505,dry,Mature,-3,-11,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil cv,soil,unknown,bulk,20100505,dry,Mature,-5,-32,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil cv,soil,unknown,bulk,20100505,dry,Mature,-4,-35,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil cv,soil,unknown,bulk,20100505,dry,Mature,-4,-33,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil cv,soil,unknown,bulk,20100505,dry,Mature,-6,-37,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,soil cv,soil,unknown,bulk,20100505,dry,Mature,-6,-42,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-9,-53,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-9,-49,Fig 6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-8,-51,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-8,-46,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-8,-46,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-8,-44,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-7,-42,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-7,-40,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-6,-38,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-6,-36,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-6,-34,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-5,-39,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Mature,stream,stream,not applicable,not applicable,20100505,dry,Mature,-7,-45,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil lysimeter,soil,unknown,mobile,20100505,dry,Secondary,-4,-19,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil lysimeter,soil,unknown,mobile,20100505,dry,Secondary,-6,-30,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil lysimeter,soil,unknown,mobile,20100505,dry,Secondary,-9,-53,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil cv,soil,unknown,bulk,20100505,dry,Secondary,-5,-25,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil cv,soil,unknown,bulk,20100505,dry,Secondary,-4,-23,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil cv,soil,unknown,bulk,20100505,dry,Secondary,-4,-25,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil cv,soil,unknown,bulk,20100505,dry,Secondary,-4,-30,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,soil cv,soil,unknown,bulk,20100505,dry,Secondary,-4,-28,Fig6.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-7,-37,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-8,-50,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-8,-52,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-9,-46,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-8,-43,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-7,-41,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-7,-43,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-8,-45,Fig 5.,NA,NA
+Goldsmith,2012,Ecohydrology,Several,Forest type,99999,not applicable,Secondary,stream,stream,not applicable,not applicable,20100505,dry,Secondary,-7,-41,Fig 5.,NA,NA
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_10_cm,soil,shallow,mobile,201505,dry,Rustrel,-4.43,-51.5,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_20_cm,soil,shallow,mobile,201505,dry,Rustrel,-7.51,-60.8,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_30_cm,soil,shallow,mobile,201505,dry,Rustrel,-9.26,-70.9,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_40_cm,soil,deep,mobile,201505,dry,Rustrel,-9.3,-68.6,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_10_cm,soil,shallow,mobile,201506,wet,Ventoux,-7.67,-60.7,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_20_cm,soil,shallow,mobile,201506,wet,Ventoux,-9.37,-63.8,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_30_cm,soil,shallow,mobile,201506,wet,Ventoux,-9.73,-67.6,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Soil_Pit_60_cm,soil,deep,mobile,201506,wet,Ventoux,-10.6,-66.4,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201406,wet,Rustrel,-8.58,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201412,wet,Rustrel,-8.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201505,wet,Rustrel,-8.21,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201404,dry,Rustrel,-8.13,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201406,dry,Rustrel,-7.87,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201406,dry,Rustrel,-8.36,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201407,dry,Rustrel,-8.37,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201407,wet,Rustrel,-8.25,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201407,dry,Rustrel,-8.18,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201407,dry,Rustrel,-8.11,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201709,wet,Rustrel,-8.04,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201709,wet,Rustrel,-8.21,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201410,wet,Rustrel,-8.14,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201410,wet,Rustrel,-8.28,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201410,wet,Rustrel,-8.26,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201410,wet,Rustrel,-8.16,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201411,wet,Rustrel,-8.44,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201411,wet,Rustrel,-8.5,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointC,groundwater,not applicable,not applicable,201410,wet,Rustrel,-8.09,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201405,wet,Rustrel,-8.01,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201405,wet,Rustrel,-7.8,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201405,wet,Rustrel,-7.82,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201406,dry,Rustrel,-7.8,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201406,dry,Rustrel,-7.72,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201406,dry,Rustrel,-7.85,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201407,dry,Rustrel,-7.74,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201407,dry,Rustrel,-7.8,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201407,dry,Rustrel,-7.92,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201407,dry,Rustrel,-7.84,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201409,wet,Rustrel,-7.77,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201409,wet,Rustrel,-7.75,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201409,wet,Rustrel,-7.71,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201410,wet,Rustrel,-7.83,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201410,wet,Rustrel,-7.96,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201410,wet,Rustrel,-7.65,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201410,wet,Rustrel,-7.76,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201411,wet,Rustrel,-7.74,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201411,wet,Rustrel,-8,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201507,dry,Rustrel,-7.85,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-PointD,groundwater,not applicable,not applicable,201511,wet,Rustrel,-7.83,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201408,dry,Ventoux,-9.6,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201407,dry,Ventoux,-9.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201407,dry,Ventoux,-9.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201407,dry,Ventoux,-9.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201408,dry,Ventoux,-9.9,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201408,dry,Ventoux,-9.6,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201408,dry,Ventoux,-9.5,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201409,wet,Ventoux,-9.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201409,wet,Ventoux,-9.3,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201409,wet,Ventoux,-9.3,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201410,wet,Ventoux,-9.33,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201411,dry,Ventoux,-9.39,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201412,dry,Ventoux,-9.3,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201507,dry,Ventoux,-9.39,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201502,dry,Ventoux,-9.6,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201503,wet,Ventoux,-9.4,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201504,wet,Ventoux,-9.72,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,20505,wet,Ventoux,-9.53,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Ctr,groundwater,not applicable,not applicable,201506,dry,Ventoux,-9.43,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201407,dry,Ventoux,-10.5,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201407,dry,Ventoux,-10.2,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201407,dry,Ventoux,-10,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201407,dry,Ventoux,-10,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201408,dry,Ventoux,-10.2,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201408,dry,Ventoux,-9.9,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201408,dry,Ventoux,-10.1,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201409,dry,Ventoux,-10,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201409,wet,Ventoux,-9.8,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201409,wet,Ventoux,-9.96,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201410,wet,Ventoux,-9.86,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201411,wet,Ventoux,-9.11,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201412,dry,Ventoux,-9.23,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201501,dry,Ventoux,-9.07,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201502,dry,Ventoux,-9.16,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201505,wet,Ventoux,-9.13,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201504,wet,Ventoux,-9.52,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201505,wet,Ventoux,-9.62,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Groundwater-Spring-Mts,groundwater,not applicable,not applicable,201506,dry,Ventoux,-9.57,-52.03,Data provided,Analyzed with IRIS,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201408,dry,Rustrel,-5.19,-33.6,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201501,dry,Rustrel,-7.63,-55.9,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201501,dry,Rustrel,-6.82,-45.1,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201502,dry,Rustrel,-9.63,-64.8,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201808,dry,Ventoux,-5.97,-34.9,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201507,dry,Ventoux,-10.09,-63.9,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201502,dry,Ventoux,-11.42,-79.4,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Carriere,2020,Data in Brief / Science of the Total Environment,Several,NA,99999,not applicable,NA,Drainage_water,stream,not applicable,not applicable,201503,wet,Ventoux,-12.35,-80.7,Data provided,NA,asumption that wet months are 3/4/5 and 9/ 10/ 11
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-0.7193,-17.44361,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-0.03509,-19.7782,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-0.01754,-30.63659,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-0.91228,-26.14411,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-1.91228,-39.50125,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-1.91228,-39.64411,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-1.82456,-39.79323,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-1.14035,-41.12782,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-2.19298,-35.05263,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-2.36842,-31.46867,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-2.52632,-30.60025,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-2.96491,-36.71178,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-2.82456,-37.86466,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-3.68421,-36.23183,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-3.92982,-39.21429,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-3.7193,-40.65789,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-4.98246,-39.42481,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-4.84211,-41.00627,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-4.78947,-42.01003,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-4.77193,-45.15414,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-4.96491,-47.14035,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-5.42105,-48.6792,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-5.36842,-47.11153,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-5.77193,-47.36842,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.24561,-45.47744,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.40351,-47.18045,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.54386,-48.88471,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.80702,-51.86591,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.78947,-53.4386,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.7193,-53.44361,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.66667,-52.73308,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.21053,-52.90852,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.05263,-53.77694,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.08772,-51.63158,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-5.47368,-59.53258,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-5.22807,-63.83584,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.49123,-63.74561,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.29825,-64.33083,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.01754,-62.20802,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.50877,-67.45865,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-6.96491,-66.56892,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-7.08772,-56.98872,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-7.21053,-55.83709,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-7.5614,-57.38346,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-7.57895,-58.52506,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-7.84211,-60.50627,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-8.14035,-64.62782,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-8.21053,-67.90852,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-8.19298,-69.90977,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-8.36842,-72.46867,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 0-40 cm,soil,shallow,bulk,2016,wet,NA,-9.15789,-73.55514,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-6.73684,-55.01378,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.05263,-54.84837,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.29825,-56.68797,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.4386,-57.8208,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.42105,-58.25063,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.5614,-59.66917,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.5614,-60.66917,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.64912,-61.23434,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.5614,-63.95489,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.49123,-64.67419,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.31579,-61.68672,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.59649,-63.52381,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.89474,-63.50251,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.91228,-65.3584,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.01754,-62.35088,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.96491,-60.64035,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.22807,-60.19298,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.98246,-58.92481,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.80702,-57.79449,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.15789,-62.62657,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.45614,-61.89098,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.75439,-61.86967,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.45614,-64.17669,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.38596,-65.46742,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.63158,-65.44987,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.73684,-65.58521,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.75439,-63.86967,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.98246,-65.1391,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-9.05263,-66.84837,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-9.87719,-72.07519,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-9.31579,-75.68672,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-9.14035,-72.69925,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.52632,-71.02882,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.70175,-68.01629,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.80702,-73.15163,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.70175,-73.87343,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-8.59649,-75.88095,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.98246,-71.06767,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 40-120 cm,soil,shallow,bulk,2016,wet,NA,-7.98246,-69.6391,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-7.85965,-73.79073,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.70175,-70.58772,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.68421,-69.30326,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.87719,-69.43233,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.87719,-71.8609,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.7193,-79.30075,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-8.98246,-82.1391,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.47368,-75.96115,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.26316,-70.40476,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.47368,-70.38972,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.52632,-73.38596,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.63158,-75.23559,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.73684,-74.65664,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.77193,-73.51128,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.87719,-74.78947,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.73684,-76.51378,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.84211,-77.93484,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.89474,-79.07393,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.75439,-81.08396,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.17544,-81.48246,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.08772,-79.48872,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.98246,-77.21053,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-9.92982,-76.21429,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.12281,-76.2005,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.15789,-77.34085,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.31579,-77.61529,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.36842,-79.0401,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.49123,-78.03133,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.52632,-76.88596,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.49123,-80.17419,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.45614,-82.74812,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.66667,-81.73308,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.77193,-80.72556,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-11.26316,-84.97619,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.66667,-84.59023,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.47368,-84.60401,Fig 4.,NA,NA
+Wang_Jian,2019,Science of the Total Environment,Several,NA,99999,not applicable,NA,soil 120-300 cm,soil,shallow,bulk,2016,wet,NA,-10.40351,-84.03759,Fig 4.,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Ground,groundwater,not applicable,not applicable,201707,dry,NA,-6.040969754,-36.65469542,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Ground,groundwater,not applicable,not applicable,201707,dry,NA,-6.025708386,-36.46800327,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Ground,groundwater,not applicable,not applicable,201711,wet,NA,-6.266615918,-37.8650663,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Ground,groundwater,not applicable,not applicable,201710,wet,NA,-6.054860889,-37.55998316,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Ground,groundwater,not applicable,not applicable,201709,wet,NA,-5.995300545,-37.47225044,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Stream,stream ,not applicable,not applicable,201707,dry,NA,-6.064930823,-37.49453585,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Stream,stream ,not applicable,not applicable,201710,wet,NA,-6.218692263,-37.62178916,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Stream,stream ,not applicable,not applicable,201710,wet,NA,-6.10561541,-37.77246705,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Stream,stream ,not applicable,not applicable,201710,wet,NA,-6.13736016,-37.60729021,Data provided by author,NA,NA
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201704,wet,NA,-2.947359568,-35.66429934,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201704,wet,NA,-6.537100025,-47.55809223,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-2.597186657,-28.5254641,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-4.760504075,-39.36680258,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-3.819143904,-35.09320495,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-0.757967314,-32.08137986,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-3.146214011,-36.10659348,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-4.668607993,-40.90549641,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-5.21553894,-45.88961658,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-5.057164165,-43.83298145,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-3.686691268,-37.59579515,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-0.481791105,-25.5633905,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-2.623699451,-22.32048965,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-3.440429297,-30.85073191,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-0.092318283,-30.19417641,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-3.510331099,-37.77594844,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-5.780790292,-44.62383148,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-5.785461626,-46.27052943,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-6.179317809,-47.74739439,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201708,dry,NA,-7.299325216,-59.31768466,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-2.34492802,-31.79127976,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-3.643863639,-36.99713185,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-0.159267828,-22.90779061,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-3.0303579,-41.90691315,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-5.478900461,-47.34949919,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-5.626197779,-42.55180999,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-2.062905902,-26.64957871,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-4.301622032,-37.00058259,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-7.508942601,-57.84818481,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-8.225903049,-62.965214,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-5.134436534,-42.82990756,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-5.916425686,-46.15147245,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-7.068938872,-53.32126209,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201707,dry,NA,-7.405697794,-54.44083585,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201706,dry,NA,-5.608096673,-43.30307361,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201706,dry,NA,-2.642956351,-25.85249846,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201706,dry,NA,-5.691289706,-32.48544284,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201706,dry,NA,-5.214559378,-40.31298685,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201705,wet,NA,-6.548161041,-48.22412599,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201705,wet,NA,-2.427301223,-22.83282366,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-6.119416921,-36.14382664,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-3.8460448,-30.03354243,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-3.798831745,-29.74743269,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-5.871009979,-41.07919205,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-3.373326668,-23.3399041,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-3.951012129,-30.64531455,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201711,wet,NA,-4.50036774,-24.36928788,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.130445074,-21.10904825,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.779037883,-29.58613586,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-4.206468797,-29.83107807,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-2.9596136,-32.42120514,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.442449016,-25.79021835,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.297980381,-25.08949097,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.887677208,-28.99308913,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-4.359693463,-33.21251207,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.954690746,-29.19016168,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-2.289409301,-25.29527403,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-1.352816837,-12.50550411,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.910180264,-34.30672515,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-1.081655846,-16.25439484,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-2.025333395,-31.12407843,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-2.921672644,-24.325544,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.897310059,-31.67801036,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-3.697236937,-30.17048796,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201710,wet,NA,-2.509481486,-26.67332617,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-2.48627175,-21.25633724,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-5.337731194,-37.12408051,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-3.255626855,-31.57922682,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-0.444521708,-31.47253459,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-6.159567913,-52.42193896,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-4.859196413,-43.50026789,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-2.636317093,-23.7350248,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-3.422096073,-32.5414656,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-3.575987562,-26.9569742,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-3.548170742,-26.84936112,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-2.450469711,-18.88509025,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-5.189671495,-35.94879231,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-2.557436431,-31.77844575,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-4.078568185,-28.01318572,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-3.91590382,-27.37759809,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-4.52761007,-33.16551818,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-4.67400511,-31.4641831,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Topsoil (0 cm),soil,shallow,bulk,201709,wet,NA,-4.109457597,-33.58307458,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201704,wet,NA,-6.685929182,-43.39030598,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.950525539,-40.96419593,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.982215117,-48.94203283,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-4.22229959,-43.60988026,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.262314325,-39.52721421,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.738986684,-43.5245582,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.897431851,-43.33427832,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.461346715,-45.88846197,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.083807012,-41.43392953,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-4.094415592,-36.33972079,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.48963511,-41.76156085,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.639181759,-46.95780782,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.534110492,-42.08098934,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.44730555,-45.55035896,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.083644766,-38.717926,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-6.545536019,-45.05523603,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201708,dry,NA,-5.213895849,-41.22387706,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.058900223,-46.87320587,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.59885343,-47.38255956,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.51820584,-42.20968504,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.330609764,-38.19108893,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.787266881,-37.65566497,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.097626323,-40.76672254,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.640714359,-47.94764574,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.052347284,-39.52593574,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.620513882,-50.12893892,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.933395838,-52.26716596,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.192823402,-34.07176242,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.719895185,-41.32950003,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.851297601,-44.39512021,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.689801457,-37.1664696,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.280845172,-34.86947264,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-5.280845172,-34.86947264,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.363717622,-38.631089,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-6.241985163,-38.9698159,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201707,dry,NA,-7.737587927,-57.91715576,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-6.648428729,-40.92591947,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-4.842960566,-34.13725628,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-5.868416039,-36.03614222,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-6.288424859,-40.28629193,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-6.590954539,-42.67836581,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-5.857651665,-36.95530535,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-5.857651665,-36.95530535,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-5.826711337,-37.66587271,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201706,dry,NA,-4.276253322,-36.45170817,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201705,wet,NA,-6.849352542,-46.33715122,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201705,wet,NA,-6.519277709,-44.41070408,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201705,wet,NA,-6.385664743,-42.65755843,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-6.002307315,-40.31408433,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-5.190486715,-30.67318791,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-7.10791372,-45.7594891,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-3.847169763,-22.15206071,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-6.553845641,-42.92897234,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-5.04441422,-36.94010253,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-6.09877383,-40.15988388,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201711,wet,NA,-5.103613534,-29.33011212,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.094410105,-32.02596923,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.931689505,-39.26634034,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-7.043448259,-48.61132509,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.604937677,-36.51797276,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.991892211,-41.8118183,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-3.887149389,-25.51485637,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.702883509,-37.63492206,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-6.598660651,-41.19307605,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-3.659012901,-26.09446505,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-4.823401306,-31.70773922,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-4.574245968,-32.53220396,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.230821292,-36.6373701,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.465886559,-40.04687028,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-6.401796619,-43.83304374,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.187528077,-35.16263008,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-7.036424724,-48.34829987,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-3.825599896,-27.22627076,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201710,wet,NA,-5.539241143,-37.1641738,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.226891773,-34.89615578,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.890370107,-40.87369963,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-4.820192133,-34.29794912,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-6.000494066,-42.85188933,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-3.726570888,-37.45698488,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.51301963,-36.65004733,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.96078435,-44.08216249,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.656493779,-40.15857329,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.959374944,-40.02007434,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-7.974228731,-54.27380269,Data provided by author,South,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-4.572260497,-29.57926048,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-2.987191888,-34.83289001,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-6.397583317,-42.47378468,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-4.321688325,-31.01794445,Data provided by author,Open,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.656617245,-39.06630194,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-5.3980947,-35.9532702,Data provided by author,Plage,plot in OBS1
+Barbeta,2019,Hydrology and Earth System Sciences,Quercus robur,NA,99999,not applicable,NA,Deepsoil (50-110 cm),soil,deep,bulk,201709,wet,NA,-4.839457215,-31.44079317,Data provided by author,Plage,plot in OBS1

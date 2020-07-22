@@ -1,18 +1,25 @@
 library(googledrive)
-drive_download("https://drive.google.com/file/d/1_bzWTiOK2JXatuYI4ovK7kXoSXEsRCKy/view?usp=sharing",
-               type = 'csv', path = 'dataMA/fuenteprueba.csv')
-source <- read.csv('dataMA/fuenteprueba.csv', sep = ";")[, 1:15]
-names(source)[1] <- 'author'
-source$id <- paste0(source$author, '_', source$year, '_', source$journal)
-source$id_date <- paste0(source$author, '_', source$year, '_', source$journal, '_', source$date)
-source <- doBy::orderBy(~id_date, source)
+drive_download("https://drive.google.com/file/d/1hP1V9eLKqUyRq9Zlfr6gzkpzSXVLuYtY/view?usp=sharing",
+               type = 'csv', path = 'dataMA/source_sample.csv', overwrite = T)
+# if this step does not work in your local computer you have a problem with ; and ,
+source <- read.csv('dataMA/source_sample.csv', sep = ",")
+source$id_species <- paste0(source$author, '_', source$year, '_', source$species)
+source$id_species_date <- paste0(source$author, '_', source$year, '_', source$species, '_', source$date)
+source$id_species_date_plot <- paste0(source$author, '_', source$year, '_', source$species,
+                              '_', source$date, '_', source$plot)
+source$id_date <- paste0(source$author, '_', source$year, '_', source$date)
+source$id_date_plot <- paste0(source$author, '_', source$year,
+                                      '_', source$date, '_', source$plot)
 
-source_results <- data.frame(row.names = 1:length(unique(source$id_date)))
-source_results$id_date <- unique(source$id_date)
+soil <- subset(source, label_class == 'soil')
+source('scriptsMA/clean_stuff.R')
+source_results <- data.frame(row.names = 1:length(unique(soil$id_date_plot)))
+source_results$id_date_plot <- unique(soil$id_date_plot)
+
 
 sourceL <- list()
 for(i in 1:nrow(source_results)){
-  sourceL[[i]] <- subset(source, source$id_date == source_results$id_date[i])
+  sourceL[[i]] <- subset(soil, soil$id_date_plot == source_results$id_date_plot[i])
 }
 
 sourceFits <- list()
@@ -33,3 +40,10 @@ for (i in 1:nrow(source_results)){
   source_results$N[i] <- nrow(sourceL[[i]])
 }
 
+par(mfrow = c(3, 4))
+for (i in 1: length(sourceL)){
+  plot(d2H_permil_source ~ d18O_permil_source, data = sourceL[[i]],
+       ylab ='d2H permil', xlab ='d18O permil', pch = 19, col = as.factor(myData$label_pool),
+       main = sourceL[[i]][1, 'id_date_plot'])
+  abline(sourceFits[[i]])
+  }
