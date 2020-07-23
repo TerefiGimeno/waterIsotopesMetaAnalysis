@@ -43,7 +43,7 @@ for (i in 1:nrow(source_results)){
 par(mfrow = c(3, 4))
 for (i in 1: length(sourceL)){
   plot(d2H_permil_source ~ d18O_permil_source, data = sourceL[[i]],
-       ylab ='d2H permil', xlab ='d18O permil', pch = 19, col = as.factor(myData$label_pool),
+       ylab ='d2H permil', xlab ='d18O permil', pch = 19, col = as.factor(sourceL[[i]]$label_pool),
        main = sourceL[[i]][1, 'id_date_plot'])
   abline(sourceFits[[i]])
   }
