@@ -1,0 +1,118 @@
+##########Load data########################
+library(googledrive)
+
+drive_download("https://docs.google.com/spreadsheets/d/1Z7HathxScqACg5vBxWm5dBTbiYMsRKGFDWu2okI2JLE/edit?usp=sharing",
+               type = 'csv', path = 'dataMA/meta_sample.csv', overwrite = T)
+meta <- read.csv('dataMA/meta_sample.csv', sep = ",")
+
+drive_download("https://docs.google.com/spreadsheets/d/1udiv5w7YXCZXP2Pjnpshkzxsx5dxV1slG0OX7eztVq4/edit?usp=sharing",
+               type = 'csv', path = 'dataMA/source_sample.csv', overwrite = T)
+source <- read.csv('dataMA/source_sample.csv', sep = ",")
+
+drive_download("https://docs.google.com/spreadsheets/d/1v2zOeuB-b_BdiEQUMSHTz9nmm9pgRseUygD7SDmDgpo/edit?usp=sharing",
+               type = 'csv', path = 'dataMA/plant_sample.csv', overwrite = T)
+plant <- read.csv('dataMA/plant_sample.csv', sep = ",")
+
+###############################################
+library(tidyverse)
+library(ggpubr)
+library(broom)
+library(tidyr)
+
+source$d2H_permil_source<-as.numeric(as.character(source$d2H_permil_source))   #for some reason those are factors...
+source$d18O_permil_source<-as.numeric(as.character(source$d18O_permil_source))
+source$year<-as.factor(source$year)
+source$authorYear <- paste0(source$author, '_', source$year)
+source$authorYearDate <- paste0(source$author, '_', source$year, '_', source$date)
+source$campaignDate <- paste0(source$id.campaign, '_', source$date)
+hist(source$d18O_permil_source)
+
+
+str(source)  ###check the type of variable
+
+source<-subset(source,!d2H_permil_source=="NA")
+source<-subset(source,!d18O_permil_source=="NA") ##clean NA
+
+source<-subset(source,label_pool=="bulk") ##only bulk soil
+
+multiple<-subset(source,label_class=='soil') %>%    ###this function computes the linear regressions
+  nest(-campaignDate, -species) %>%                       ###here you can choose which factors should be used
+  mutate(
+    fit = map(data, ~ lm(d2H_permil_source ~ d18O_permil_source, na.action='na.omit',data = .x)),
+    tidied = map(fit, tidy)
+  ) %>% 
+  unnest(tidied)
+
+multiple<-multiple[,c('campaignDate', 'species', 'term','estimate','std.error',"statistic",'p.value')]  ###select only relevant columns
+
+###more parameters from the regression, including r squared
+rsquared<-subset(source,label_class=='soil') %>%    ###this function computes the linear regressions
+  nest(-campaignDate, -species) %>%                       ###here you can choose which factors should be used
+  mutate(
+    fit = map(data, ~ lm(d2H_permil_source ~ d18O_permil_source,data = .x)),
+    tidied = map(fit, glance)
+  ) %>% 
+  unnest(tidied)
+
+rsquared<-rsquared[,c('campaignDate', 'species','r.squared')]  ###select only relevant columns
+
+###count the number of soil samples, in case we want to cut off using this
+length<- source %>% count(campaignDate, species)
+
+###divide into intercept and slope
+intercept<-subset(multiple,term=='(Intercept)')
+slope<-subset(multiple,term=='d18O_permil_source')
+
+hist(slope$estimate)
+
+weird<-subset(slope,estimate<0)  ##the slope should be positive...anyway those got cut when using the p.value, except Twining
+
+swl<-merge(intercept,slope,by=c('campaignDate', 'species'))   ###create a new table with separate columns for intercept and slope
+
+###give proper names
+colnames(swl)<-c("campaignDate","species","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
+                 "statistic.slope","p.value.slope")
+##paste rsquareds
+swl<-merge(swl,rsquared,by=c('campaignDate', 'species'))
+source<-merge(source,rsquared,by=c('campaignDate', 'species'))
+#past N's
+swl<-merge(swl,length,by=c('campaignDate', 'species'))
+
+hist(swl$r.squared)
+
+swl<-subset(swl,p.value.slope<0.05&n>2)   #cutoff non-significant and poorly fit regressions
+
+library(ggpubr)
+
+sourceswl<- merge(swl,source,by=c('campaignDate', 'species'))
+names(sourceswl)
+ggplot(data=subset(sourceswl,r.squared<0.65&p.value.slope<0.05&n>2),aes(x=d18O_permil_source,y=d2H_permil_source))+
+  geom_point()+
+  geom_smooth(method=lm,se=F)+
+  facet_wrap(~campaignDate)
+
+ggplot(data=subset(sourceswl,rsquared<0.65),aes(x=d18O_permil_source,y=d2H_permil_source))+
+  geom_point()+
+  geom_smooth(method=lm,se=F)+
+  facet_wrap(~campaignDate)+
+  stat_cor()
+
+
+###metadata filled information (MAP and MAT from NA's)
+
+library(raster)
+library(sp)
+
+r <- getData("worldclim",var="bio",res=10)
+r <- r[[c(1,12)]]
+names(r) <- c("MATwc","MAPwc")
+coords <- data.frame(x=meta$log,y=meta$lat)
+
+points <- SpatialPoints(coords, proj4string = r@crs)
+
+values <- extract(r,points)
+
+df <- cbind.data.frame(coordinates(points),values)points <- spsample(as(r@extent, 'SpatialPolygons'),n=100, type="random")   
+values <- extract(r,points)
+
+df <- cbind.data.frame(coordinates(points),values)
