@@ -1,0 +1,962 @@
+Source;Group;species;Organ;Organ (details);Growth form;Climate;RP;AP;RAP
+Bauch 2000;Angiosperm;Carapa guianensis;stem;trunk;angio tree;tropical;18;8;26
+Bauch 2006;Gymnosperm;Podocarpus oleifolius;stem;trunk;gymno tree;tropical;4.9;2.2;7.1
+Bhat 1985;Angiosperm;Anacardium occidentale;stem;branch/trunk;angio tree;tropical;29.45;6.5;35.95
+Bhat 1985;Angiosperm;Dillenia pentagyna;stem;branch/trunk;angio tree;tropical;29.8;4.65;34.45
+Bhat 1985;Angiosperm;Dipterocarpus indicus;stem;branch/trunk;angio tree;tropical;16.25;13.25;29.5
+Bhat 1985;Angiosperm;Erythrina stricta;stem;branch/trunk;angio tree;tropical;18.25;46.9;65.15
+Bhat 1985;Angiosperm;Grewia latifolia;stem;branch/trunk;angio tree;tropical;20.1;9.9;30
+Bhat 1985;Angiosperm;Hevea brasiliensis;stem;branch/trunk;angio tree;tropical;24.65;11.2;35.85
+Bhat 1985;Angiosperm;Lagerstroemia microcarpa;stem;branch/trunk;angio tree;tropical;17.45;14.55;32
+Bhat 1985;Angiosperm;Stereospermum chelonoides;stem;branch/trunk;angio tree;tropical;11.8;19.7;31.5
+Bhat 1985;Angiosperm;Tectona grandis;stem;branch/trunk;angio tree;tropical;10.8;7;17.8
+Bhat 1985;Angiosperm;Terminalia paniculata;stem;branch/trunk;angio tree;tropical;18.6;16.45;35.05
+Bhat 1985;Angiosperm;Xylia xylocarpa;stem;branch/trunk;angio tree;tropical;17.1;13.6;30.7
+Bhat 2004;Angiosperm;Tectona grandis;stem;trunk;angio tree;tropical;;;24.2
+Bhat 2004;Angiosperm;Tectona grandis;stem;trunk;angio tree;tropical;;;30.5
+Borja de la Rosa 2010;Gymnosperm;Juniperus flaccida;stem;trunk;gymno tree;subtropical;7.72;0.18;7.9
+Bravo 2010;Angiosperm;Aspidosperma quebracho-blanco;stem;trunk;angio tree;subtropical;19.8;8;27.8
+Bravo 2010;Angiosperm;Schinopsis lorentzii;stem;trunk;angio tree;subtropical;18.4;4.9;23.3
+Chapotin 2006;Angiosperm;Adansonia fony;stem;trunk;angio tree;tropical;;;67
+Chapotin 2006;Angiosperm;Adansonia grandidieri;stem;trunk;angio tree;tropical;;;76
+Chapotin 2006;Angiosperm;Adansonia za;stem;trunk;angio tree;tropical;;;72
+Climent 1998;Gymnosperm;Pinus canariensis;stem;trunk;gymno tree;subtropical;10.04;3.44;13.47
+Climent 1998;Gymnosperm;Pinus canariensis;stem;trunk;gymno tree;subtropical;11.55;3.09;14.64
+da Siva 2011;Angiosperm;Mimosa ophthalmocentra;stem;trunk;angio tree;tropical;8.2;17.1;25.3
+Danne 2008;Gymnosperm;Larix decidua;root;root;;temperate;10.8;;
+Danne 2008;Gymnosperm;Larix decidua;stem;trunk;gymno tree;temperate;9.64;;9.64
+das Neves Brandes 2008;Angiosperm;Acacia tenuifolia;stem;liana stem;climber;tropical;14;32;46
+das Neves Brandes 2008;Angiosperm;Dalbergia frutescens;stem;liana stem;climber;tropical;12;33;45
+das Neves Brandes 2008;Angiosperm;Piptadenia adiantoides;stem;liana stem;climber;tropical;17;24;41
+das Neves Brandes 2008;Angiosperm;Piptadenia micracantha;stem;liana stem;climber;tropical;15;26;41
+das Neves Brandes 2008;Angiosperm;Senegalia grandistipula;stem;liana stem;climber;tropical;12;35;47
+das Neves Brandes 2008;Angiosperm;Senegalia lacerans;stem;liana stem;climber;tropical;12;33;45
+das Neves Brandes 2008;Angiosperm;Senegalia martiusiana;stem;liana stem;climber;tropical;10;32;42
+das Neves Brandes 2008;Angiosperm;Senegalia pedicellata;stem;liana stem;climber;tropical;8;43;51
+DeSmidt 1922;Angiosperm;Ulmus rubra;stem;trunk;angio tree;temperate;14;5;19
+Dias Leme 2012;Angiosperm;Poincianella pyramidalis;stem;branch/trunk;angio tree;subtropical;;;62
+Fichtler 2012;Angiosperm;Acosmium nitens;stem;trunk;angio tree;tropical;;;44.2
+Fichtler 2012;Angiosperm;Aldina latifolia;stem;trunk;angio tree;tropical;;;58.2
+Fichtler 2012;Angiosperm;Amanoa oblongifolia;stem;trunk;angio tree;tropical;;;48.1
+Fichtler 2012;Angiosperm;Amphirrhox longifolia;stem;trunk;angio tree;tropical;;;55.4
+Fichtler 2012;Angiosperm;Astronium fraxinifolium;stem;trunk;angio tree;tropical;;;47
+Fichtler 2012;Angiosperm;Baikiaea plurijuga;stem;trunk;angio tree;tropical;;;38
+Fichtler 2012;Angiosperm;Baikiaea plurijuga;stem;trunk;angio tree;tropical;;;47.2
+Fichtler 2012;Angiosperm;Balizia elegans;stem;trunk;angio tree;tropical;;;27.4
+Fichtler 2012;Angiosperm;Burkea africana;stem;trunk;angio tree;subtropical;;;43.6
+Fichtler 2012;Angiosperm;Burkea africana;stem;trunk;angio tree;subtropical;;;44.2
+Fichtler 2012;Angiosperm;Burkea africana;stem;trunk;angio tree;subtropical;;;52.8
+Fichtler 2012;Angiosperm;Bursera sp;stem;trunk;angio tree;subtropical;;;27
+Fichtler 2012;Angiosperm;Campsiandra comosa;stem;trunk;angio tree;tropical;;;43.5
+Fichtler 2012;Angiosperm;Caraipa tereticaulis;stem;trunk;angio tree;tropical;;;27.3
+Fichtler 2012;Angiosperm;Casearia sp;stem;trunk;angio tree;tropical;;;31.5
+Fichtler 2012;Angiosperm;Cassia grandis;stem;trunk;angio tree;tropical;;;48.7
+Fichtler 2012;Angiosperm;Cassia grandis;stem;trunk;angio tree;tropical;;;57.1
+Fichtler 2012;Angiosperm;Cecropia sp;stem;trunk;angio tree;tropical;;;24.6
+Fichtler 2012;Angiosperm;Cedrela odorata;stem;trunk;angio tree;tropical;;;41.4
+Fichtler 2012;Angiosperm;Ceiba pentandra;stem;trunk;angio tree;tropical;;;45.1
+Fichtler 2012;Angiosperm;Ceiba sp;stem;trunk;angio tree;tropical;;;52.8
+Fichtler 2012;Angiosperm;Chaetocarpus schomburgkianus;stem;trunk;angio tree;tropical;;;32
+Fichtler 2012;Angiosperm;Cochlospermum;stem;trunk;angio tree;tropical;;;29.3
+Fichtler 2012;Angiosperm;Colophospermum mopane;stem;trunk;angio tree;tropical;;;35.3
+Fichtler 2012;Angiosperm;Combretum collinum;stem;trunk;angio tree;subtropical;;;46.8
+Fichtler 2012;Angiosperm;Combretum collinum;stem;trunk;angio tree;subtropical;;;54.8
+Fichtler 2012;Angiosperm;Crateva tapia;stem;trunk;angio tree;tropical;;;39.3
+Fichtler 2012;Angiosperm;Crescentia alata;stem;trunk;angio tree;tropical;;;44.9
+Fichtler 2012;Angiosperm;Curatella americana;stem;trunk;angio tree;tropical;;;56.9
+Fichtler 2012;Angiosperm;Dipteryx oleifera;stem;trunk;angio tree;tropical;;;35.7
+Fichtler 2012;Angiosperm;Duguetia sp;stem;trunk;angio tree;tropical;;;51.5
+Fichtler 2012;Angiosperm;Duguetia uniflora;stem;trunk;angio tree;tropical;;;45.7
+Fichtler 2012;Angiosperm;Endlicheria arunciflora;stem;trunk;angio tree;tropical;;;31.5
+Fichtler 2012;Angiosperm;Erisma calcaratum;stem;trunk;angio tree;tropical;;;40.8
+Fichtler 2012;Angiosperm;Eschweilera albiflora;stem;trunk;angio tree;tropical;;;50.6
+Fichtler 2012;Angiosperm;Eschweilera sp;stem;trunk;angio tree;tropical;;;43.8
+Fichtler 2012;Angiosperm;Eschweilera sp;stem;trunk;angio tree;tropical;;;50.8
+Fichtler 2012;Angiosperm;Ferdinandusa paraensis;stem;trunk;angio tree;tropical;;;27.9
+Fichtler 2012;Angiosperm;Ferdinandusa paraensis;stem;trunk;angio tree;tropical;;;35.1
+Fichtler 2012;Angiosperm;Ficus benjamina;stem;trunk;angio tree;tropical;;;52.3
+Fichtler 2012;Angiosperm;Ficus sp;stem;trunk;angio tree;tropical;;;48.4
+Fichtler 2012;Angiosperm;Ficus sp;stem;trunk;angio tree;tropical;;;59.7
+Fichtler 2012;Angiosperm;Guatteria aeruginosa;stem;trunk;angio tree;tropical;;;47.5
+Fichtler 2012;Angiosperm;Guazuma ulmifolia;stem;trunk;angio tree;tropical;;;45.7
+Fichtler 2012;Angiosperm;Handroanthus barbatus;stem;trunk;angio tree;tropical;;;34.6
+Fichtler 2012;Angiosperm;Handroanthus barbatus;stem;trunk;angio tree;tropical;;;38.7
+Fichtler 2012;Angiosperm;Handroanthus barbatus;stem;trunk;angio tree;tropical;;;40.6
+Fichtler 2012;Angiosperm;Hieronyma sp;stem;trunk;angio tree;tropical;;;30.2
+Fichtler 2012;Angiosperm;Humiria balsamifera;stem;trunk;angio tree;tropical;;;26.4
+Fichtler 2012;Angiosperm;Humiria balsamifera;stem;trunk;angio tree;tropical;;;27.2
+Fichtler 2012;Angiosperm;Humiriastrum cuspidatum;stem;trunk;angio tree;tropical;;;29.7
+Fichtler 2012;Angiosperm;Hymenaea courbaril;stem;trunk;angio tree;tropical;;;35.9
+Fichtler 2012;Angiosperm;Hymenolobium mesoamericanum;stem;trunk;angio tree;tropical;;;48.2
+Fichtler 2012;Angiosperm;Hyptidendron arboreum;stem;trunk;angio tree;tropical;;;31.1
+Fichtler 2012;Angiosperm;Ilex sp;stem;trunk;angio tree;tropical;;;43.5
+Fichtler 2012;Angiosperm;Inga sp;stem;trunk;angio tree;tropical;;;32.1
+Fichtler 2012;Angiosperm;Inga umbellifera;stem;trunk;angio tree;tropical;;;42.7
+Fichtler 2012;Angiosperm;Jacaranda mimosifolia;stem;trunk;angio tree;subtropical;;;52.5
+Fichtler 2012;Angiosperm;Laetia corymbulosa;stem;trunk;angio tree;tropical;;;39.3
+Fichtler 2012;Angiosperm;Laetia suaveolens;stem;trunk;angio tree;tropical;;;32.8
+Fichtler 2012;Angiosperm;Licania parviflora;stem;trunk;angio tree;tropical;;;42.8
+Fichtler 2012;Angiosperm;Licania sp;stem;trunk;angio tree;tropical;;;42.9
+Fichtler 2012;Angiosperm;Lonchocarpus nelsii;stem;trunk;angio tree;subtropical;;;60.1
+Fichtler 2012;Angiosperm;Lonchocarpus nelsii;stem;trunk;angio tree;subtropical;;;60.6
+Fichtler 2012;Angiosperm;Lonchocarpus sp;stem;trunk;angio tree;tropical;;;59.7
+Fichtler 2012;Angiosperm;Mabea nitida;stem;trunk;angio tree;tropical;;;38.8
+Fichtler 2012;Angiosperm;Minquartia guianensis;stem;trunk;angio tree;tropical;;;34.8
+Fichtler 2012;Angiosperm;Myrcia amazonica;stem;trunk;angio tree;tropical;;;36.9
+Fichtler 2012;Angiosperm;Myrcia amazonica;stem;trunk;angio tree;tropical;;;38.2
+Fichtler 2012;Angiosperm;Myrcia amazonica;stem;trunk;angio tree;tropical;;;41.3
+Fichtler 2012;Angiosperm;Ocotea diospyrifolia;stem;trunk;angio tree;tropical;;;33.9
+Fichtler 2012;Angiosperm;Ocotea guianensis;stem;trunk;angio tree;tropical;;;25.3
+Fichtler 2012;Angiosperm;Ocotea sp.;stem;trunk;angio tree;tropical;;;35.6
+Fichtler 2012;Angiosperm;Pachira minor;stem;trunk;angio tree;tropical;;;50.1
+Fichtler 2012;Angiosperm;Piranhea trifoliata;stem;trunk;angio tree;tropical;;;38.2
+Fichtler 2012;Angiosperm;Piranhea trifoliata;stem;trunk;angio tree;tropical;;;49.1
+Fichtler 2012;Angiosperm;Poecilanthe amazonica;stem;trunk;angio tree;tropical;;;33.6
+Fichtler 2012;Angiosperm;Pouteria elegans;stem;trunk;angio tree;tropical;;;44.7
+Fichtler 2012;Angiosperm;Pouteria orinocoensis;stem;trunk;angio tree;tropical;;;48.3
+Fichtler 2012;Angiosperm;Protium pittieri;stem;trunk;angio tree;tropical;;;28.5
+Fichtler 2012;Angiosperm;Pseudobombax munguba;stem;trunk;angio tree;tropical;;;30.7
+Fichtler 2012;Angiosperm;Pseudobombax munguba;stem;trunk;angio tree;tropical;;;32.1
+Fichtler 2012;Angiosperm;Pseudoxandra polyphleba;stem;trunk;angio tree;tropical;;;49.5
+Fichtler 2012;Angiosperm;Pseudoxandra polyphleba;stem;trunk;angio tree;tropical;;;49.8
+Fichtler 2012;Angiosperm;Psidium acutangulum;stem;trunk;angio tree;tropical;;;38.3
+Fichtler 2012;Angiosperm;Psidium densicomum;stem;trunk;angio tree;tropical;;;37.7
+Fichtler 2012;Angiosperm;Pterocarpus angolensis;stem;trunk;angio tree;tropical;;;38.7
+Fichtler 2012;Angiosperm;Pterocarpus angolensis;stem;trunk;angio tree;tropical;;;42.1
+Fichtler 2012;Angiosperm;Roucheria sp;stem;trunk;angio tree;tropical;;;37.8
+Fichtler 2012;Angiosperm;Schistostemon sp;stem;trunk;angio tree;tropical;;;25
+Fichtler 2012;Angiosperm;Simarouba amara;stem;trunk;angio tree;tropical;;;48.4
+Fichtler 2012;Angiosperm;Swartzia argentea;stem;trunk;angio tree;tropical;;;39.1
+Fichtler 2012;Angiosperm;Swartzia laevicarpa;stem;trunk;angio tree;tropical;;;46.7
+Fichtler 2012;Angiosperm;Swartzia laevicarpa;stem;trunk;angio tree;tropical;;;51.6
+Fichtler 2012;Angiosperm;Swartzia macrocarpa;stem;trunk;angio tree;tropical;;;53.2
+Fichtler 2012;Angiosperm;Swartzia polyphylla;stem;trunk;angio tree;tropical;;;48.5
+Fichtler 2012;Angiosperm;Swartzia sp;stem;trunk;angio tree;tropical;;;37.6
+Fichtler 2012;Angiosperm;Swartzia sp;stem;trunk;angio tree;tropical;;;38
+Fichtler 2012;Angiosperm;Swartzia sp;stem;trunk;angio tree;tropical;;;50.7
+Fichtler 2012;Angiosperm;Swietenia macrophylla;stem;trunk;angio tree;tropical;;;28.8
+Fichtler 2012;Angiosperm;Swietenia macrophylla;stem;trunk;angio tree;tropical;;;37.4
+Fichtler 2012;Angiosperm;Tabebuia ochracea;stem;trunk;angio tree;tropical;;;44.1
+Fichtler 2012;Angiosperm;Tabebuia sp;stem;trunk;angio tree;tropical;;;28.8
+Fichtler 2012;Angiosperm;Tachigalia sp;stem;trunk;angio tree;tropical;;;38.1
+Fichtler 2012;Angiosperm;Tectona grandis;stem;trunk;angio tree;tropical;;;44.7
+Fichtler 2012;Angiosperm;Terminalia amazonia;stem;trunk;angio tree;tropical;;;31.2
+Fichtler 2012;Angiosperm;Terminalia amazonia;stem;trunk;angio tree;tropical;;;32.7
+Fichtler 2012;Angiosperm;Terminalia amazonia;stem;trunk;angio tree;tropical;;;33.1
+Fichtler 2012;Angiosperm;Terminalia guyanensis;stem;trunk;angio tree;tropical;;;44.2
+Fichtler 2012;Angiosperm;Terminalia quintalata;stem;trunk;angio tree;tropical;;;28.2
+Fichtler 2012;Angiosperm;Terminalia sericea;stem;trunk;angio tree;subtropical;;;32.7
+Fichtler 2012;Angiosperm;Terminalia sericea;stem;trunk;angio tree;subtropical;;;33.8
+Fichtler 2012;Angiosperm;Vitex cymosa;stem;trunk;angio tree;tropical;;;39.3
+Fichtler 2012;Angiosperm;Vitex cymosa;stem;trunk;angio tree;tropical;;;43.3
+Fichtler 2012;Angiosperm;Zygia inaequalis;stem;trunk;angio tree;tropical;;;52.2
+French 1923 as cited in Panshin 1980;Angiosperm;Acer rubrum;stem;trunk;angio tree;temperate;13.3;0.1;13.4
+French 1923 as cited in Panshin 1980;Angiosperm;Acer saccharinum;stem;trunk;angio tree;temperate;11.9;0.1;12
+French 1923 as cited in Panshin 1980;Angiosperm;Acer saccharum;stem;trunk;angio tree;temperate;17.9;0.1;18
+French 1923 as cited in Panshin 1980;Angiosperm;Betula alleghaniensis;stem;trunk;angio tree;temperate;10.8;2;12.8
+French 1923 as cited in Panshin 1980;Angiosperm;Betula papyrifera;stem;trunk;angio tree;temperate;11.7;2;13.7
+French 1923 as cited in Panshin 1980;Angiosperm;Carya illinoinensis;stem;trunk;angio tree;temperate;26.4;10.9;37.3
+French 1923 as cited in Panshin 1980;Angiosperm;Carya ovata;stem;trunk;angio tree;temperate;20;8;28
+French 1923 as cited in Panshin 1980;Angiosperm;Castanea dentata;stem;trunk;angio tree;temperate;11.9;1.5;13.4
+French 1923 as cited in Panshin 1980;Angiosperm;Celtis occidentalis;stem;trunk;angio tree;temperate;13.3;8.5;21.8
+French 1923 as cited in Panshin 1980;Angiosperm;Cornus florida;stem;trunk;angio tree;temperate;27;5.6;32.6
+French 1923 as cited in Panshin 1980;Angiosperm;Fagus grandifolia;stem;trunk;angio tree;temperate;20.4;;
+French 1923 as cited in Panshin 1980;Angiosperm;Fraxinus americana;stem;trunk;angio tree;temperate;11.9;4.2;16.1
+French 1923 as cited in Panshin 1980;Angiosperm;Fraxinus latifolia;stem;trunk;angio tree;temperate;14.5;2.8;17.3
+French 1923 as cited in Panshin 1980;Angiosperm;Fraxinus nigra;stem;trunk;angio tree;temperate;12;7;19
+French 1923 as cited in Panshin 1980;Angiosperm;Juglans cinerea;stem;trunk;angio tree;temperate;10.4;9;19.4
+French 1923 as cited in Panshin 1980;Angiosperm;Juglans nigra;stem;trunk;angio tree;temperate;16.8;13.5;30.3
+French 1923 as cited in Panshin 1980;Angiosperm;Liquidambar styraciflua;stem;trunk;angio tree;temperate;18.3;0.2;18.5
+French 1923 as cited in Panshin 1980;Angiosperm;Liriodendron tulipifera;stem;trunk;angio tree;temperate;14.2;0.2;14.4
+French 1923 as cited in Panshin 1980;Angiosperm;Magnolia acuminata;stem;trunk;angio tree;temperate;13.9;0.2;14.1
+French 1923 as cited in Panshin 1980;Angiosperm;Nyssa sylvatica;stem;trunk;angio tree;temperate;17.6;;
+French 1923 as cited in Panshin 1980;Angiosperm;Platanus occidentalis;stem;trunk;angio tree;temperate;19.2;;
+French 1923 as cited in Panshin 1980;Angiosperm;Populus deltoides;stem;trunk;angio tree;temperate;13.7;0.2;13.9
+French 1923 as cited in Panshin 1980;Angiosperm;Populus grandidentata;stem;trunk;angio tree;temperate;11.1;0.1;11.2
+French 1923 as cited in Panshin 1980;Angiosperm;Prunus serotina;stem;trunk;angio tree;temperate;17.2;;
+French 1923 as cited in Panshin 1980;Angiosperm;Quercus alba;stem;trunk;angio tree;temperate;28;8;36
+French 1923 as cited in Panshin 1980;Angiosperm;Quercus macrocarpa;stem;trunk;angio tree;temperate;20.6;12;32.6
+French 1923 as cited in Panshin 1980;Angiosperm;Quercus rubra;stem;trunk;angio tree;temperate;21.4;13.5;34.9
+French 1923 as cited in Panshin 1980;Angiosperm;Quercus velutina;stem;trunk;angio tree;temperate;31.4;17.2;48.6
+French 1923 as cited in Panshin 1980;Angiosperm;Robinia pseudoacacia;stem;trunk;angio tree;temperate;20.9;6.4;27.3
+French 1923 as cited in Panshin 1980;Angiosperm;Salix nigra;stem;trunk;angio tree;temperate;7.4;0.1;7.5
+French 1923 as cited in Panshin 1980;Angiosperm;Tilia americana;stem;trunk;angio tree;temperate;6.1;2.2;8.3
+French 1923 as cited in Panshin 1980;Angiosperm;Ulmus americana;stem;trunk;angio tree;temperate;11.3;6;17.3
+French 1923 as cited in Panshin 1980;Angiosperm;Ulmus rubra;stem;trunk;angio tree;temperate;11.4;2;13.4
+French 1923 as cited in Panshin 1980;Angiosperm;Ulmus thomasii;stem;trunk;angio tree;temperate;11.7;7.6;19.3
+Fujiwara 1991/1992;Angiosperm;Acer pictum;stem;trunk;angio tree;temperate;12.95;;
+Fujiwara 1991/1992;Angiosperm;Aesculus turbinata;stem;trunk;angio tree;temperate;7.9;;
+Fujiwara 1991/1992;Angiosperm;Albizia julibrissin;stem;trunk;angio tree;subtropical;4.55;;
+Fujiwara 1991/1992;Angiosperm;Alnus hirsuta;stem;trunk;angio tree;temperate;9.5;;
+Fujiwara 1991/1992;Angiosperm;Betula grossa;stem;trunk;angio tree;temperate;9.95;;
+Fujiwara 1991/1992;Angiosperm;Betula maximowicziana;stem;trunk;angio tree;temperate;11.4;;
+Fujiwara 1991/1992;Angiosperm;Betula platyphylla;stem;trunk;angio tree;temperate;8.1;;
+Fujiwara 1991/1992;Angiosperm;Camellia japonica;stem;trunk;angio tree;temperate;15.65;;
+Fujiwara 1991/1992;Angiosperm;Carpinus tschonoskii;stem;trunk;angio tree;temperate;14.9;;
+Fujiwara 1991/1992;Angiosperm;Castanea crenata;stem;trunk;angio tree;temperate;8.05;;
+Fujiwara 1991/1992;Angiosperm;Castanopsis cuspidata;stem;trunk;angio tree;temperate;13;;
+Fujiwara 1991/1992;Angiosperm;Cerasus jamasakura;stem;trunk;angio tree;temperate;17.6;;
+Fujiwara 1991/1992;Angiosperm;Cercidiphyllum japonicum;stem;trunk;angio tree;temperate;9;;
+Fujiwara 1991/1992;Angiosperm;Cinnamomum camphora;stem;trunk;angio tree;subtropical;14.75;;
+Fujiwara 1991/1992;Angiosperm;Clethra barbinervis;stem;trunk;angio tree;subtropical;15.7;;
+Fujiwara 1991/1992;Angiosperm;Cornus controversa;stem;trunk;angio tree;temperate;15.2;;
+Fujiwara 1991/1992;Angiosperm;Daphniphyllum macropodum;stem;trunk;angio tree;temperate;15.55;;
+Fujiwara 1991/1992;Angiosperm;Diospyros kaki;stem;trunk;angio tree;temperate;19.2;;
+Fujiwara 1991/1992;Angiosperm;Distylium racemosum;stem;trunk;angio tree;subtropical;23.1;;
+Fujiwara 1991/1992;Angiosperm;Fagus crenata;stem;trunk;angio tree;temperate;15.65;;
+Fujiwara 1991/1992;Angiosperm;Fraxinus lanuginosa;stem;trunk;angio tree;temperate;12.2;;
+Fujiwara 1991/1992;Angiosperm;Fraxinus mandshurica;stem;trunk;angio tree;temperate;8.2;;
+Fujiwara 1991/1992;Angiosperm;Fraxinus platypoda;stem;trunk;angio tree;temperate;11.55;;
+Fujiwara 1991/1992;Angiosperm;Idesia polycarpa;stem;trunk;angio tree;temperate;6.4;;
+Fujiwara 1991/1992;Angiosperm;Juglans ailanthifolia;stem;trunk;angio tree;temperate;9.15;;
+Fujiwara 1991/1992;Angiosperm;Litsea lancifolia;stem;trunk;angio tree;subtropical;11.85;;
+Fujiwara 1991/1992;Angiosperm;Maackia amurensis;stem;trunk;angio tree;temperate;7.8;;
+Fujiwara 1991/1992;Angiosperm;Machilus thunbergii;stem;trunk;angio tree;subtropical;12.85;;
+Fujiwara 1991/1992;Angiosperm;Magnolia obovata;stem;trunk;angio tree;temperate;8.6;;
+Fujiwara 1991/1992;Angiosperm;Mallotus japonicus;stem;trunk;angio tree;temperate;16.4;;
+Fujiwara 1991/1992;Angiosperm;Melia azedarach;stem;trunk;angio tree;subtropical;10.4;;
+Fujiwara 1991/1992;Angiosperm;Morus australis;stem;trunk;angio tree;subtropical;17;;
+Fujiwara 1991/1992;Angiosperm;Ostrya japonica;stem;trunk;angio tree;temperate;19.1;;
+Fujiwara 1991/1992;Angiosperm;Phellodendron amurense;stem;trunk;angio tree;temperate;4.17;;
+Fujiwara 1991/1992;Angiosperm;Populus suaveolens;stem;trunk;angio tree;temperate;5.6;;
+Fujiwara 1991/1992;Angiosperm;Pterocarya rhoifolia;stem;trunk;angio tree;temperate;5.55;;
+Fujiwara 1991/1992;Angiosperm;Quercus acuta;stem;trunk;angio tree;temperate;23.3;;
+Fujiwara 1991/1992;Angiosperm;Quercus acutissima;stem;trunk;angio tree;temperate;21.9;;
+Fujiwara 1991/1992;Angiosperm;Quercus crenata;stem;trunk;angio tree;temperate;9.05;;
+Fujiwara 1991/1992;Angiosperm;Quercus mongolica;stem;trunk;angio tree;temperate;12.8;;
+Fujiwara 1991/1992;Angiosperm;Quercus myrtifolia;stem;trunk;angio tree;temperate;21.75;;
+Fujiwara 1991/1992;Angiosperm;Rhus succedanea;stem;trunk;angio tree;subtropical;6.95;;
+Fujiwara 1991/1992;Angiosperm;Stewartia monadelpha;stem;trunk;angio tree;temperate;13.85;;
+Fujiwara 1991/1992;Angiosperm;Styrax japonicus;stem;trunk;angio tree;temperate;12.95;;
+Fujiwara 1991/1992;Angiosperm;Symplocos myrtacea;stem;trunk;angio tree;subtropical;14.4;;
+Fujiwara 1991/1992;Angiosperm;Tilia japonica;stem;trunk;angio tree;temperate;6.85;;
+Fujiwara 1991/1992;Angiosperm;Ulmus parvifolia;stem;trunk;angio tree;temperate;15.4;;
+Fujiwara 1991/1992;Angiosperm;Zelkova serrata;stem;trunk;angio tree;temperate;12.4;;
+Gartner 2000;Gymnosperm;Pseudotsuga menziesii;stem;trunk;gymno tree;temperate;5.19;;5.19
+Hearn 2009;Angiosperm;Adenia aculeata;stem;pachycaul;succulent;tropical;;;94
+Hearn 2009;Angiosperm;Adenia acuta;stem;liana stem;climber;tropical;;;79
+Hearn 2009;Angiosperm;Adenia boivinii;stem;pachycaul;succulent;tropical;;;51
+Hearn 2009;Angiosperm;Adenia cissampeloides;stem;liana stem;climber;tropical;;;61
+Hearn 2009;Angiosperm;Adenia cladosepala;stem;liana stem;climber;tropical;;;46
+Hearn 2009;Angiosperm;Adenia densiflora;stem;liana stem;climber;tropical;;;68
+Hearn 2009;Angiosperm;Adenia elegans;stem;liana stem;climber;tropical;;;23
+Hearn 2009;Angiosperm;Adenia ellenbeckii;stem;trunk;angio tree;tropical;;;75
+Hearn 2009;Angiosperm;Adenia fasciculata;stem;liana stem;climber;tropical;;;80
+Hearn 2009;Angiosperm;Adenia firingalavensis;stem;pachycaul;succulent;tropical;;;72
+Hearn 2009;Angiosperm;Adenia fruticosa;stem;pachycaul;succulent;tropical;;;93
+Hearn 2009;Angiosperm;Adenia glauca;stem;pachycaul;succulent;tropical;;;99
+Hearn 2009;Angiosperm;Adenia globosa;stem;pachycaul;succulent;tropical;;;92
+Hearn 2009;Angiosperm;Adenia gummifera;stem;liana stem;climber;tropical;;;40
+Hearn 2009;Angiosperm;Adenia heterophylla;stem;liana stem;climber;tropical;;;38
+Hearn 2009;Angiosperm;Adenia hondala;stem;pachycaul;succulent;tropical;;;86
+Hearn 2009;Angiosperm;Adenia karibaensis;stem;pachycaul;succulent;tropical;;;96
+Hearn 2009;Angiosperm;Adenia keramanthus;stem;trunk;angio tree;tropical;;;85
+Hearn 2009;Angiosperm;Adenia lapiazicola;stem;trunk;angio tree;tropical;;;85
+Hearn 2009;Angiosperm;Adenia letouzeyi;stem;liana stem;climber;tropical;;;54
+Hearn 2009;Angiosperm;Adenia litoralis;stem;pachycaul;succulent;tropical;;;69
+Hearn 2009;Angiosperm;Adenia lobata;stem;liana stem;climber;tropical;;;43
+Hearn 2009;Angiosperm;Adenia longestipitata;stem;liana stem;climber;tropical;;;42
+Hearn 2009;Angiosperm;Adenia mcdadiana;stem;liana stem;climber;tropical;;;63
+Hearn 2009;Angiosperm;Adenia metamorpha;stem;pachycaul;succulent;tropical;;;53
+Hearn 2009;Angiosperm;Adenia monadelpha;stem;pachycaul;succulent;tropical;;;35
+Hearn 2009;Angiosperm;Adenia olaboensis;stem;pachycaul;succulent;tropical;;;71
+Hearn 2009;Angiosperm;Adenia pachyphylla;stem;liana stem;climber;tropical;;;47
+Hearn 2009;Angiosperm;Adenia pechuelii;stem;pachycaul;succulent;tropical;;;93
+Hearn 2009;Angiosperm;Adenia peltata;stem;pachycaul;succulent;tropical;;;82
+Hearn 2009;Angiosperm;Adenia perrieri;stem;pachycaul;succulent;tropical;;;83
+Hearn 2009;Angiosperm;Adenia rumicifolia;stem;liana stem;climber;tropical;;;55
+Hearn 2009;Angiosperm;Adenia schweinfurthii;stem;liana stem;climber;tropical;;;82
+Hearn 2009;Angiosperm;Adenia sphaerocarpa;stem;liana stem;climber;tropical;;;76
+Hearn 2009;Angiosperm;Adenia spinosa;stem;pachycaul;succulent;tropical;;;98
+Hearn 2009;Angiosperm;Adenia stylosa;stem;pachycaul;succulent;tropical;;;96
+Hearn 2009;Angiosperm;Adenia venenata;stem;pachycaul;succulent;tropical;;;92
+Hearn 2009;Angiosperm;Adenia volkensii;stem;trunk;angio tree;tropical;;;57
+Hearn 2009;Angiosperm;Deidamia bicolor;stem;liana stem;climber;tropical;;;28
+Hearn 2009;Angiosperm;Passiflora bicornis;stem;trunk;angio tree;subtropical;;;8
+Hearn 2009;Angiosperm;Passiflora caerulea;stem;liana stem;climber;temperate;;;42
+Hearn 2009;Angiosperm;Passiflora foetida;stem;liana stem;climber;subtropical;;;60
+Huber 1938;Angiosperm;Acer pseudoplatanus;stem;trunk;angio tree;temperate;17.2;;
+Huber 1938;Angiosperm;Aesculus hippocastanum;stem;trunk;angio tree;temperate;15.5;;
+Huber 1938;Angiosperm;Andira inermis;stem;trunk;angio tree;subtropical;16.9;31.9;48.8
+Huber 1938;Angiosperm;Aucoumea klaineana;stem;trunk;angio tree;tropical;12.1;;
+Huber 1938;Angiosperm;Baphia crassifolia;stem;trunk;angio tree;tropical;15.6;31.6;47.2
+Huber 1938;Angiosperm;Betula pendula;stem;trunk;angio tree;temperate;10.5;;
+Huber 1938;Angiosperm;Castanea sativa;stem;trunk;angio tree;temperate;17.2;;
+Huber 1938;Angiosperm;Ceiba pentandra;stem;trunk;angio tree;tropical;21.3;41.3;62.6
+Huber 1938;Angiosperm;Erythrina sp;stem;trunk;angio tree;subtropical;14;45.4;59.4
+Huber 1938;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;27;4.6;31.6
+Huber 1938;Angiosperm;Faurea rochetiana;stem;trunk;angio tree;subtropical;36.7;15.3;52
+Huber 1938;Angiosperm;Fraxinus excelsior;stem;trunk;angio tree;temperate;14.9;10.6;25.5
+Huber 1938;Angiosperm;Juglans regia;stem;trunk;angio tree;temperate;16.2;8;24.2
+Huber 1938;Gymnosperm;Larix decidua;stem;trunk;gymno tree;temperate;8.8;;8.8
+Huber 1938;Angiosperm;Lophira alata;stem;trunk;angio tree;tropical;13.4;19.5;32.9
+Huber 1938;Angiosperm;Milicia excelsa;stem;trunk;angio tree;tropical;12.6;19.2;31.8
+Huber 1938;Angiosperm;Millettia laurentii;stem;trunk;angio tree;tropical;19.1;31.3;50.4
+Huber 1938;Angiosperm;Mimosa scabrella;stem;trunk;angio tree;subtropical;14.8;6.7;21.5
+Huber 1938;Angiosperm;Morus alba;stem;trunk;angio tree;temperate;30.9;;
+Huber 1938;Angiosperm;Morus alba;stem;trunk;angio tree;temperate;44.7;;
+Huber 1938;Angiosperm;Musanga cecropioides;stem;trunk;angio tree;tropical;19.7;4;23.7
+Huber 1938;Gymnosperm;Picea abies;stem;trunk;gymno tree;temperate;9.6;;9.6
+Huber 1938;Gymnosperm;Picea abies;stem;trunk;gymno tree;temperate;4.7;;4.7
+Huber 1938;Gymnosperm;Pinus sylvestris;stem;trunk;gymno tree;temperate;5.5;1.4;6.9
+Huber 1938;Angiosperm;Populus tremula;stem;trunk;angio tree;temperate;12.7;;
+Huber 1938;Angiosperm;Pycnanthus angolensis;stem;trunk;angio tree;tropical;33.7;4.4;38.1
+Huber 1938;Angiosperm;Quercus robur;stem;trunk;angio tree;temperate;29.3;4.9;34.2
+Huber 1938;Angiosperm;Quercus robur;stem;trunk;angio tree;temperate;10.8;35.7;46.5
+Huber 1938;Angiosperm;Rhizophora mangle;stem;trunk;angio tree;subtropical;19.2;;
+Huber 1938;Angiosperm;Ricinodendron heudelotii;stem;trunk;angio tree;tropical;17.6;;
+Huber 1938;Angiosperm;Rinorea welwitschii;stem;trunk;angio tree;tropical;33.8;;
+Huber 1938;Angiosperm;Sterculia rhinopetala;stem;trunk;angio tree;tropical;24.3;30.3;54.6
+Huber 1938;Angiosperm;Symphonia globulifera;stem;trunk;angio tree;tropical;10.8;35.7;46.5
+Huber 1938;Angiosperm;Tectona grandis;stem;trunk;angio tree;tropical;13.5;6.6;20.1
+Huber 1938;Angiosperm;Triplochiton scleroxylon;stem;trunk;angio tree;tropical;21.9;41;62.9
+Huber 1938;Angiosperm;Zanthoxylum gilletii;stem;trunk;angio tree;subtropical;9.1;11.6;20.7
+Ishiguri 2009;Angiosperm;Falcataria moluccana;stem;trunk;angio tree;tropical;4;2;6
+Knigge 1961;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;14.6;1.7;16.3
+Koch 1985;Angiosperm;Acer rubrum;root;root;;temperate;17.6;9.9;27.5
+Koch 1985;Angiosperm;Acer rubrum;stem;branch/trunk;angio tree;temperate;12.65;16.2;28.85
+Koch 1985;Angiosperm;Carya sp;root;root;;temperate;24.8;18.9;43.7
+Koch 1985;Angiosperm;Carya sp;stem;branch/trunk;angio tree;temperate;17.15;15.9;33.05
+Koch 1985;Angiosperm;Celtis sp;root;root;;temperate;15.2;17.2;32.4
+Koch 1985;Angiosperm;Celtis sp;stem;branch/trunk;angio tree;temperate;14.1;15.25;29.35
+Koch 1985;Angiosperm;Fraxinus americana;root;root;;temperate;13;13.7;26.7
+Koch 1985;Angiosperm;Fraxinus americana;stem;branch/trunk;angio tree;temperate;14.35;15.4;29.75
+Koch 1985;Angiosperm;Fraxinus pennsylvanica;root;root;;temperate;15.2;15.4;30.6
+Koch 1985;Angiosperm;Fraxinus pennsylvanica;stem;branch/trunk;angio tree;temperate;14.9;15.65;30.55
+Koch 1985;Angiosperm;Liquidambar styraciflua;root;root;;temperate;16;10.2;26.2
+Koch 1985;Angiosperm;Liquidambar styraciflua;stem;branch/trunk;angio tree;temperate;13.6;2;15.6
+Koch 1985;Angiosperm;Liriodendron tulipifera;root;root;;temperate;16;7.1;23.1
+Koch 1985;Angiosperm;Liriodendron tulipifera;stem;branch/trunk;angio tree;temperate;12;3.3;15.3
+Koch 1985;Angiosperm;Magnolia virginiana;root;root;;temperate;5.8;7.2;13
+Koch 1985;Angiosperm;Magnolia virginiana;stem;branch/trunk;angio tree;temperate;15;4.95;19.95
+Koch 1985;Angiosperm;Nyssa sylvatica;root;root;;temperate;5;8.2;13.2
+Koch 1985;Angiosperm;Nyssa sylvatica;stem;branch/trunk;angio tree;temperate;16.8;4.35;21.15
+Koch 1985;Angiosperm;Quercus alba;root;root;;temperate;8.4;22.7;31.1
+Koch 1985;Angiosperm;Quercus alba;stem;branch/trunk;angio tree;temperate;18.5;25.45;43.95
+Koch 1985;Angiosperm;Quercus coccinea;root;root;;temperate;20.7;19.5;40.2
+Koch 1985;Angiosperm;Quercus coccinea;stem;branch/trunk;angio tree;temperate;18.15;23.3;41.45
+Koch 1985;Angiosperm;Quercus falcata;root;root;;subtropical;20.9;25.7;46.6
+Koch 1985;Angiosperm;Quercus falcata;stem;branch/trunk;angio tree;subtropical;18.7;27.6;46.3
+Koch 1985;Angiosperm;Quercus laurifolia;root;root;;temperate;20.6;20.7;41.3
+Koch 1985;Angiosperm;Quercus laurifolia;stem;branch/trunk;angio tree;temperate;18.85;26.35;45.2
+Koch 1985;Angiosperm;Quercus marilandica;root;root;;temperate;27.6;16.7;44.3
+Koch 1985;Angiosperm;Quercus marilandica;stem;branch/trunk;angio tree;temperate;21.55;23.75;45.3
+Koch 1985;Angiosperm;Quercus nigra;root;root;;temperate;19;24.1;43.1
+Koch 1985;Angiosperm;Quercus nigra;stem;branch/trunk;angio tree;temperate;18.6;25.95;44.55
+Koch 1985;Angiosperm;Quercus pagoda;root;root;;temperate;20.2;22.5;42.7
+Koch 1985;Angiosperm;Quercus pagoda;stem;branch/trunk;angio tree;temperate;17.8;24.05;41.85
+Koch 1985;Angiosperm;Quercus rubra;root;root;;temperate;20.7;20.4;41.1
+Koch 1985;Angiosperm;Quercus rubra;stem;branch/trunk;angio tree;temperate;18.5;23.95;42.45
+Koch 1985;Angiosperm;Quercus shumardii;root;root;;temperate;25.7;19.3;45
+Koch 1985;Angiosperm;Quercus shumardii;stem;branch/trunk;angio tree;temperate;17.9;23.6;41.5
+Koch 1985;Angiosperm;Quercus stellata;root;root;;temperate;21.5;14.8;36.3
+Koch 1985;Angiosperm;Quercus stellata;stem;branch/trunk;angio tree;temperate;19.15;29.75;48.9
+Koch 1985;Angiosperm;Quercus velutina;root;root;;temperate;24;19.4;43.4
+Koch 1985;Angiosperm;Quercus velutina;stem;branch/trunk;angio tree;temperate;18.9;26.4;45.3
+Koch 1985;Angiosperm;Ulmus alata;root;root;;temperate;17.5;18.7;36.2
+Koch 1985;Angiosperm;Ulmus alata;stem;branch/trunk;angio tree;temperate;14.05;15.95;30
+Koch 1985;Angiosperm;Ulmus americana;root;root;;temperate;13.3;19.2;32.5
+Koch 1985;Angiosperm;Ulmus americana;stem;branch/trunk;angio tree;temperate;11.1;16.2;27.3
+Lei 1996;Angiosperm;Quercus garryana;stem;trunk;angio tree;temperate;13.5;11;24.5
+Lei 1997;Angiosperm;Alnus rubra;stem;trunk;angio tree;temperate;13.5;1.5;15
+Maeglin 1976 as cited in Panshin 1980;Angiosperm;Quercus rubra;stem;trunk;angio tree;temperate;15.9;23.4;39.3
+Martinez-Cabrera 2009;Angiosperm;Acacia greggii;stem;trunk;angio tree;temperate;9.65;19.45;29.1
+Martinez-Cabrera 2009;Angiosperm;Acanthostyles buniifolius;stem;trunk;angio tree;subtropical;40.36;0.55;40.91
+Martinez-Cabrera 2009;Angiosperm;Acanthostyles buniifolius;stem;trunk;angio tree;subtropical;45.4;3.06;48.46
+Martinez-Cabrera 2009;Angiosperm;Adenostoma fasciculatum;stem;trunk;angio tree;subtropical;35.36;12;47.36
+Martinez-Cabrera 2009;Angiosperm;Adesmia trijuga;stem;trunk;angio tree;subtropical;2.3;16.85;19.15
+Martinez-Cabrera 2009;Angiosperm;Aloysia grattissima;stem;trunk;angio tree;subtropical;12.95;1;13.95
+Martinez-Cabrera 2009;Angiosperm;Ambrosia dumosa;stem;trunk;angio tree;subtropical;13;2.67;15.67
+Martinez-Cabrera 2009;Angiosperm;Ambrosia salsola;stem;trunk;angio tree;subtropical;40.19;4.47;44.66
+Martinez-Cabrera 2009;Angiosperm;Artemisia californica;stem;trunk;angio tree;subtropical;8.31;3.15;11.46
+Martinez-Cabrera 2009;Angiosperm;Atamisquea emarginata;stem;trunk;angio tree;subtropical;17.19;3.41;20.6
+Martinez-Cabrera 2009;Angiosperm;Baccharis articulata;stem;trunk;angio tree;subtropical;9.56;4.1;13.66
+Martinez-Cabrera 2009;Angiosperm;Baccharis flabellata;stem;trunk;angio tree;subtropical;28.1;0.79;28.89
+Martinez-Cabrera 2009;Angiosperm;Bougainvillea spinosa;stem;trunk;angio tree;subtropical;6.6;33.5;40.1
+Martinez-Cabrera 2009;Angiosperm;Bulnesia retamo;stem;trunk;angio tree;subtropical;12.4;3.4;15.8
+Martinez-Cabrera 2009;Angiosperm;Calycanthus floridus;stem;trunk;angio tree;subtropical;33.81;0.835;34.645
+Martinez-Cabrera 2009;Angiosperm;Celtis laevigata;stem;trunk;angio tree;temperate;27.22;2.98;30.2
+Martinez-Cabrera 2009;Angiosperm;Cestrum parqui;stem;trunk;angio tree;subtropical;14.66;0.89;15.55
+Martinez-Cabrera 2009;Angiosperm;Condalia microphylla;stem;trunk;angio tree;subtropical;35.73;2.8;38.53
+Martinez-Cabrera 2009;Angiosperm;Dalea formosa;stem;trunk;angio tree;temperate;19.36666667;13.08;32.44666667
+Martinez-Cabrera 2009;Angiosperm;Daphnopsis racemosa;stem;trunk;angio tree;subtropical;16.05;2.69;18.74
+Martinez-Cabrera 2009;Angiosperm;Elaeagnus umbellata;stem;trunk;angio tree;subtropical;23.09;20.5;43.59
+Martinez-Cabrera 2009;Angiosperm;Encelia farinosa;stem;trunk;angio tree;subtropical;18;12.99;30.99
+Martinez-Cabrera 2009;Angiosperm;Eriogonum fasciculatum;stem;trunk;angio tree;subtropical;4.19;3.77;7.96
+Martinez-Cabrera 2009;Angiosperm;Escallonia megapotamica;stem;trunk;angio tree;subtropical;31.15;11.3;42.45
+Martinez-Cabrera 2009;Angiosperm;Gaylussacia ursina;stem;trunk;angio tree;subtropical;24.74;2.47;27.21
+Martinez-Cabrera 2009;Angiosperm;Guettarda uruguensis;stem;trunk;angio tree;subtropical;28.53;2.7;31.23
+Martinez-Cabrera 2009;Angiosperm;Gutierrezia sarothrae;stem;trunk;angio tree;temperate;25.03;5;30.03
+Martinez-Cabrera 2009;Angiosperm;Hyptis emoryi;stem;trunk;angio tree;subtropical;21.4;4.6;26
+Martinez-Cabrera 2009;Angiosperm;Ilex mucronata;stem;trunk;angio tree;subtropical;25;0.93;25.93
+Martinez-Cabrera 2009;Angiosperm;Kalmia latifolia;stem;trunk;angio tree;subtropical;13;4.94;17.94
+Martinez-Cabrera 2009;Angiosperm;Lantana camara;stem;trunk;angio tree;subtropical;19.28;7.1;26.38
+Martinez-Cabrera 2009;Angiosperm;Lantana grisebachii;stem;trunk;angio tree;subtropical;15.11;0.45;15.56
+Martinez-Cabrera 2009;Angiosperm;Larrea cuneifolia;stem;trunk;angio tree;subtropical;9.91;27.42;37.33
+Martinez-Cabrera 2009;Angiosperm;Larrea divaricata;stem;trunk;angio tree;subtropical;7.6;16;23.6
+Martinez-Cabrera 2009;Angiosperm;Larrea tridentata;stem;trunk;angio tree;subtropical;9.5;14.55;24.05
+Martinez-Cabrera 2009;Angiosperm;Ligustrum sinense;stem;trunk;angio tree;subtropical;42;2.26;44.26
+Martinez-Cabrera 2009;Angiosperm;Lippia turbinata;stem;trunk;angio tree;subtropical;22.76;3.7;26.46
+Martinez-Cabrera 2009;Angiosperm;Lycium chilense;stem;trunk;angio tree;subtropical;14.85;10.55;25.4
+Martinez-Cabrera 2009;Angiosperm;Malosma laurina;stem;trunk;angio tree;subtropical;20.75;5.08;25.83
+Martinez-Cabrera 2009;Angiosperm;Mimozyganthus carinatus;stem;trunk;angio tree;subtropical;6.69;10.99;17.68
+Martinez-Cabrera 2009;Angiosperm;Mimulus aurantiacus;stem;trunk;angio tree;subtropical;38.56;6.29;44.85
+Martinez-Cabrera 2009;Angiosperm;Mulguraea aspera;stem;trunk;angio tree;subtropical;15.655;5.82;21.475
+Martinez-Cabrera 2009;Angiosperm;Myrcia selloi;stem;trunk;angio tree;subtropical;21.4;9.1;30.5
+Martinez-Cabrera 2009;Angiosperm;Pavonia hastata;stem;trunk;angio tree;subtropical;25.65;2.02;27.67
+Martinez-Cabrera 2009;Angiosperm;Porlieria microphylla;stem;trunk;angio tree;subtropical;4.5;17;21.5
+Martinez-Cabrera 2009;Angiosperm;Prosopis alpataco;stem;trunk;angio tree;subtropical;14.09;34.3;48.39
+Martinez-Cabrera 2009;Angiosperm;Prosopis glandulosa;stem;trunk;angio tree;temperate;15.3;46.74;62.04
+Martinez-Cabrera 2009;Angiosperm;Pseudabutilon virgatum;stem;trunk;angio tree;subtropical;28.09;8.2;36.29
+Martinez-Cabrera 2009;Angiosperm;Rhododendron maximum;stem;trunk;angio tree;subtropical;20.34;0;20.34
+Martinez-Cabrera 2009;Angiosperm;Rhus copallinum;stem;trunk;angio tree;subtropical;5.18;0.5;5.68
+Martinez-Cabrera 2009;Angiosperm;Rhus trilobata;stem;trunk;angio tree;temperate;19.01;2.7;21.71
+Martinez-Cabrera 2009;Angiosperm;Salvia apiana;stem;trunk;angio tree;subtropical;19.5;8.6;28.1
+Martinez-Cabrera 2009;Angiosperm;Salvia mellifera;stem;trunk;angio tree;subtropical;33.25;0;33.25
+Martinez-Cabrera 2009;Angiosperm;Senecio pinnatus;stem;trunk;angio tree;subtropical;22.41;1.6;24.01
+Martinez-Cabrera 2009;Angiosperm;Senna aphylla;stem;trunk;angio tree;subtropical;10.05;51.52;61.57
+Martinez-Cabrera 2009;Angiosperm;Solanum sp;stem;trunk;angio tree;subtropical;27.6;1;28.6
+Martinez-Cabrera 2009;Angiosperm;Syrmatium glabrum;stem;trunk;angio tree;subtropical;26.22;16;42.22
+Martinez-Cabrera 2009;Angiosperm;Vaccinium arboreum;stem;trunk;angio tree;subtropical;31.63;3.05;34.68
+Martinez-Cabrera 2009;Angiosperm;Vaccinium elliottii;stem;trunk;angio tree;subtropical;21.84;6.82;28.66
+Martinez-Cabrera 2009;Angiosperm;Vernonanthura montevidensis;stem;trunk;angio tree;subtropical;46.02;1.4;47.42
+Martinez-Cabrera 2009;Angiosperm;Ximenia americana;stem;trunk;angio tree;subtropical;9.98;3.2;13.18
+Martinez-Cabrera 2009;Angiosperm;Ziziphus obtusiflia;stem;trunk;angio tree;temperate;20.16;41;61.16
+Mauseth 1997;Angiosperm;Acanthocereus tetragonus;stem;cactus wood;succulent;subtropical;42;5.2;47.2
+Mauseth 1997;Angiosperm;Acanthocereus tetragonus;stem;cactus wood;succulent;subtropical;54;41.8;95.8
+Mauseth 1997;Angiosperm;Cleistocactus icosagonus;stem;cactus wood;succulent;subtropical;29.2;12.2;41.4
+Mauseth 1997;Angiosperm;Cleistocactus variispinus;stem;cactus wood;succulent;subtropical;42.6;4.9;47.5
+Mauseth 1997;Angiosperm;Coleocephalocereus aureus;stem;cactus wood;succulent;subtropical;37.3;3.4;40.7
+Mauseth 1997;Angiosperm;Coleocephalocereus aureus;stem;cactus wood;succulent;subtropical;42.4;33.5;75.9
+Mauseth 1997;Angiosperm;Dendrocereus nudiflorus;stem;cactus wood;succulent;subtropical;38.2;4.1;42.3
+Mauseth 1997;Angiosperm;Dendrocereus nudiflorus;stem;cactus wood;succulent;subtropical;32.4;60;92.4
+Mauseth 1997;Angiosperm;Echinopsis chiloensis;stem;cactus wood;succulent;subtropical;47.1;7;54.1
+Mauseth 1997;Angiosperm;Echinopsis deserticola;stem;cactus wood;succulent;subtropical;64.7;6.1;70.8
+Mauseth 1997;Angiosperm;Echinopsis schickendantzii;stem;cactus wood;succulent;subtropical;47.6;31.4;79
+Mauseth 1997;Angiosperm;Haageocereus australis;stem;cactus wood;succulent;subtropical;61.3;25.8;87.1
+Mauseth 1997;Angiosperm;Haageocereus platinospinus;stem;cactus wood;succulent;subtropical;51.7;12.7;64.4
+Mauseth 1997;Angiosperm;Hylocereus lemairei;stem;cactus wood;succulent;subtropical;10.9;3.7;14.6
+Mauseth 1997;Angiosperm;Hylocereus lemairei;stem;cactus wood;succulent;subtropical;29;63.8;92.8
+Mauseth 1997;Angiosperm;Mila nealeana;stem;cactus wood;succulent;subtropical;24.9;33;57.9
+Mauseth 1997;Angiosperm;Oreocereus doelzianus;stem;cactus wood;succulent;subtropical;60.6;10.6;71.2
+Mauseth 1997;Angiosperm;Oreocereus doelzianus;stem;cactus wood;succulent;subtropical;64.4;19.2;83.6
+Mauseth 1997;Angiosperm;Oreocereus fossulatus;stem;cactus wood;succulent;subtropical;36.6;8.2;44.8
+Mauseth 1997;Angiosperm;Samaipaticereus corroanus;stem;cactus wood;succulent;subtropical;55.5;2.4;57.9
+Mauseth 1997;Angiosperm;Samaipaticereus corroanus;stem;cactus wood;succulent;subtropical;51.4;44.9;96.3
+Mauseth 1997;Angiosperm;Selenicereus grandiflorus;stem;cactus wood;succulent;subtropical;27.4;5.4;32.8
+Mauseth 1997;Angiosperm;Selenicereus grandiflorus;stem;cactus wood;succulent;subtropical;32.4;52.7;85.1
+Mauseth 1997;Angiosperm;Selenicereus inermis;stem;cactus wood;succulent;subtropical;26.2;7.1;33.3
+Mauseth 1997;Angiosperm;Selenicereus inermis;stem;cactus wood;succulent;subtropical;36;28.5;64.5
+Mauseth 1997;Angiosperm;Selenicereus testudo;stem;cactus wood;succulent;subtropical;49.2;4.3;53.5
+Mauseth 1997;Angiosperm;Selenicereus testudo;stem;cactus wood;succulent;subtropical;59;26.4;85.4
+Mauseth 1997;Angiosperm;Stephanocereus leucostele;stem;cactus wood;succulent;subtropical;41;14.4;55.4
+Mauseth 1997;Angiosperm;Stephanocereus leucostele;stem;cactus wood;succulent;subtropical;36.3;45.7;82
+Mauseth 1997;Angiosperm;Trichocereus coquimbanus;stem;cactus wood;succulent;subtropical;64.3;5;69.3
+Mauseth 1997;Angiosperm;Werckleocereus glaber;stem;cactus wood;succulent;subtropical;27.5;17.7;45.2
+Mauseth 1997;Angiosperm;Werckleocereus glaber;stem;cactus wood;succulent;subtropical;68.4;23.6;92
+Meyr 1922;Gymnosperm;Abies alba;stem;trunk;gymno tree;temperate;6.57;;6.57
+Meyr 1922;Gymnosperm;Abies amabilis;stem;trunk;gymno tree;temperate;6.68;;6.68
+Meyr 1922;Gymnosperm;Abies balsamea;stem;trunk;gymno tree;temperate;5.68;;5.68
+Meyr 1922;Gymnosperm;Abies concolor;stem;trunk;gymno tree;temperate;9.48;;9.48
+Meyr 1922;Gymnosperm;Abies grandis;stem;trunk;gymno tree;temperate;6.68;;6.68
+Meyr 1922;Gymnosperm;Abies grandis;stem;trunk;gymno tree;temperate;5.07;;5.07
+Meyr 1922;Angiosperm;Acer macrophyllum;stem;trunk;angio tree;temperate;18.46;;
+Meyr 1922;Angiosperm;Acer negundo;stem;trunk;angio tree;temperate;16.19;;
+Meyr 1922;Angiosperm;Betula lenta;stem;trunk;angio tree;temperate;16.6;;
+Meyr 1922;Angiosperm;Betula nigra;stem;trunk;angio tree;temperate;15.83;;
+Meyr 1922;Angiosperm;Betula populifolia;stem;trunk;angio tree;temperate;9.32;;
+Meyr 1922;Gymnosperm;Calocedrus decurrens;stem;trunk;gymno tree;temperate;8.9;;8.9
+Meyr 1922;Angiosperm;Carya cordiformis;stem;trunk;angio tree;temperate;16.8;;
+Meyr 1922;Angiosperm;Carya glabra;stem;trunk;angio tree;temperate;23.4;;
+Meyr 1922;Angiosperm;Catalpa bignonioides;stem;trunk;angio tree;temperate;9.2;;
+Meyr 1922;Angiosperm;Catalpa speciosa;stem;trunk;angio tree;temperate;13.3;;
+Meyr 1922;Gymnosperm;Chamaecyparis lawsoniana;stem;trunk;gymno tree;temperate;5.57;;5.57
+Meyr 1922;Gymnosperm;Chamaecyparis thyoides;stem;trunk;gymno tree;temperate;5.18;;5.18
+Meyr 1922;Angiosperm;Fraxinus oregona;stem;trunk;angio tree;temperate;14.5;;
+Meyr 1922;Angiosperm;Fraxinus quadrangulata;stem;trunk;angio tree;temperate;17.1;;
+Meyr 1922;Angiosperm;Gleditsia triacanthos;stem;trunk;angio tree;temperate;18.46;;
+Meyr 1922;Angiosperm;Hicoria ovata;stem;trunk;angio tree;temperate;19.97;;
+Meyr 1922;Gymnosperm;Juniperus occidentalis;stem;trunk;gymno tree;temperate;6.8;;6.8
+Meyr 1922;Gymnosperm;Juniperus virginiana;stem;trunk;gymno tree;temperate;6.26;;6.26
+Meyr 1922;Gymnosperm;Larix laricina;stem;trunk;gymno tree;temperate;11.07;;11.07
+Meyr 1922;Gymnosperm;Larix occidentalis;stem;trunk;gymno tree;temperate;10;;10
+Meyr 1922;Angiosperm;Notholithocarpus densiflorus;stem;trunk;angio tree;subtropical;42.26;;
+Meyr 1922;Gymnosperm;Picea engelmannii;stem;trunk;gymno tree;temperate;5.91;;5.91
+Meyr 1922;Gymnosperm;Picea rubens;stem;trunk;gymno tree;temperate;4.98;;4.98
+Meyr 1922;Gymnosperm;Picea sitchensis;stem;trunk;gymno tree;temperate;7.27;;7.27
+Meyr 1922;Gymnosperm;Pinus banksiana;stem;trunk;gymno tree;temperate;8.1;;8.1
+Meyr 1922;Gymnosperm;Pinus contorta;stem;trunk;gymno tree;temperate;5.7;;5.7
+Meyr 1922;Gymnosperm;Pinus echinata;stem;trunk;gymno tree;temperate;8.05;;8.05
+Meyr 1922;Gymnosperm;Pinus jeffreyi;stem;trunk;gymno tree;temperate;8.1;;8.1
+Meyr 1922;Gymnosperm;Pinus lambertiana;stem;trunk;gymno tree;temperate;5.7;;5.7
+Meyr 1922;Gymnosperm;Pinus monticola;stem;trunk;gymno tree;temperate;6.59;;6.59
+Meyr 1922;Gymnosperm;Pinus palustris;stem;trunk;gymno tree;subtropical;8.3;;8.3
+Meyr 1922;Gymnosperm;Pinus parviflora;stem;trunk;gymno tree;temperate;11.7;;11.7
+Meyr 1922;Gymnosperm;Pinus ponderosa;stem;trunk;gymno tree;temperate;6.78;;6.78
+Meyr 1922;Gymnosperm;Pinus resinosa;stem;trunk;gymno tree;temperate;7;;7
+Meyr 1922;Gymnosperm;Pinus rigida;stem;trunk;gymno tree;temperate;7.25;;7.25
+Meyr 1922;Gymnosperm;Pinus strobus;stem;trunk;gymno tree;temperate;5.39;;5.39
+Meyr 1922;Gymnosperm;Pinus taeda;stem;trunk;gymno tree;temperate;7.63;;7.63
+Meyr 1922;Gymnosperm;Pinus virginiana;stem;trunk;gymno tree;temperate;7.22;;7.22
+Meyr 1922;Angiosperm;Populus tremuloides;stem;trunk;angio tree;temperate;9.63;;
+Meyr 1922;Gymnosperm;Pseudotsuga menziesii;stem;trunk;gymno tree;temperate;7.37;;7.37
+Meyr 1922;Angiosperm;Quercus bicolor;stem;trunk;angio tree;temperate;29.72;;
+Meyr 1922;Angiosperm;Quercus candicans;stem;trunk;angio tree;temperate;21.9;;
+Meyr 1922;Angiosperm;Quercus falcata;stem;trunk;angio tree;subtropical;18.8;;
+Meyr 1922;Angiosperm;Quercus michauxii;stem;trunk;angio tree;temperate;25.3;;
+Meyr 1922;Angiosperm;Quercus nigra;stem;trunk;angio tree;temperate;28.3;;
+Meyr 1922;Angiosperm;Salix nigra;stem;trunk;angio tree;temperate;10.6;;
+Meyr 1922;Gymnosperm;Sequoia sempervirens;stem;trunk;gymno tree;temperate;7.85;;7.85
+Meyr 1922;Gymnosperm;Taxodium distichum;stem;trunk;gymno tree;temperate;6.62;;6.62
+Meyr 1922;Gymnosperm;Thuja occidentalis;stem;trunk;gymno tree;temperate;3.43;;3.43
+Meyr 1922;Gymnosperm;Thuja plicata;stem;trunk;gymno tree;temperate;6.93;;6.93
+Meyr 1922;Angiosperm;Tilia americana;stem;trunk;angio tree;temperate;5.3;;
+Meyr 1922;Gymnosperm;Tsuga canadensis;stem;trunk;gymno tree;temperate;7.09;;7.09
+Meyr 1922;Gymnosperm;Tsuga canadensis;stem;trunk;gymno tree;temperate;5.96;;5.96
+Meyr 1922;Gymnosperm;Tsuga heterophylla;stem;trunk;gymno tree;tropical;8.8;;8.8
+Meyr 1922;Angiosperm;Ulmus alata;stem;trunk;angio tree;temperate;18.6;;
+Meyr 1922;Angiosperm;Ulmus rubra;stem;trunk;angio tree;temperate;13.03;;
+Myer 1922 as cited in Panshin 1980;Angiosperm;Quercus virginiana;stem;trunk;angio tree;subtropical;32.2;;
+Myer 1922 as cited in Panshin 1980;Angiosperm;Ulmus thomasii;stem;trunk;angio tree;temperate;18.6;;
+Ogunkunle 2008;Angiosperm;Ficus exasperata;stem;trunk;angio tree;tropical;32;24.6;56.6
+Ogunkunle 2008;Angiosperm;Ficus ingens;stem;trunk;angio tree;tropical;20.1;32.7;52.8
+Ogunkunle 2008;Angiosperm;Ficus lutea;stem;trunk;angio tree;tropical;32.8;20.2;53
+Ogunkunle 2008;Angiosperm;Ficus mucuso;stem;trunk;angio tree;tropical;23.9;29.3;53.2
+Ogunkunle 2008;Angiosperm;Ficus natalensis;stem;trunk;angio tree;tropical;28.9;26.3;55.2
+Ogunkunle 2008;Angiosperm;Ficus ottonifolia;stem;trunk;angio tree;tropical;26.7;27.8;54.5
+Ogunkunle 2008;Angiosperm;Ficus ovata;stem;trunk;angio tree;tropical;27.1;27.3;54.4
+Ogunkunle 2008;Angiosperm;Ficus polita;stem;trunk;angio tree;tropical;21.9;26.6;48.5
+Ogunkunle 2008;Angiosperm;Ficus populifolia;stem;trunk;angio tree;tropical;29.2;21.2;50.4
+Ogunkunle 2008;Angiosperm;Ficus sur;stem;trunk;angio tree;tropical;22.4;30.9;53.3
+Ogunkunle 2008;Angiosperm;Ficus thonningii;stem;trunk;angio tree;tropical;27.9;29;56.9
+Ogunkunle 2008;Angiosperm;Ficus umbellata;stem;trunk;angio tree;tropical;32.1;24.4;56.5
+Ogunkunle 2008;Angiosperm;Gmelina arborea;stem;trunk;angio tree;tropical;31;5.2;36.2
+Ogunwusi 2012;Angiosperm;Albizia zygia;stem;trunk;angio tree;tropical;32.9;23.2;56.1
+Ogunwusi 2012;Angiosperm;Isoberlinia doka;stem;trunk;angio tree;tropical;23.6;35;58.6
+Ogunwusi 2012;Angiosperm;Lannea acida;stem;trunk;angio tree;tropical;67;0;67
+Ogunwusi 2012;Angiosperm;Parkia filicoidea;stem;trunk;angio tree;tropical;24;23.4;47.4
+Ogunwusi 2012;Angiosperm;Vitellaria paradoxa;stem;trunk;angio tree;tropical;22.7;12;34.7
+Olano 2013;Gymnosperm;Juniperus thurifera;stem;trunk;gymno tree;subtropical;6.7;;6.7
+Ona 1999;Angiosperm;Eucalyptus camaldulensis;stem;trunk;angio tree;subtropical;17.8;10.8;28.6
+Ona 1999;Angiosperm;Eucalyptus globulus;stem;trunk;angio tree;subtropical;17.8;10.8;28.6
+Ona 2001;Angiosperm;Eucalyptus camaldulensis;stem;trunk;angio tree;subtropical;20.66;14.1;34.76
+Ona 2001;Angiosperm;Eucalyptus globuls;stem;trunk;angio tree;subtropical;15.2;6.3;21.5
+Pande 2005;Angiosperm;Castanopsis echinocarpa;stem;trunk;angio tree;subtropical;31.75;23.75;55.5
+Pande 2005;Angiosperm;Castanopsis indica;stem;trunk;angio tree;subtropical;30.8;21.2;52
+Pande 2005;Angiosperm;Castanopsis lanceifolia;stem;trunk;angio tree;subtropical;35.6;22.3;57.9
+Pande 2005;Angiosperm;Castanopsis purpurea;stem;trunk;angio tree;subtropical;24;22;46
+Panshin 1980;Gymnosperm;Abies alba;stem;trunk;gymno tree;temperate;7.45;;7.45
+Panshin 1980;Gymnosperm;Abies procera;stem;trunk;gymno tree;temperate;6.6;;6.6
+Panshin 1980;Gymnosperm;Cupressus sempervirens;stem;trunk;gymno tree;subtropical;5.58;0.2;5.78
+Panshin 1980;Gymnosperm;Juniperus excelsa;stem;trunk;gymno tree;subtropical;8.26;0.26;8.52
+Panshin 1980;Gymnosperm;Larix decidua;stem;trunk;gymno tree;temperate;6.13;;6.13
+Panshin 1980;Gymnosperm;Picea abies;stem;trunk;gymno tree;temperate;5.95;;5.95
+Panshin 1980;Gymnosperm;Picea glauca;stem;trunk;gymno tree;temperate;7.1;;7.1
+Panshin 1980;Gymnosperm;Pinus cembra;stem;trunk;gymno tree;temperate;9.24;;9.24
+Panshin 1980;Gymnosperm;Pinus elliottii;stem;trunk;gymno tree;subtropical;11.7;;11.7
+Panshin 1980;Gymnosperm;Pinus nigra;stem;trunk;gymno tree;subtropical;5.49;;5.49
+Panshin 1980;Gymnosperm;Pinus pinaster;stem;trunk;gymno tree;subtropical;6.22;;6.22
+Panshin 1980;Gymnosperm;Pinus strobus;stem;trunk;gymno tree;temperate;6;;6
+Panshin 1980;Gymnosperm;Pinus strobus;stem;trunk;gymno tree;temperate;5.29;;5.29
+Panshin 1980;Gymnosperm;Pinus sylvestris;stem;trunk;gymno tree;temperate;6.41;;6.41
+Panshin 1980;Gymnosperm;Pseudotsuga menziesii;stem;trunk;gymno tree;temperate;7.22;;7.22
+Petric 1975 as cited in Panshin 1980;Angiosperm;Acer campestre;stem;trunk;angio tree;temperate;15.4;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Aesculus hippocastanum;stem;trunk;angio tree;temperate;13.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Alnus incana;stem;trunk;angio tree;temperate;13.7;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Betula pendula;stem;trunk;angio tree;temperate;10.1;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Carpinus betulus;stem;trunk;angio tree;temperate;15.7;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Castanea sativa;stem;trunk;angio tree;temperate;12.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;18.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Fraxinus excelsior;stem;trunk;angio tree;temperate;14.7;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Juglans regia;stem;trunk;angio tree;temperate;16.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Morus alba;stem;trunk;angio tree;temperate;18.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Ostrya carpinifolia;stem;trunk;angio tree;temperate;23.5;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Platanus orientalis;stem;trunk;angio tree;temperate;25.6;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Populus nigra;stem;trunk;angio tree;temperate;11.8;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Prunus avium;stem;trunk;angio tree;temperate;16.4;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Prunus domestica;stem;trunk;angio tree;temperate;26.3;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Quercus ilex;stem;trunk;angio tree;subtropical;34.1;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Quercus robur;stem;trunk;angio tree;temperate;20.6;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Robinia pseudoacacia;stem;trunk;angio tree;temperate;19;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Salix alba;stem;trunk;angio tree;temperate;9.2;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Tilia platyphyllos;stem;trunk;angio tree;temperate;7.8;;
+Petric 1975 as cited in Panshin 1980;Angiosperm;Ulmus minor;stem;trunk;angio tree;temperate;20.8;;
+Plavcova unpublished;Gymnosperm;Abies alba;stem;branch;gymno tree;temperate;5.2;0;5.2
+Plavcova unpublished;Angiosperm;Acer pseudoplatanus;stem;branch;angio tree;temperate;11.5;1.8;13.3
+Plavcova unpublished;Angiosperm;Carpinus betulus;stem;branch;angio tree;temperate;17.6;6.2;23.8
+Plavcova unpublished;Angiosperm;Ceiba aesculifolia;stem;branch;angio tree;tropical;24.8;42.9;67.7
+Plavcova unpublished;Angiosperm;Clematis vitalba;stem;liana stem;climber;temperate;12.4;6.1;18.7
+Plavcova unpublished;Angiosperm;Fagus sylvatica;stem;branch;angio tree;temperate;17.9;5.9;23.8
+Plavcova unpublished;Angiosperm;Ficus benjamina;stem;branch;angio tree;tropical;16.4;30.7;47.1
+Plavcova unpublished;Angiosperm;Ficus rubiginosa;stem;branch;angio tree;tropical;19.7;27.2;46.9
+Plavcova unpublished;Angiosperm;Fraxinus excelsior;stem;branch;angio tree;temperate;13.3;5.4;18.7
+Plavcova unpublished;Angiosperm;Liquidambar styraciflua;stem;branch;angio tree;temperate;16.5;2.6;19.1
+Plavcova unpublished;Gymnosperm;Picea abies;stem;branch;gymno tree;temperate;7;0;7
+Plavcova unpublished;Angiosperm;Prunus avium;stem;branch;angio tree;temperate;20.7;2.7;23.4
+Plavcova unpublished;Angiosperm;Quercus robur;stem;branch;angio tree;temperate;10.9;22.7;33.6
+Plavcova unpublished;Angiosperm;Robinia pseudoacacia;stem;branch;angio tree;temperate;9.9;20.9;30.8
+Plavcova unpublished;Angiosperm;Terminalia catappa;stem;branch;angio tree;tropical;14.6;11.8;26.4
+Plavcova unpublished;Angiosperm;Tilia cordata;stem;branch;angio tree;temperate;9.7;7.5;17.3
+Poorter 2010;Angiosperm;Acacia bonariensis;stem;trunk;angio tree;tropical;;;46.1
+Poorter 2010;Angiosperm;Ardisia ambigua;stem;trunk;angio tree;tropical;;;44
+Poorter 2010;Angiosperm;Aspidosperma cylindrocarpon;stem;trunk;angio tree;tropical;;;23.4
+Poorter 2010;Angiosperm;Aspidosperma rigidum;stem;trunk;angio tree;tropical;;;34.4
+Poorter 2010;Angiosperm;Batocarpus amazonicus;stem;trunk;angio tree;tropical;;;37.7
+Poorter 2010;Angiosperm;Cariniana estrellensis;stem;trunk;angio tree;tropical;;;43.8
+Poorter 2010;Angiosperm;Cecropia concolor;stem;trunk;angio tree;tropical;;;32
+Poorter 2010;Angiosperm;Cedrela fissilis;stem;trunk;angio tree;tropical;;;64.2
+Poorter 2010;Angiosperm;Ceiba pentandra;stem;trunk;angio tree;tropical;;;55.7
+Poorter 2010;Angiosperm;Cordia alliodora;stem;trunk;angio tree;tropical;;;41
+Poorter 2010;Angiosperm;Cupania cinerea;stem;trunk;angio tree;tropical;;;40.5
+Poorter 2010;Angiosperm;Dendropanax arboreus;stem;trunk;angio tree;tropical;;;19.1
+Poorter 2010;Angiosperm;Erythrochiton fallax;stem;trunk;angio tree;tropical;;;38.9
+Poorter 2010;Angiosperm;Eugenia sp;stem;trunk;angio tree;tropical;;;51.1
+Poorter 2010;Angiosperm;Ficus boliviana;stem;trunk;angio tree;tropical;;;41
+Poorter 2010;Angiosperm;Guarea guidonia;stem;trunk;angio tree;tropical;;;58.1
+Poorter 2010;Angiosperm;Heliocarpus americanus;stem;trunk;angio tree;tropical;;;47.7
+Poorter 2010;Angiosperm;Hirtella triandra;stem;trunk;angio tree;tropical;;;49.8
+Poorter 2010;Angiosperm;Hura crepitans;stem;trunk;angio tree;tropical;;;24.9
+Poorter 2010;Angiosperm;Inga edulis;stem;trunk;angio tree;tropical;;;46.9
+Poorter 2010;Angiosperm;Licaria triandra;stem;trunk;angio tree;tropical;;;34.9
+Poorter 2010;Angiosperm;Machaerium villosum;stem;trunk;angio tree;tropical;;;37.5
+Poorter 2010;Angiosperm;Maclura tinctoria;stem;trunk;angio tree;tropical;;;41.1
+Poorter 2010;Angiosperm;Margaritaria nobilis;stem;trunk;angio tree;tropical;;;37.2
+Poorter 2010;Angiosperm;Ocotea guianensis;stem;trunk;angio tree;tropical;;;31.5
+Poorter 2010;Angiosperm;Ocotea sp;stem;trunk;angio tree;tropical;;;22.9
+Poorter 2010;Angiosperm;Ocotea sp;stem;trunk;angio tree;tropical;;;28.8
+Poorter 2010;Angiosperm;Ormosia nobilis;stem;trunk;angio tree;tropical;;;51.1
+Poorter 2010;Angiosperm;Picramnia sellowii;stem;trunk;angio tree;tropical;;;36.3
+Poorter 2010;Angiosperm;Pourouma cecropiifolia;stem;trunk;angio tree;tropical;;;53.6
+Poorter 2010;Angiosperm;Pouteria macrophylla;stem;trunk;angio tree;tropical;;;48.7
+Poorter 2010;Angiosperm;Pouteria nemorosa;stem;trunk;angio tree;tropical;;;53.9
+Poorter 2010;Angiosperm;Pseudolmedia laevis;stem;trunk;angio tree;tropical;;;51
+Poorter 2010;Angiosperm;Sapindus saponaria;stem;trunk;angio tree;tropical;;;52.4
+Poorter 2010;Angiosperm;Sapium glandulosum;stem;trunk;angio tree;tropical;;;39.4
+Poorter 2010;Angiosperm;Schizolobium parahyba;stem;trunk;angio tree;tropical;;;26
+Poorter 2010;Angiosperm;Swietenia macrophylla;stem;trunk;angio tree;tropical;;;49
+Poorter 2010;Angiosperm;Tabernaemontana catharinensis;stem;trunk;angio tree;tropical;;;29.7
+Poorter 2010;Angiosperm;Terminalia oblonga;stem;trunk;angio tree;tropical;;;51.5
+Poorter 2010;Angiosperm;Trema micrantha;stem;trunk;angio tree;tropical;;;22.4
+Poorter 2010;Angiosperm;Triplaris americana;stem;trunk;angio tree;tropical;;;13.4
+Poorter 2010;Angiosperm;Zanthoxylum sprucei;stem;trunk;angio tree;tropical;;;43.2
+Pratt 2007;Angiosperm;Ceanothus crassifolius;root;root;;subtropical;;;14
+Pratt 2007;Angiosperm;Ceanothus crassifolius;stem;branch;angio tree;subtropical;;;11.1
+Pratt 2007;Angiosperm;Ceanothus cuneatus;root;root;;subtropical;;;17.3
+Pratt 2007;Angiosperm;Ceanothus cuneatus;stem;branch;angio tree;subtropical;;;12.8
+Pratt 2007;Angiosperm;Ceanothus leucodermis;root;root;;subtropical;;;19.3
+Pratt 2007;Angiosperm;Ceanothus leucodermis;stem;branch;angio tree;subtropical;;;19.2
+Pratt 2007;Angiosperm;Ceanothus megacarpus;root;root;;subtropical;;;10.7
+Pratt 2007;Angiosperm;Ceanothus megacarpus;stem;branch;angio tree;subtropical;;;12.7
+Pratt 2007;Angiosperm;Ceanothus oliganthus;root;root;;subtropical;;;16.3
+Pratt 2007;Angiosperm;Ceanothus oliganthus;stem;branch;angio tree;subtropical;;;15.6
+Pratt 2007;Angiosperm;Ceanothus spinosus;root;root;;subtropical;;;18.2
+Pratt 2007;Angiosperm;Ceanothus spinosus;stem;branch;angio tree;subtropical;;;11.9
+Pratt 2007;Angiosperm;Rhamnus californica;root;root;;subtropical;;;22.6
+Pratt 2007;Angiosperm;Rhamnus californica;stem;branch;angio tree;subtropical;;;11
+Pratt 2007;Angiosperm;Rhamnus crocea;root;root;;subtropical;;;21
+Pratt 2007;Angiosperm;Rhamnus crocea;stem;branch;angio tree;subtropical;;;15.8
+Pratt 2007;Angiosperm;Rhamnus ilicifolia;root;root;;subtropical;;;18.7
+Pratt 2007;Angiosperm;Rhamnus ilicifolia;stem;branch;angio tree;subtropical;;;8.31
+Ruelle 2006;Angiosperm;Casearia javitensis;stem;trunk;angio tree;tropical;24.3;0;24.3
+Ruelle 2006;Angiosperm;Cassipourea guianensis;stem;trunk;angio tree;tropical;18.2;2.5;20.7
+Ruelle 2006;Angiosperm;Cupania scrobiculata;stem;trunk;angio tree;tropical;15;1.6;16.6
+Ruelle 2006;Angiosperm;Dendrobangia boliviana;stem;trunk;angio tree;tropical;30;7;37
+Ruelle 2006;Angiosperm;Eschweilera sagotiana;stem;trunk;angio tree;tropical;14.8;23.7;38.5
+Ruelle 2006;Angiosperm;Goupia glabra;stem;trunk;angio tree;tropical;33;3.4;36.4
+Ruelle 2006;Angiosperm;Guatteria schomburgkiana;stem;trunk;angio tree;tropical;22.2;16.6;38.8
+Ruelle 2006;Angiosperm;Hebepetalum humiriifolium;stem;trunk;angio tree;tropical;16.8;2.9;19.7
+Ruelle 2006;Angiosperm;Inga semialata;stem;trunk;angio tree;tropical;9.4;22.9;32.3
+Ruelle 2006;Angiosperm;Lacmellea aczdeata;stem;trunk;angio tree;tropical;22.8;7.6;30.4
+Ruelle 2006;Angiosperm;Lecythis poiteaui;stem;trunk;angio tree;tropical;14.7;27.4;42.1
+Ruelle 2006;Angiosperm;Licania membranacea;stem;trunk;angio tree;tropical;13.2;13.5;26.7
+Ruelle 2006;Angiosperm;Myrcia decorticans;stem;trunk;angio tree;tropical;20;8.1;28.1
+Ruelle 2006;Angiosperm;Ocotea indirectinervia;stem;trunk;angio tree;tropical;14.3;5.9;20.2
+Ruelle 2006;Angiosperm;Ormosia bolivarensis;stem;trunk;angio tree;tropical;13.8;38.3;52.1
+Ruelle 2006;Angiosperm;Ormosia coutinhoi;stem;trunk;angio tree;tropical;9.4;44.1;53.5
+Ruelle 2006;Angiosperm;Oxandra asbeckii;stem;trunk;angio tree;tropical;15.2;8.1;23.3
+Ruelle 2006;Angiosperm;Protium opacum;stem;trunk;angio tree;tropical;10.7;0;10.7
+Ruelle 2006;Angiosperm;Symphonia globulifera;stem;trunk;angio tree;tropical;19.2;34.2;53.4
+Ruelle 2006;Angiosperm;Talisia simaboides;stem;trunk;angio tree;tropical;23.3;2.8;26.1
+Ruelle 2006;Angiosperm;Trichilia schomburgkii;stem;trunk;angio tree;tropical;18.4;8;26.4
+Schulz 1957;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;17;5;22
+Spicer 2007;Angiosperm;Acer rubrum;stem;trunk;angio tree;temperate;16.6;;
+Spicer 2007;Angiosperm;Fraxinus americana;stem;trunk;angio tree;temperate;15.8;9.6;25
+Spicer 2007;Gymnosperm;Pinus strobus;stem;trunk;gymno tree;temperate;3.98;;3.98
+Spicer 2007;Angiosperm;Quercus rubra;stem;trunk;angio tree;temperate;18.5;5.1;24
+Spicer 2007;Gymnosperm;Tsuga canadensis;stem;trunk;gymno tree;temperate;5.44;0.39;6
+Sreevani 2014;Angiosperm;Eucalyptus tereticornis;stem;trunk;angio tree;subtropical;16.3;11.4;27.7
+Suss 1972;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;15.7;5.2;20.9
+Taylor 1968;Angiosperm;Liriodendron tulipifera;stem;trunk;angio tree;temperate;11.7;;
+Verdaguer 2002;Angiosperm;Erica calycina;root;root;;subtropical;11.8;;
+Verdaguer 2002;Angiosperm;Erica calycina;root;root;;subtropical;26.5;;
+Verdaguer 2002;Angiosperm;Erica coccinea;root;root;;subtropical;18.21;;
+Verdaguer 2002;Angiosperm;Erica coccinea;root;root;;subtropical;15.33;;
+Villagra 1997;Angiosperm;Prosopis alpataco;stem;trunk;angio tree;subtropical;;;53
+Villagra 1997;Angiosperm;Prosopis argentina;stem;trunk;angio tree;subtropical;;;47
+von Frey-Wyssling 1942;Angiosperm;Buxus sempervirens;stem;trunk;angio tree;temperate;14.3;2.4;16.7
+von Frey-Wyssling 1942;Angiosperm;Carpinus betulus;stem;trunk;angio tree;temperate;13.5;;
+von Frey-Wyssling 1942;Angiosperm;Clematis vitalba;stem;liana stem;climber;temperate;28;;
+von Frey-Wyssling 1942;Angiosperm;Hedera helix;stem;liana stem;climber;temperate;33;;
+von Frey-Wyssling 1942;Angiosperm;Ilex aquifolium;stem;trunk;angio tree;temperate;16.4;;
+von Frey-Wyssling 1942;Angiosperm;Lonicera caprifolium;stem;liana stem;climber;temperate;22.8;;
+von Frey-Wyssling 1942;Angiosperm;Robinia pseudoacacia;stem;trunk;angio tree;temperate;16.7;8.3;25
+von Frey-Wyssling 1942;Angiosperm;Tilia cordata;stem;trunk;angio tree;temperate;13.7;26.1;39.8
+von Frey-Wyssling 1942;Angiosperm;Vitis vinifera;stem;liana stem;climber;temperate;38.6;;
+Wagenfuhr 2007;Gymnosperm;Abies alba;stem;trunk;gymno tree;temperate;10.2;;10.2
+Wagenfuhr 2007;Angiosperm;Acer pictum;stem;trunk;angio tree;temperate;14;4;18
+Wagenfuhr 2007;Angiosperm;Acer pseudoplatanus;stem;trunk;angio tree;temperate;17.4;;
+Wagenfuhr 2007;Angiosperm;Aesculus hippocastanum;stem;trunk;angio tree;temperate;15;;
+Wagenfuhr 2007;Angiosperm;Afzelia bipindensis;stem;trunk;angio tree;tropical;15;22;37
+Wagenfuhr 2007;Angiosperm;Afzelia quanzensis;stem;trunk;angio tree;tropical;15;18;33
+Wagenfuhr 2007;Gymnosperm;Agathis australis;stem;trunk;gymno tree;subtropical;7;;7
+Wagenfuhr 2007;Angiosperm;Albizia saman;stem;trunk;angio tree;tropical;13;22;35
+Wagenfuhr 2007;Angiosperm;Alnus glutinosa;stem;trunk;angio tree;temperate;13;;
+Wagenfuhr 2007;Angiosperm;Alstonia congensis;stem;trunk;angio tree;tropical;20;8;28
+Wagenfuhr 2007;Angiosperm;Amphimas pterocarpoides;stem;trunk;angio tree;tropical;22;38;60
+Wagenfuhr 2007;Angiosperm;Anisoptera costata;stem;trunk;angio tree;tropical;27;5;32
+Wagenfuhr 2007;Angiosperm;Antiaris toxicaria;stem;trunk;angio tree;tropical;19;15;34
+Wagenfuhr 2007;Angiosperm;Antrocaryon klaineanum;stem;trunk;angio tree;tropical;10;7;17
+Wagenfuhr 2007;Gymnosperm;Araucaria angustifolia;stem;trunk;gymno tree;subtropical;5.5;;5.5
+Wagenfuhr 2007;Angiosperm;Aspidosperma polyneuron;stem;trunk;angio tree;tropical;17;1;18
+Wagenfuhr 2007;Angiosperm;Astronium fraxinifolium;stem;trunk;angio tree;tropical;15;5;20
+Wagenfuhr 2007;Angiosperm;Aucoumea klaineana;stem;trunk;angio tree;tropical;12.5;1.5;14
+Wagenfuhr 2007;Angiosperm;Autranella congolensis;stem;trunk;angio tree;tropical;25;17;42
+Wagenfuhr 2007;Angiosperm;Avicennia officinalis;stem;trunk;angio tree;tropical;10;27;37
+Wagenfuhr 2007;Angiosperm;Baillonella toxisperma;stem;trunk;angio tree;tropical;25;19;44
+Wagenfuhr 2007;Angiosperm;Beilschmiedia gaboonensis;stem;trunk;angio tree;tropical;15;8;23
+Wagenfuhr 2007;Angiosperm;Berlinia bracteosa;stem;trunk;angio tree;tropical;17;21;38
+Wagenfuhr 2007;Angiosperm;Betula pendula;stem;trunk;angio tree;temperate;10.4;2;12.4
+Wagenfuhr 2007;Angiosperm;Brachystegia cynometroides;stem;trunk;angio tree;tropical;13;20;33
+Wagenfuhr 2007;Angiosperm;Brachystegia spiciformis;stem;trunk;angio tree;tropical;23;19;42
+Wagenfuhr 2007;Angiosperm;Bruguiera gymnorhiza;stem;trunk;angio tree;tropical;25.5;0.5;26
+Wagenfuhr 2007;Angiosperm;Caesalpinia echinata;stem;trunk;angio tree;tropical;10;6;16
+Wagenfuhr 2007;Gymnosperm;Calocedrus decurrens;stem;trunk;gymno tree;temperate;12;8;20
+Wagenfuhr 2007;Angiosperm;Calophyllum peekelii;stem;trunk;angio tree;tropical;16;10;26
+Wagenfuhr 2007;Angiosperm;Canarium schweinfurtii;stem;trunk;angio tree;tropical;10.5;4;14.5
+Wagenfuhr 2007;Angiosperm;Carapa guianensis;stem;trunk;angio tree;tropical;17;7.5;24.5
+Wagenfuhr 2007;Angiosperm;Cariniana pyriformis;stem;trunk;angio tree;tropical;20;14;34
+Wagenfuhr 2007;Angiosperm;Carpinus betulus;stem;trunk;angio tree;temperate;22;2;24
+Wagenfuhr 2007;Angiosperm;Carya alba;stem;trunk;angio tree;temperate;20;8;28
+Wagenfuhr 2007;Angiosperm;Castanea sativa;stem;trunk;angio tree;temperate;17;;
+Wagenfuhr 2007;Angiosperm;Cedrela odorata;stem;trunk;angio tree;tropical;13;25;38
+Wagenfuhr 2007;Angiosperm;Ceiba pentandra;stem;trunk;angio tree;tropical;21;51;72
+Wagenfuhr 2007;Angiosperm;Celtis sp;stem;trunk;angio tree;temperate;8;6;14
+Wagenfuhr 2007;Angiosperm;Chlorocardium rodiei;stem;trunk;angio tree;tropical;11.4;10.4;21.8
+Wagenfuhr 2007;Angiosperm;Chrysophyllum africanum;stem;trunk;angio tree;tropical;21;;
+Wagenfuhr 2007;Angiosperm;Chukrasia tabularis;stem;trunk;angio tree;tropical;20;7;27
+Wagenfuhr 2007;Angiosperm;Copaifera salikounda;stem;trunk;angio tree;tropical;16;16;32
+Wagenfuhr 2007;Angiosperm;Cordia millenii;stem;trunk;angio tree;tropical;12;21;33
+Wagenfuhr 2007;Gymnosperm;Dacrycarpus imbricatus;stem;trunk;gymno tree;tropical;8;1;9
+Wagenfuhr 2007;Angiosperm;Dacryodes buettneri;stem;trunk;angio tree;tropical;14;4;18
+Wagenfuhr 2007;Angiosperm;Dacryodes igaganga;stem;trunk;angio tree;tropical;17;;
+Wagenfuhr 2007;Angiosperm;Dacryodes pubescens;stem;trunk;angio tree;tropical;7;6;13
+Wagenfuhr 2007;Angiosperm;Dalbergia frutescens;stem;trunk;angio tree;tropical;14;8;22
+Wagenfuhr 2007;Angiosperm;Dalbergia latifolia;stem;trunk;angio tree;tropical;15;15;30
+Wagenfuhr 2007;Angiosperm;Dalbergia nigra;stem;trunk;angio tree;tropical;23;22;45
+Wagenfuhr 2007;Angiosperm;Dalbergia retusa;stem;trunk;angio tree;tropical;12;18;30
+Wagenfuhr 2007;Angiosperm;Daniellia ogea;stem;trunk;angio tree;tropical;12;9;21
+Wagenfuhr 2007;Angiosperm;Detarium senegalense;stem;trunk;angio tree;tropical;21;16;37
+Wagenfuhr 2007;Angiosperm;Dicorynia guianensis;stem;trunk;angio tree;tropical;10;28;38
+Wagenfuhr 2007;Angiosperm;Didelotia africana;stem;trunk;angio tree;tropical;24;7;31
+Wagenfuhr 2007;Angiosperm;Diospyros celebica;stem;trunk;angio tree;tropical;20;13;33
+Wagenfuhr 2007;Angiosperm;Diospyros virginiana;stem;trunk;angio tree;temperate;22;19;41
+Wagenfuhr 2007;Angiosperm;Dipterocarpus alatus;stem;trunk;angio tree;tropical;19;10;29
+Wagenfuhr 2007;Angiosperm;Distemonanthus benthamianus;stem;trunk;angio tree;tropical;14;18.5;32.5
+Wagenfuhr 2007;Angiosperm;Dracontomelon dao;stem;trunk;angio tree;tropical;13;13;26
+Wagenfuhr 2007;Angiosperm;Entandrophragma angolense;stem;trunk;angio tree;tropical;26;10;36
+Wagenfuhr 2007;Angiosperm;Entandrophragma candollei;stem;trunk;angio tree;tropical;25;18;43
+Wagenfuhr 2007;Angiosperm;Entandrophragma cylindricum;stem;trunk;angio tree;tropical;17.9;20.5;38.4
+Wagenfuhr 2007;Angiosperm;Entandrophragma utile;stem;trunk;angio tree;tropical;20.5;10.5;31
+Wagenfuhr 2007;Angiosperm;Erythrophleum suaveolens;stem;trunk;angio tree;tropical;14;32;46
+Wagenfuhr 2007;Angiosperm;Eucalyptus globulus;stem;trunk;angio tree;subtropical;14;16;30
+Wagenfuhr 2007;Angiosperm;Fagus sylvatica;stem;trunk;angio tree;temperate;16.2;5.3;21.5
+Wagenfuhr 2007;Gymnosperm;Fitzroya cupressoides;stem;trunk;gymno tree;temperate;13;1;14
+Wagenfuhr 2007;Angiosperm;Fleroya ledermannii;stem;trunk;angio tree;tropical;13.5;11.5;25
+Wagenfuhr 2007;Angiosperm;Fraxinus excelsior;stem;trunk;angio tree;temperate;15;10.4;25.4
+Wagenfuhr 2007;Angiosperm;Gilbertiodendron dewevrei;stem;trunk;angio tree;tropical;12;15;27
+Wagenfuhr 2007;Angiosperm;Gonystylus bancanus;stem;trunk;angio tree;tropical;12;6;18
+Wagenfuhr 2007;Angiosperm;Gossweilerodendron balsamiferum;stem;trunk;angio tree;tropical;16;27;43
+Wagenfuhr 2007;Angiosperm;Guaiacum officinale;stem;trunk;angio tree;tropical;12;3;15
+Wagenfuhr 2007;Angiosperm;Guarea cedrata;stem;trunk;angio tree;tropical;15.5;16;31.5
+Wagenfuhr 2007;Angiosperm;Guarea thompsonii;stem;trunk;angio tree;tropical;17;25;42
+Wagenfuhr 2007;Angiosperm;Guibourtia arnoldiana;stem;trunk;angio tree;tropical;20;13;33
+Wagenfuhr 2007;Angiosperm;Guibourtia ehie;stem;trunk;angio tree;tropical;17.5;13;30.5
+Wagenfuhr 2007;Angiosperm;Guibourtia tessmannii;stem;trunk;angio tree;tropical;16;10;26
+Wagenfuhr 2007;Angiosperm;Heritiera simplicifolia;stem;trunk;angio tree;tropical;20;21.5;41.5
+Wagenfuhr 2007;Angiosperm;Hevea brasiliensis;stem;trunk;angio tree;tropical;19;4;23
+Wagenfuhr 2007;Angiosperm;Hopea odorata;stem;trunk;angio tree;tropical;13;10;23
+Wagenfuhr 2007;Angiosperm;Hura crepitans;stem;trunk;angio tree;tropical;22;18;40
+Wagenfuhr 2007;Angiosperm;Hymenaea courbaril;stem;trunk;angio tree;tropical;17;13;30
+Wagenfuhr 2007;Angiosperm;Intsia bijuga;stem;trunk;angio tree;tropical;7;19;26
+Wagenfuhr 2007;Angiosperm;Juglans nigra;stem;trunk;angio tree;temperate;11;4;15
+Wagenfuhr 2007;Angiosperm;Juglans regia;stem;trunk;angio tree;temperate;16.1;8.2;24.3
+Wagenfuhr 2007;Angiosperm;Julbernardia pellegriniana;stem;trunk;angio tree;tropical;14;9;23
+Wagenfuhr 2007;Angiosperm;Khaya ivorensis;stem;trunk;angio tree;tropical;21.5;5.1;26.6
+Wagenfuhr 2007;Angiosperm;Lagerstroemia balansae;stem;trunk;angio tree;tropical;22.5;13.5;36
+Wagenfuhr 2007;Gymnosperm;Larix decidua;stem;trunk;gymno tree;temperate;9;;9
+Wagenfuhr 2007;Angiosperm;Laurelia aromatica;stem;trunk;angio tree;subtropical;16;;
+Wagenfuhr 2007;Angiosperm;Liriodendron tultipifera;stem;trunk;angio tree;temperate;19;;
+Wagenfuhr 2007;Angiosperm;Lophira alata;stem;trunk;angio tree;tropical;13.2;19.1;32.3
+Wagenfuhr 2007;Angiosperm;Lovoa trichilioides;stem;trunk;angio tree;tropical;13;4.5;17.5
+Wagenfuhr 2007;Angiosperm;Magnolia hypolampra;stem;trunk;angio tree;tropical;17;6.5;23.5
+Wagenfuhr 2007;Angiosperm;Magnolia sumatrana;stem;trunk;angio tree;tropical;14.5;7;21.5
+Wagenfuhr 2007;Angiosperm;Mansonia altissima;stem;trunk;angio tree;tropical;16.3;7.8;24
+Wagenfuhr 2007;Angiosperm;Melaleuca leucadendra;stem;trunk;angio tree;tropical;12;6;18
+Wagenfuhr 2007;Angiosperm;Microberlinia brazzavillensis;stem;trunk;angio tree;tropical;15;17;32
+Wagenfuhr 2007;Angiosperm;Milicia excelsa;stem;trunk;angio tree;tropical;16.5;15;31.5
+Wagenfuhr 2007;Angiosperm;Millettia laurentii;stem;trunk;angio tree;tropical;19.4;30.8;50.2
+Wagenfuhr 2007;Angiosperm;Monopetalanthus sp;stem;trunk;angio tree;tropical;11;20;31
+Wagenfuhr 2007;Angiosperm;Musanga cecropioides;stem;trunk;angio tree;tropical;19.7;3.9;23.6
+Wagenfuhr 2007;Angiosperm;Nauclea diderrichii;stem;trunk;angio tree;tropical;22.5;6.5;29
+Wagenfuhr 2007;Angiosperm;Nesogordonia papaverifera;stem;trunk;angio tree;tropical;19.5;24;43.5
+Wagenfuhr 2007;Angiosperm;Nothofagus alpina;stem;trunk;angio tree;temperate;14;;
+Wagenfuhr 2007;Angiosperm;Ochroma pyramidale;stem;trunk;angio tree;tropical;18;74;92
+Wagenfuhr 2007;Angiosperm;Ocotea porosa;stem;trunk;angio tree;subtropical;17;;
+Wagenfuhr 2007;Angiosperm;Oxystigma oxyphyllum;stem;trunk;angio tree;tropical;18;11;29
+Wagenfuhr 2007;Angiosperm;Paratecoma peroba;stem;trunk;angio tree;tropical;11;4;15
+Wagenfuhr 2007;Angiosperm;Parinari excelsa;stem;trunk;angio tree;tropical;28;16;44
+Wagenfuhr 2007;Angiosperm;Peltogyne venosa;stem;trunk;angio tree;tropical;15;21;36
+Wagenfuhr 2007;Angiosperm;Pentacme contorta;stem;trunk;angio tree;tropical;15;15;30
+Wagenfuhr 2007;Angiosperm;Pericopsis elata;stem;trunk;angio tree;tropical;15;15;30
+Wagenfuhr 2007;Angiosperm;Persea lingue;stem;trunk;angio tree;temperate;17;9;26
+Wagenfuhr 2007;Angiosperm;Petersianthus macrocarpus;stem;trunk;angio tree;tropical;17;3;20
+Wagenfuhr 2007;Gymnosperm;Picea abies;stem;trunk;gymno tree;temperate;5;;5
+Wagenfuhr 2007;Gymnosperm;Pinus kesiya;stem;trunk;gymno tree;tropical;5;;5
+Wagenfuhr 2007;Gymnosperm;Pinus massoniana;stem;trunk;gymno tree;subtropical;8;;8
+Wagenfuhr 2007;Gymnosperm;Pinus merkusii;stem;trunk;gymno tree;tropical;8;;8
+Wagenfuhr 2007;Gymnosperm;Pinus palustris;stem;trunk;gymno tree;subtropical;8.4;;8.4
+Wagenfuhr 2007;Gymnosperm;Pinus radiata;stem;trunk;gymno tree;temperate;11.2;;11.2
+Wagenfuhr 2007;Gymnosperm;Pinus strobus;stem;trunk;gymno tree;temperate;5.3;;5.3
+Wagenfuhr 2007;Gymnosperm;Pinus sylvestris;stem;trunk;gymno tree;temperate;5.6;;5.6
+Wagenfuhr 2007;Angiosperm;Piptadeniastrum africanum;stem;trunk;angio tree;tropical;13.5;23;36.5
+Wagenfuhr 2007;Angiosperm;Platanus acerifolia;stem;trunk;angio tree;temperate;31;9;40
+Wagenfuhr 2007;Gymnosperm;Podocarpus salignus;stem;trunk;gymno tree;tropical;9;2.3;11.3
+Wagenfuhr 2007;Angiosperm;Populus nigra;stem;trunk;angio tree;temperate;12;;
+Wagenfuhr 2007;Angiosperm;Populus tremula;stem;trunk;angio tree;temperate;12.3;;
+Wagenfuhr 2007;Angiosperm;Pouteria pierrei;stem;trunk;angio tree;tropical;25;17;42
+Wagenfuhr 2007;Angiosperm;Prunus avium;stem;trunk;angio tree;temperate;17;;
+Wagenfuhr 2007;Angiosperm;Prunus serotina;stem;trunk;angio tree;temperate;14;;
+Wagenfuhr 2007;Gymnosperm;Pseudotsuga menziesii;stem;trunk;gymno tree;temperate;7;;7
+Wagenfuhr 2007;Angiosperm;Pterocarpus angolensis;stem;trunk;angio tree;tropical;17;21;38
+Wagenfuhr 2007;Angiosperm;Pterocarpus macrocarpus;stem;trunk;angio tree;tropical;14.1;14.6;28.7
+Wagenfuhr 2007;Angiosperm;Pterocarpus soyauxii;stem;trunk;angio tree;tropical;13;23;36
+Wagenfuhr 2007;Angiosperm;Pterygota macrocarpa;stem;trunk;angio tree;tropical;20;23;43
+Wagenfuhr 2007;Angiosperm;Pycnanthus angolensis;stem;trunk;angio tree;tropical;27;;
+Wagenfuhr 2007;Angiosperm;Pyrus communis;stem;trunk;angio tree;temperate;21;8;29
+Wagenfuhr 2007;Angiosperm;Quercus alba;stem;trunk;angio tree;temperate;22;4;26
+Wagenfuhr 2007;Angiosperm;Quercus robur;stem;trunk;angio tree;temperate;16.1;5.5;21.5
+Wagenfuhr 2007;Angiosperm;Quercus rubra;stem;trunk;angio tree;temperate;10.1;4.3;14.4
+Wagenfuhr 2007;Angiosperm;Rhizophora apiculata;stem;trunk;angio tree;tropical;18.5;0.5;19
+Wagenfuhr 2007;Angiosperm;Rhodognaphalon brevicuspe;stem;trunk;angio tree;tropical;22;27;49
+Wagenfuhr 2007;Angiosperm;Ricinodendron heudelotii;stem;trunk;angio tree;tropical;17.7;;
+Wagenfuhr 2007;Angiosperm;Robinia pseudoacacia;stem;trunk;angio tree;temperate;21;6;27
+Wagenfuhr 2007;Angiosperm;Salix alba;stem;trunk;angio tree;temperate;17;;
+Wagenfuhr 2007;Gymnosperm;Sequoia sempervirens;stem;trunk;gymno tree;temperate;7.8;;7.8
+Wagenfuhr 2007;Angiosperm;Shorea hypochra;stem;trunk;angio tree;tropical;15;12;27
+Wagenfuhr 2007;Angiosperm;Shorea obtusa;stem;trunk;angio tree;tropical;17;17;34
+Wagenfuhr 2007;Angiosperm;Shorea sp;stem;trunk;angio tree;tropical;18;14;32
+Wagenfuhr 2007;Angiosperm;Sindoropsis letestui;stem;trunk;angio tree;tropical;17;7;24
+Wagenfuhr 2007;Angiosperm;Sorbus aucuparia;stem;trunk;angio tree;temperate;20;1;21
+Wagenfuhr 2007;Angiosperm;Sorbus torminalis;stem;trunk;angio tree;temperate;23;2;25
+Wagenfuhr 2007;Angiosperm;Staudtia kamerunensis;stem;trunk;angio tree;tropical;17;14;31
+Wagenfuhr 2007;Angiosperm;Sterculia oblonga;stem;trunk;angio tree;tropical;13;36;49
+Wagenfuhr 2007;Angiosperm;Sterculia rhinopetala;stem;trunk;angio tree;tropical;23;27;50
+Wagenfuhr 2007;Angiosperm;Swietenia macrophylla;stem;trunk;angio tree;tropical;13;4;17
+Wagenfuhr 2007;Angiosperm;Tarrietia utilis;stem;trunk;angio tree;tropical;26;7;33
+Wagenfuhr 2007;Gymnosperm;Taxus baccata;stem;trunk;gymno tree;temperate;14;;14
+Wagenfuhr 2007;Angiosperm;Tectona grandis;stem;trunk;angio tree;tropical;16.7;7;23.7
+Wagenfuhr 2007;Angiosperm;Terminalia ivorensis;stem;trunk;angio tree;tropical;17;10;27
+Wagenfuhr 2007;Angiosperm;Terminalia superba;stem;trunk;angio tree;tropical;16.5;13.1;29.6
+Wagenfuhr 2007;Angiosperm;Testulea gabonensis;stem;trunk;angio tree;tropical;14;12;26
+Wagenfuhr 2007;Angiosperm;Tetraberlinia bifoliolata;stem;trunk;angio tree;tropical;9;11;20
+Wagenfuhr 2007;Gymnosperm;Thuja plicata;stem;trunk;gymno tree;temperate;7;;7
+Wagenfuhr 2007;Angiosperm;Tieghemella africana;stem;trunk;angio tree;tropical;19;16;35
+Wagenfuhr 2007;Angiosperm;Tieghemella heckelii;stem;trunk;angio tree;tropical;23.8;16;39.8
+Wagenfuhr 2007;Angiosperm;Tilia platyphyllos;stem;trunk;angio tree;temperate;9;2.5;11.5
+Wagenfuhr 2007;Angiosperm;Triplochiton scleroxylon;stem;trunk;angio tree;tropical;23.5;35;58.5
+Wagenfuhr 2007;Gymnosperm;Tsuga heterophylla;stem;trunk;gymno tree;tropical;8.8;;8.8
+Wagenfuhr 2007;Angiosperm;Turraeanthus africana;stem;trunk;angio tree;tropical;7;3;10
+Wagenfuhr 2007;Angiosperm;Ulmus glabra;stem;trunk;angio tree;temperate;14;6;20
+Wagenfuhr 2007;Angiosperm;Ulmus minor;stem;trunk;angio tree;temperate;14;6;20
+Wagenfuhr 2007;Angiosperm;Virola surinamensis;stem;trunk;angio tree;tropical;15;1;16
+Wagenfuhr 2007;Angiosperm;Vochysia tomentosa;stem;trunk;angio tree;tropical;23;15;38
+Wagenfuhr 2007;Angiosperm;Xylia xylocarpa;stem;trunk;angio tree;tropical;14;11;25
+Wagenfuhr 2007;Angiosperm;Zanthoxylum heitzii;stem;trunk;angio tree;tropical;13;5;18
+Woodrum 2003;Angiosperm;Acer negundo;stem;trunk;angio tree;temperate;5.3;;
+Woodrum 2003;Angiosperm;Acer rubrum;stem;trunk;angio tree;temperate;6.4;;
+Woodrum 2003;Angiosperm;Acer saccharinum;stem;trunk;angio tree;temperate;5.4;;
+Woodrum 2003;Angiosperm;Acer saccharum;stem;trunk;angio tree;temperate;7.1;;
+Woodrum 2003;Angiosperm;Acer saccharum;stem;trunk;angio tree;temperate;8.1;;
+Wu 2006;Angiosperm;Eucalyptus grandis;stem;trunk;angio tree;subtropical;15.24;4.6;19.84
+Wu 2006;Angiosperm;Eucalyptus urophylla;stem;trunk;angio tree;subtropical;16.4;4;20.4
+Xi and Zhao 2012;Angiosperm;Populus x canadensis;stem;trunk;angio tree;temperate;5.2;1.4;6.6
+Yamada 2011;Angiosperm;Robinia pseudoacacia;stem;trunk;angio tree;temperate;5.34;7.95;13.29
+Zieminska 2015;Angiosperm;Acacia dealbata;stem;branch;angio tree;temperate;8.4;16.1;24.5
+Zieminska 2015;Angiosperm;Acacia melanoxylon;stem;branch;angio tree;temperate;7.6;18.4;26.1
+Zieminska 2015;Angiosperm;Acacia obliquinervia;stem;branch;angio tree;temperate;6;10.9;16.9
+Zieminska 2015;Angiosperm;Antirhea tenuiflora;stem;branch;angio tree;tropical;27.9;13.3;41.2
+Zieminska 2015;Angiosperm;Argyrodendron peralatum;stem;branch;angio tree;tropical;27;32;59
+Zieminska 2015;Angiosperm;Austromuellera trinervia;stem;branch;angio tree;tropical;34.8;17.5;52.3
+Zieminska 2015;Angiosperm;Beccariella xerocarpa;stem;branch;angio tree;tropical;27.9;22.4;50.2
+Zieminska 2015;Angiosperm;Cardwellia sublimis;stem;branch;angio tree;tropical;37.9;28.3;66.2
+Zieminska 2015;Angiosperm;Casearia dallachii;stem;branch;angio tree;tropical;34.8;2.8;37.5
+Zieminska 2015;Angiosperm;Castanospermum australe;stem;branch;angio tree;tropical;25.8;27.8;53.6
+Zieminska 2015;Angiosperm;Cleistanthus oblongifolius;stem;branch;angio tree;tropical;26.6;8.8;35.3
+Zieminska 2015;Angiosperm;Coprosma hirtella;stem;branch;angio tree;temperate;24.7;14.1;38.8
+Zieminska 2015;Angiosperm;Corymbia citridora;stem;branch;angio tree;subtropical;10.8;7.3;18.2
+Zieminska 2015;Angiosperm;Corymbia clarksoniana;stem;branch;angio tree;subtropical;6.1;6;12.1
+Zieminska 2015;Angiosperm;Cryptocarya grandis;stem;branch;angio tree;tropical;21.3;15.1;36.4
+Zieminska 2015;Angiosperm;Cryptocarya mackinnoniana;stem;branch;angio tree;tropical;27.6;16.3;43.9
+Zieminska 2015;Angiosperm;Cryptocarya murrayi;stem;branch;angio tree;tropical;24.4;19.5;43.9
+Zieminska 2015;Angiosperm;Doryphora aromatica;stem;branch;angio tree;tropical;23.2;1.3;24.4
+Zieminska 2015;Angiosperm;Dysoxylum alliaceum;stem;branch;angio tree;tropical;21.8;27.6;49.4
+Zieminska 2015;Angiosperm;Dysoxylum arborescens;stem;branch;angio tree;tropical;22.2;21.8;44
+Zieminska 2015;Angiosperm;Dysoxylum papuanum;stem;branch;angio tree;tropical;23.5;15.3;38.8
+Zieminska 2015;Angiosperm;Dysoxylum parasiticum;stem;branch;angio tree;tropical;20.1;10.5;30.6
+Zieminska 2015;Angiosperm;Dysoxylum pettigrewianum;stem;branch;angio tree;tropical;19;24.4;43.4
+Zieminska 2015;Angiosperm;Elaeocarpus angustifolius;stem;branch;angio tree;tropical;26.5;3.8;30.3
+Zieminska 2015;Angiosperm;Endiandra leptodendron;stem;branch;angio tree;tropical;23;12.6;35.6
+Zieminska 2015;Angiosperm;Endiandra microneura;stem;branch;angio tree;tropical;22.6;14.8;37.3
+Zieminska 2015;Angiosperm;Eucalyptus pauciflora;stem;branch;angio tree;temperate;13.6;7.3;20.9
+Zieminska 2015;Angiosperm;Eucalyptus sp;stem;branch;angio tree;subtropical;13.1;5.5;18.6
+Zieminska 2015;Angiosperm;Eucalyptus sp;stem;branch;angio tree;subtropical;9;11.3;20.3
+Zieminska 2015;Angiosperm;Eupomatia laurina;stem;branch;angio tree;tropical;34;5.9;39.9
+Zieminska 2015;Angiosperm;Exocarpos strictus;stem;branch;angio tree;temperate;23.8;11.7;35.5
+Zieminska 2015;Angiosperm;Ficus variegata;stem;branch;angio tree;tropical;17.1;19;36.2
+Zieminska 2015;Angiosperm;Gillbeea whypallana;stem;branch;angio tree;tropical;20.7;8.2;28.9
+Zieminska 2015;Angiosperm;Gomphandra australiana;stem;branch;angio tree;tropical;37.6;17.7;55.3
+Zieminska 2015;Angiosperm;Grevillea glauca;stem;branch;angio tree;tropical;30.9;13.1;43.9
+Zieminska 2015;Angiosperm;Grevillea parallela;stem;branch;angio tree;tropical;25.8;26;51.7
+Zieminska 2015;Angiosperm;Hakea lissosperma;stem;branch;angio tree;temperate;20.9;9.2;30.2
+Zieminska 2015;Angiosperm;Hakea microcarpa;stem;branch;angio tree;temperate;31.8;9.6;41.4
+Zieminska 2015;Angiosperm;Haplostichanthus ramiflorus;stem;branch;angio tree;tropical;26.2;19.4;45.6
+Zieminska 2015;Angiosperm;Harpullia rhyticarpa;stem;branch;angio tree;tropical;20.2;11;31.2
+Zieminska 2015;Angiosperm;Hernandia albiflora;stem;branch;angio tree;tropical;21.9;14.6;36.5
+Zieminska 2015;Angiosperm;Leea indica;stem;branch;angio tree;tropical;40.9;2.2;43
+Zieminska 2015;Angiosperm;Leionema phylicifolium;stem;branch;angio tree;temperate;15.5;5;20.5
+Zieminska 2015;Angiosperm;Litsea leefeana;stem;branch;angio tree;tropical;18.8;4;22.8
+Zieminska 2015;Angiosperm;Lomatia myricoides;stem;branch;angio tree;temperate;22.1;6.9;29
+Zieminska 2015;Angiosperm;Lophostemon suaveolens;stem;branch;angio tree;subtropical;21.8;16.4;38.2
+Zieminska 2015;Angiosperm;Mallotus paniculatus;stem;branch;angio tree;tropical;21;7.9;28.9
+Zieminska 2015;Angiosperm;Melaleuca nervosa;stem;branch;angio tree;tropical;15.6;19.7;35.3
+Zieminska 2015;Angiosperm;Melaleuca viridiflora;stem;branch;angio tree;tropical;16.3;8.8;25.1
+Zieminska 2015;Angiosperm;Melicope platynema;stem;branch;angio tree;tropical;28;8.7;36.7
+Zieminska 2015;Angiosperm;Melicope xanthoxyloides;stem;branch;angio tree;tropical;21.1;10;31.1
+Zieminska 2015;Angiosperm;Musgravea heterophylla;stem;branch;angio tree;tropical;26.2;20.9;47.1
+Zieminska 2015;Angiosperm;Myristica globosa;stem;branch;angio tree;tropical;23;12.3;35.3
+Zieminska 2015;Angiosperm;Olearia megalophylla;stem;branch;angio tree;temperate;6.1;14.9;21.1
+Zieminska 2015;Angiosperm;Olearia phlogopappa;stem;branch;angio tree;temperate;15.2;6.5;21.6
+Zieminska 2015;Angiosperm;Ozothamnus secundiflorus;stem;branch;angio tree;temperate;15.9;11.4;27.3
+Zieminska 2015;Angiosperm;Palaquium galactoxylum;stem;branch;angio tree;tropical;24.4;13.4;37.8
+Zieminska 2015;Angiosperm;Persoonia falcata;stem;branch;angio tree;tropical;7.2;12.9;20.1
+Zieminska 2015;Angiosperm;Persoonia subvelutina;stem;branch;angio tree;temperate;9.6;10.2;19.8
+Zieminska 2015;Angiosperm;Pimelea linifolia;stem;branch;angio tree;subtropical;7.3;4.4;11.7
+Zieminska 2015;Angiosperm;Pimelea linifolia;stem;branch;angio tree;subtropical;12.2;4.9;17.1
+Zieminska 2015;Angiosperm;Polyscias sambucifolia;stem;branch;angio tree;temperate;22.2;3;25.2
+Zieminska 2015;Angiosperm;Rockinghamia angustifolia;stem;branch;angio tree;tropical;22.3;10.9;33.2
+Zieminska 2015;Angiosperm;Syzygium graveolens;stem;branch;angio tree;tropical;15.4;28.7;44.2
+Zieminska 2015;Angiosperm;Syzygium monospermum;stem;branch;angio tree;tropical;18.4;33.4;51.8
+Zieminska 2015;Angiosperm;Syzygium sayeri;stem;branch;angio tree;tropical;21.9;28;49.9
+Zieminska 2015;Angiosperm;Toechima erythrocarpum;stem;branch;angio tree;tropical;15.4;5.5;20.9
+Zieminska 2015;Angiosperm;Wrightia laevis;stem;branch;angio tree;tropical;24.9;14.4;39.3
+Zieminska 2015;Angiosperm;Xylomelum scottianum;stem;branch;angio tree;tropical;28;25.4;53.4
