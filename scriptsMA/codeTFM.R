@@ -1,5 +1,9 @@
 ##########Load data########################
 library(googledrive)
+library(tidyverse)
+library(ggpubr)
+library(broom)
+library(tidyr)
 
 drive_download("https://docs.google.com/spreadsheets/d/1Z7HathxScqACg5vBxWm5dBTbiYMsRKGFDWu2okI2JLE/edit?usp=sharing",
                type = 'csv', path = 'dataMA/meta_sample.csv', overwrite = T)
@@ -13,11 +17,47 @@ drive_download("https://docs.google.com/spreadsheets/d/1v2zOeuB-b_BdiEQUMSHTz9nm
                type = 'csv', path = 'dataMA/plant_sample.csv', overwrite = T)
 plant <- read.csv('dataMA/plant_sample.csv', sep = ",")
 
+#########WORLDCLIM############
+
+#First we have to fix the data of meta by filling the gaos of map and mat with the worldclim database
+
+library(sp)
+library(raster)
+
+
+WCvars <- getData("worldclim",var="bio",res=10)
+
+# ignore glasshouse studies
+meta$lat <- ifelse(meta$lat > 91 | meta$lat < -91, NA, meta$lat)
+meta$log <- ifelse(meta$log > 181 | meta$log < -181, NA, meta$log)
+coords <- data.frame(x=meta$log,y=meta$lat)
+# filter for NA's
+coords <- coords[which(!is.na(coords$x)), ]
+# remove duplicate values
+coords<- unique(coords)
+
+points <- SpatialPoints(coords, proj4string = r@crs)
+
+values <- extract(r,points)
+WCvars <- cbind.data.frame(coordinates(points),values)
+
+metaWC<-WCvars %>% 
+  select(x,y,bio1,bio12)
+
+colnames(metaWC)<- c("log","lat","matWC","mapWC")
+#MAT data must be the same as meta database
+
+metaWC$matWC<- 0.1*metaWC$matWC
+
+meta<-merge(meta,metaWC, by=c('log','lat'))
+
+metacompare<- meta %>% select(log,lat,map,mapWC,mat,matWC)
+
+#MAP and MAt data from the review are a bit different than the one for worldclim
+#we have to decide if we fill the gaps with WC at if we use directly WC
+#i'm going to use WC at this moment
+
 #################SWL##############################
-library(tidyverse)
-library(ggpubr)
-library(broom)
-library(tidyr)
 
 source$d2H_permil_source<-as.numeric(as.character(source$d2H_permil_source))   #for some reason those are factors...
 source$d18O_permil_source<-as.numeric(as.character(source$d18O_permil_source))
@@ -145,13 +185,17 @@ lengthplant<-offst %>% count(campaignspp,species_plant)
 means_offset<-offst %>%
   group_by(campaignspp,species_plant)%>%
   summarise(mean_offset=mean(offset,na.rm=T),se_offset=sd(offset)/sqrt(length(offset)),count=n())
-
-
 #strange that in count some has a lot of n
+
+#######set up the model database##########
+
 source$campaignspp<- paste0(source$campaign, '_', source$species_source)
+
 source$authorYearJournal<- paste0(source$authorYear, '_', source$journal)
+
 sourcemerge<-source %>%
   select(campaign, campaignspp,natural,authorYearJournal)
+
 plantmerge<-plant%>%
   select(authorYearPlot,campaign,species_plant,season)
 
@@ -159,11 +203,14 @@ mergeSP<- merge(sourcemerge,plantmerge, by='campaign')
 
 metamergePLANT<-meta %>%
   select(authorYearPlot, species_metaR,leaf_habit,leaf_shape,plant_group,growth_form)
+
 metamergePLOT<-meta %>%
-  select(authorYearPlot,climate_class,log,lat,elevation,map,mat)
+  select(authorYearPlot,climate_class,log,lat,elevation,mapWC,matWC)
+
 mergeSPMp<- merge(mergeSP,metamergePLOT, by='authorYearPlot')
 
 mergeSPMp$speciesMP<-paste0(mergeSPMp$authorYearPlot, '_', mergeSPMp$species_plant)
+
 metamergePLANT$speciesMP <-paste0(metamergePLANT$authorYearPlot, '_', metamergePLANT$species_metaR) 
 
 mergeSPMpp<- merge(mergeSPMp,metamergePLANT, by='speciesMP')
@@ -180,7 +227,7 @@ modeldata<- unique(modeldata)
 
 modeldata<-modeldata %>%
   select(authorYearJournal,campaignspp,natural,species_plant,natural,leaf_habit,leaf_shape,plant_group,growth_form,season,
-         climate_class,log,lat,elevation,map,mat,mean_offset,count.x,
+         climate_class,log,lat,elevation,mapWC,matWC,mean_offset,count.x,
          estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,
          r.squared,n,diff,count.y)
          
@@ -194,6 +241,7 @@ colnames(modeldata)<- c("study","campaign","natural","species_plant","leaf_habit
 
 write.csv(modeldata,"C:\\Users\\JAVI\\Desktop\\pRojects\\waterIsotopesMetaAnalysis\\dataMA\\modeldata.csv",row.names=T)
 
+#######looking the data########
 
 #That will be our dataset for the model. but first we have to fill the gaps in MAP ans MAT. 
 #there are only agricultural, urban and natural studies
@@ -228,19 +276,8 @@ modeldataCLIMATE<-modeldata %>%
   summarise(mean_SWL=mean(SWLslope,na.rm=T),mean_offset=mean(mean_offset,na.rm=T),
             mean_LMWLdiff=mean(`LMWL-SWLslopediff`,na.rm=T), count=n())
 
-library(raster)
-library(sp)
 
-r <- getData("worldclim",var="bio",res=10)
-r <- r[[c(1,12)]]
-names(r) <- c("MATwc","MAPwc")
-coords <- data.frame(x=meta$log,y=meta$lat)
+######Aplicating the models########
 
-points <- SpatialPoints(coords, proj4string = r@crs)
 
-values <- extract(r,points)
 
-df <- cbind.data.frame(coordinates(points),values)points <- spsample(as(r@extent, 'SpatialPolygons'),n=100, type="random")   
-values <- extract(r,points)
-
-df <- cbind.data.frame(coordinates(points),values)
