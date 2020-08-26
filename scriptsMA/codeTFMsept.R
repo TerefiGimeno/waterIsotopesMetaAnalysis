@@ -201,10 +201,13 @@ source$authorYearJournal<- paste0(source$authorYear, '_', source$journal)
 sourcemerge<-source %>%
   select(campaign,natural,authorYearJournal)
 
+
 plantmerge<-plant%>%
   select(authorYearPlot,campaign,species_plant,season)
 
+
 mergeSP<- merge(sourcemerge,plantmerge, by='campaign')
+mergeSP<- unique(mergeSP)
 
 metamergePLANT<-meta %>%
   select(authorYearPlot, species_metaR,leaf_habit,leaf_shape,plant_group,growth_form)
@@ -222,11 +225,13 @@ mergeSPMpp<- merge(mergeSPMp,metamergePLANT, by='speciesMP')
 
 mergeSPMppOF<- merge(mergeSPMpp,means_offset, by=c('campaign','species_plant'))
 
-mergeSPMofSWL<- left_join(mergeSPMppOF,swlplot, by='campaign')
-
+mergeSPMofSWL<- merge(mergeSPMppOF,swl, by='campaign')
+ 
 modeldata<- merge(mergeSPMofSWL, slopedifference, by='campaign')
 
 modeldata<- unique(modeldata) #erase duplicates
+
+modeldata$woodyness<- 
 #select the useful ones
 
 modeldata<-modeldata %>%
@@ -237,12 +242,11 @@ modeldata<-modeldata %>%
 
 #give proper names
 
-colnames(modeldataNEW)<- c("study","campaign","natural","species_plant","leaf_habit","leaf_shape","plant_group","growth_form",
+colnames(modeldata)<- c("study","campaign","natural","species_plant","leaf_habit","leaf_shape","plant_group","growth_form",
                         "season","climate_class","log","lat","elevation","map","mat","mean_offset",
                         "n_offset","SWLslope","SWLslope.std.error","SWLslope.pvalue","SWLintercept",
                         "SWLintercept.std.error","SWLintercept.pvalue","SWLrsquared","n_SWL","LMWL-SWLslopediff","n_slopediff")
 
-modeldata<- unique(modeldata)
 
 #That will be our dataset for the model. but first we have to fill the gaps in MAP ans MAT. 
 #there are only agricultural, urban and natural studies
@@ -251,8 +255,46 @@ n_distinct(modeldata$campaign)
 n_distinct(modeldata$species_plant)
 n_distinct(modeldata$study)
 
-modeldata %>% count(climate_class) #see the distribution of classes
+modeldata %>% 
+  group_by(campaign) %>% 
+  summarise(sum(climate_class))
 
+
+datatropical<- modeldata %>% 
+  filter(climate_class== "tropical")
+
+n_distinct(datatropical$campaign)
+n_distinct(datatropical$species_plant)
+n_distinct(datatropical$study)
+
+
+
+datawarm<- modeldata %>% 
+  filter(climate_class== "warm")
+
+n_distinct(datawarm$campaign)
+n_distinct(datawarm$species_plant)
+n_distinct(datawarm$study)
+
+
+dataarid<- modeldata %>% 
+  filter(climate_class== "arid")
+
+n_distinct(dataarid$campaign)
+n_distinct(dataarid$species_plant)
+n_distinct(dataarid$study)
+
+databoreal<- modeldata %>% 
+  filter(climate_class== "boreal")
+
+n_distinct(databoreal$campaign)
+n_distinct(databoreal$species_plant)
+n_distinct(databoreal$study)
+
+
+
+modeldata %>% count(climate_class)#see the distribution of classes
+modeldata %>% count(season)
 modeldata %>% count(plant_group)
 
 modeldata %>% count(leaf_habit)
@@ -301,11 +343,11 @@ modeldataNEW %>%
           diag = list(continuous = wrap("densityDiag", alpha = 0.5)))
 
 
+Sys.setenv("R_MAX_VSIZE" = 8000000000) 
 
+memory.size()
 
-
-
-
+memory.limit()
 
 
 
