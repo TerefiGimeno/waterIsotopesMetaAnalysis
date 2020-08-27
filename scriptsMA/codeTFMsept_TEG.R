@@ -1,5 +1,4 @@
 ##########Load data########################
-##########Load data########################
 library(googledrive)
 library(tidyverse)
 library(ggpubr)
@@ -28,7 +27,6 @@ plant <- read.csv('dataMA/plant_sample.csv', sep = ",")
 library(sp)
 library(raster)
 
-
 WCvars <- getData("worldclim",var="bio",res=10)
 
 # ignore glasshouse studies
@@ -36,7 +34,7 @@ meta$lat <- ifelse(meta$lat > 91 | meta$lat < -91, NA, meta$lat)
 meta$log <- ifelse(meta$log > 181 | meta$log < -181, NA, meta$log)
 # convert 99999 in map and mat into NA
 meta[which(meta$map > 10000 | meta$mat > 10000), c('map', 'mat')] <- NA
-coords <- data.frame(x=meta$log,y=meta$lat)
+coords <- data.frame(x=meta$log, y=meta$lat)
 # filter for NA's
 coords <- coords[which(!is.na(coords$x)), ]
 
@@ -140,6 +138,7 @@ swlplotL <- list()
 for(i in 1:ceiling((nrow(campNames)/20))){
   swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
 }
+wierd <- subset(swlplot, r.squared < 0.6)
 
 # not needed if you use the right file
 # swlplot<-subset(swlplot,!item_source=="")  #I detected an strange problem. Data with empty item source has the same outliers (around d2H=45, d180=7). 
@@ -157,6 +156,248 @@ ggplot(data=swlplotL[[i]],aes(x=d18O_permil_source,y=d2H_permil_source))+
  geom_point()+
  geom_smooth(method=lm,se=F)+
  facet_wrap(~campaign)+
- stat_cor() 
+ stat_cor()
+
+windows(12, 8)
+# enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
+ggplot(data=wierd,aes(x=d18O_permil_source,y=d2H_permil_source))+
+  geom_point()+
+  geom_smooth(method=lm,se=F)+
+  facet_wrap(~campaign)+
+  stat_cor() 
 
 ######SWL-LMWL##########################
+meta$authorYear <- paste0(meta$author, '_', meta$year)
+
+meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
+authorYearPlot<- source %>% select (campaign, authorYearPlot)
+authorYearPlot<- unique(authorYearPlot)
+swl<- merge(swl, authorYearPlot, by='campaign')
+metasource<- inner_join(swl,meta, by='authorYearPlot')
+
+#we eliminate studies without LMWL (experimental)
+metasource<-subset(metasource,!natural=='experimental')
+metasource$slopediff<- metasource$slope_LMWL-metasource$estimate.slope
+
+slopedifference<-metasource %>%
+  group_by(campaign)%>%
+  summarise(diff=mean(slopediff,na.rm=T),count=n())
+
+hist(slopedifference$diff)#looks nice
+
+
+###########offset############################
+
+plant$d2H_permil_plant<-as.numeric(as.character(plant$d2H_permil_plant))   #for some reason those are factors...
+plant$d18O_permil_plant<-as.numeric(as.character(plant$d18O_permil_plant))
+
+hist(plant$d2H_permil_plant)
+hist(plant$d18O_permil_plant)
+
+plant<-subset(plant,!plant_tissue=='leaf')  #we don't want leaves
+plant$authorYear <- paste0(plant$author, '_', plant$year)
+plant$campaign <- paste0(plant$authorYear, '_', plant$date, '_', plant$plotR)
+plant$authorYearPlot <- paste0(plant$authorYear, '_', plant$plotR)
+
+offst<-inner_join(plant,metasource,by=c('campaign')) 
+
+###let's calculate the offset!
+
+offst$offset<-offst$d2H_permil_plant-offst$estimate.slope*offst$d18O_permil_plant-offst$estimate
+
+hist(offst$offset) ###weird things, lets fix them
+
+rareoffset<-subset(offst,offset< -100)
+rareoffset<- unique(rareoffset)
+hist(rareoffset$offset)
+str (rareoffset)
+rareoffset<- rareoffset %>%
+  select(campaign,species_source, d2H_permil_plant, estimate.slope, estimate, offset)
+
+view(rareoffset) #outliers are there because of the strange interpecpts (estimate)
+
+#lets continue without removing the outliers. Best thing to do is to run model with and without 
+#them and compare
+
+lengthplant<-offst %>% count(campaign,species_plant)
+
+means_offset<-offst %>%
+  group_by(campaign,species_plant)%>%
+  summarise(mean_offset=mean(offset,na.rm=T),se_offset=sd(offset)/sqrt(length(offset)),count=n())
+
+#strange that in count some has a lot of n
+
+#######set up the model database##########
+
+source$authorYearJournal<- paste0(source$authorYear, '_', source$journal)
+
+sourcemerge<-source %>%
+  select(campaign,natural,authorYearJournal)
+
+
+plantmerge<-plant%>%
+  select(authorYearPlot,campaign,species_plant,season)
+
+
+mergeSP<- merge(sourcemerge,plantmerge, by='campaign')
+mergeSP<- unique(mergeSP)
+
+metamergePLANT<-meta %>%
+  select(authorYearPlot, species_metaR,leaf_habit,leaf_shape,plant_group,growth_form)
+
+metamergePLOT<-meta %>%
+  select(authorYearPlot,climate_class,log,lat,elevation,mapWC,matWC)
+
+mergeSPMp<- merge(mergeSP,metamergePLOT, by='authorYearPlot')
+
+mergeSPMp$speciesMP<-paste0(mergeSPMp$authorYearPlot, '_', mergeSPMp$species_plant)
+
+metamergePLANT$speciesMP <-paste0(metamergePLANT$authorYearPlot, '_', metamergePLANT$species_metaR) 
+
+mergeSPMpp<- merge(mergeSPMp,metamergePLANT, by='speciesMP')
+
+mergeSPMppOF<- merge(mergeSPMpp,means_offset, by=c('campaign','species_plant'))
+
+mergeSPMofSWL<- merge(mergeSPMppOF,swl, by='campaign')
+
+modeldata<- merge(mergeSPMofSWL, slopedifference, by='campaign')
+
+modeldata<- unique(modeldata) #erase duplicates
+
+modeldata$woodyness<- 
+  #select the useful ones
+  
+  modeldata<-modeldata %>%
+  select(authorYearJournal,campaign,natural,species_plant,natural,leaf_habit,leaf_shape,plant_group,growth_form,season,
+         climate_class,log,lat,elevation,mapWC,matWC,mean_offset,count.x,
+         estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,
+         r.squared,n,diff,count.y)
+
+#give proper names
+
+colnames(modeldata)<- c("study","campaign","natural","species_plant","leaf_habit","leaf_shape","plant_group","growth_form",
+                        "season","climate_class","log","lat","elevation","map","mat","mean_offset",
+                        "n_offset","SWLslope","SWLslope.std.error","SWLslope.pvalue","SWLintercept",
+                        "SWLintercept.std.error","SWLintercept.pvalue","SWLrsquared","n_SWL","LMWL-SWLslopediff","n_slopediff")
+
+n_distinct(modeldata$campaign)
+n_distinct(modeldata$species_plant)
+n_distinct(modeldata$study)
+str(modeldata)
+summary(modeldata)
+hist(modeldata$mean_offset)
+hist(modeldata$SWLslope)
+
+library(moments)
+skewness(modeldata$mean_offset)
+kurtosis(modeldata$mean_offset)
+
+boxplot (modeldata$mean_offset)
+boxplot (modeldata$mean_offset~modeldata$climate_class)
+boxplot (modeldata$mean_offset~modeldata$plant_group)
+
+rareoffset<- unique(rareoffset)
+#That will be our dataset for the model. but first we have to fill the gaps in MAP ans MAT. 
+#there are only agricultural, urban and natural studies
+
+n_distinct(modeldata$campaign)
+n_distinct(modeldata$species_plant)
+n_distinct(modeldata$study)
+
+modeldata %>% 
+  group_by(campaign) %>% 
+  summarise(sum(climate_class))
+
+
+datatropical<- modeldata %>% 
+  filter(climate_class== "tropical")
+
+n_distinct(datatropical$campaign)
+n_distinct(datatropical$species_plant)
+n_distinct(datatropical$study)
+
+
+
+datawarm<- modeldata %>% 
+  filter(climate_class== "warm")
+
+n_distinct(datawarm$campaign)
+n_distinct(datawarm$species_plant)
+n_distinct(datawarm$study)
+
+
+dataarid<- modeldata %>% 
+  filter(climate_class== "arid")
+
+n_distinct(dataarid$campaign)
+n_distinct(dataarid$species_plant)
+n_distinct(dataarid$study)
+
+databoreal<- modeldata %>% 
+  filter(climate_class== "boreal")
+
+n_distinct(databoreal$campaign)
+n_distinct(databoreal$species_plant)
+n_distinct(databoreal$study)
+
+
+
+modeldata %>% count(climate_class)#see the distribution of classes
+modeldata %>% count(season)
+modeldata %>% count(plant_group)
+
+modeldata %>% count(leaf_habit)
+
+modeldata %>% count(leaf_shape)
+
+modeldata %>% count(growth_form) %>% group_by(authorYearJournal)
+
+
+metamergePLOT %>% select (authorYearPlot,climate_class)
+metamergePLOT<- unique(metamergePLOT)
+metamerge %>% count (climate_class)
+
+meta$authorYearJournal<- paste0(meta$authorYear,'_',meta$journal) 
+metaCOUNT<-meta %>% select (authorYearJournal,climate_class)
+metaCOUNT<- unique(metaCOUNT)
+metaCOUNT %>% count(climate_class)
+
+climatecountTROPICAL<- subset(modeldata,climate_class=='tropical')
+climatecountTROPICAL %>% count(season)
+climatecountTROPICAL %>% count(species_plant) #####NO
+climatecountTROPICAL %>% mean(SWLslope)
+
+modeldataCLIMATE<-modeldata %>%
+  group_by(climate_class)%>%
+  summarise(mean_SWL=mean(SWLslope,na.rm=T),mean_offset=mean(mean_offset,na.rm=T),
+            mean_LMWLdiff=mean(`LMWL-SWLslopediff`,na.rm=T), count=n())
+
+
+
+library(GGally)
+modeldataNEW %>%
+  dplyr::select(climate_class, mean_offset, SWLslope,) %>%
+  ggpairs(aes(color = climate_class),
+          upper = list(continuous = wrap('cor', size = 3)),
+          lower = list(combo = wrap("facethist", bins = 15),
+                       continuous = wrap("smooth_loess", alpha=0.3, size=0.1)),
+          diag = list(continuous = wrap("densityDiag", alpha = 0.5)))
+
+modeldataNEW %>%
+  dplyr::select(plant_group, mean_offset,) %>%
+  ggpairs(aes(color = plant_group),
+          upper = list(continuous = wrap('cor', size = 3)),
+          lower = list(combo = wrap("facethist", bins = 15),
+                       continuous = wrap("smooth_loess", alpha=0.3, size=0.1)),
+          diag = list(continuous = wrap("densityDiag", alpha = 0.5)))
+
+
+Sys.setenv("R_MAX_VSIZE" = 8000000000) 
+
+memory.size()
+
+memory.limit()
+
+
+
+
