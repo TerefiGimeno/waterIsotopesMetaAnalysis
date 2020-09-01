@@ -305,3 +305,28 @@ write.csv(modeldata,"C:\\Users\\Jabier\\Desktop\\modeldatas.csv")
 modeldataCLIMATE<- subset(modeldata, natural== 'natural')
 write.csv(modeldataCLIMATE,"C:\\Users\\Jabier\\Desktop\\modeldataclimate.csv")
 
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(sf)
+library(rgeos)
+theme_set(theme_bw())
+
+#cargo mapa del mundo con los paises:
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+#crear data frame con las coordenadas de mis puntos:
+sites <- data.frame(modeldata$log, modeldata$lat)
+names(sites)[1] <- "longitude"
+names(sites)[2] <- "latitude"
+sites<- unique(sites)
+sites<- subset(sites, !longitude== "NA")
+#para que cuadren las proyecciones: here WGS84, which is the CRS code #4326
+sites<- st_as_sf(sites, coords = c("longitude", "latitude"), 
+                 crs = 4326, agr = "constant")
+
+#plot:
+gg1 <- ggplot(data = world) +
+  geom_sf() +
+  geom_sf(data = sites, size = 3.7, shape = 21, 
+          fill = "dodgerblue2", color="dodgerblue3", alpha=0.9) +
+  coord_sf(xlim = c(-170, 170), ylim = c(-90, 90), expand = FALSE)
