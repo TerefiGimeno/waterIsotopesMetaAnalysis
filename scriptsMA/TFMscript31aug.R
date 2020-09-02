@@ -1,4 +1,3 @@
-
 ##########Load data########################
 library(googledrive)
 library(tidyverse)
@@ -27,7 +26,6 @@ plant <- read.csv('dataMA/plant_sample.csv', sep = ",")
 
 library(sp)
 library(raster)
-
 
 WCvars <- getData("worldclim",var="bio",res=10)
 
@@ -61,6 +59,7 @@ meta<-merge(meta, metaWC, by=c('log','lat'), all.x = T)
 source('scriptsMA/compare_with_WC.R')
 
 detach("package:raster", unload = TRUE)
+rm(WCvars, coords, points, values)
 #################SWL##############################
 
 # this is the first thing you should do
@@ -127,10 +126,9 @@ hist(swl$r.squared)
 swl<-subset(swl,p.value.slope<0.05&n>2&estimate.slope>0)   #cutoff non-significant and poorly fit regressions
 hist(swl$estimate.slope)
 
-
 ####lets screen the plots
 
-swlplot<-inner_join(swl, source, by = 'campaign')
+swlplot<- left_join(source, swl, by = 'campaign')
 # split in groups to see the plots more clearly
 campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
 campNames$campaign <- unique(swlplot$campaign)
@@ -159,16 +157,21 @@ ggplot(data=swlplotL[[i]],aes(x=d18O_permil_source,y=d2H_permil_source))+
   facet_wrap(~campaign)+
   stat_cor()
 
+# try keeping a clean environment
+rm(campNames, swlplotL, multiple, rsquared, length, slope, intercept)
+
 ######SWL-LMWL##########################
-meta$authorYear <- paste0(meta$author, '_', meta$year)
+#meta$authorYear <- paste0(meta$author, '_', meta$year)
 
 meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
 authorYearPlot<- source %>% select (campaign, authorYearPlot)
 authorYearPlot<- unique(authorYearPlot)
 swl<- merge(swl, authorYearPlot, by='campaign')
-metasource<- inner_join(swl,meta, by='authorYearPlot')
+metasource<- left_join(swl, meta, by='authorYearPlot')
 
 #we eliminate studies without LMWL (experimental)
+# turn non-sense values of slope and intercept of lmwl into NA'
+metasource[which(metasource$slope_LMWL >= 100), c('slope_LMWL', 'intercept_LMWL')] <- NA
 
 metasource$slopediff<- metasource$slope_LMWL-metasource$estimate.slope
 
@@ -177,54 +180,56 @@ slopedifference<-metasource %>%
   summarise(diff=mean(slopediff,na.rm=T),count=n())
 
 hist(slopedifference$diff)#looks nice
+# remove repetead code
+rm(authorYearPlot)
 
-
-meta$authorYear <- paste0(meta$author, '_', meta$year)
-
-meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
-authorYearPlot<- source %>% select (campaign, authorYearPlot)
-authorYearPlot<- unique(authorYearPlot)
-swl<- merge(swl, authorYearPlot, by='campaign')
-metasource<- inner_join(swl,meta, by='authorYearPlot')
-metasource$slopediff<- metasource$slope_LMWL-metasource$estimate.slope
-
-slopedifference<-metasource %>%
-  group_by(campaign)%>%
-  summarise(diff=mean(slopediff,na.rm=T),count=n())
-
-hist(slopedifference$diff)#looks nice
 ###########offset############################
-
-plant$d2H_permil_plant<-as.numeric(as.character(plant$d2H_permil_plant))   #for some reason those are factors...
-plant$d18O_permil_plant<-as.numeric(as.character(plant$d18O_permil_plant))
 
 hist(plant$d2H_permil_plant)
 hist(plant$d18O_permil_plant)
 
-plant<-subset(plant,!plant_tissue=='leaf')  #we don't want leaves
-plant$authorYear <- paste0(plant$author, '_', plant$year)
-plant$campaign <- paste0(plant$authorYear, '_', plant$date, '_', plant$plotR)
-plant$authorYearPlot <- paste0(plant$authorYear, '_', plant$plotR)
+#plant$authorYear <- paste0(plant$author, '_', plant$year)
+plant$campaign <- paste0(plant$author, '_', plant$year, '_', plant$date, '_', plant$plotR)
+#plant$authorYearPlot <- paste0(plant$authorYear, '_', plant$plotR)
 
-offst<-inner_join(plant,metasource,by=c('campaign'))
+offset <- left_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant')],
+                     metasource, by = 'campaign')
+# drop values measured on leaves and exclude those that do not represent plant pool water
+plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')  #we don't want leaves
 
 ###let's calculate the offset!
+# equation (1) in Barbeta et al. 2019 HESS
+offset$offset <- offset$d2H_permil_plant - offset$estimate.slope*offset$d18O_permil_plant - offset$estimate
 
-offst$offset<-offst$d2H_permil_plant-offst$estimate.slope*offst$d18O_permil_plant-offst$estimate
+hist(offset$offset) ###weird things, lets fix them
 
-hist(offst$offset) ###weird things, lets fix them
-
-rareoffset<-subset(offst,offset>25)
-rareoffset<- unique(rareoffset)
+rareoffset<-subset(offset,offset>25)
+#rareoffset<- unique(rareoffset)
 hist(rareoffset$offset)
-str (rareoffset)
-rareoffset<- rareoffset %>%
-  select(campaign, d18O_permil_plant, d2H_permil_plant, estimate.slope, estimate, offset)
+wierdCamps <- unique(rareoffset$campaign)
+wierdCampsL <- list()
+for(i in 1:length(wierdCamps)){
+  wierdCampsL[[i]] <- subset(rareoffset, campaign == wierdCamps[i])
+}
+windows(12,8)
+par(mfrow=c(2, 4))
+for(i in 1:length(wierdCampsL)){
+  plot(wierdCampsL[[i]][, 'd2H_permil_plant'] ~ wierdCampsL[[i]][, 'd18O_permil_plant'],
+       main = wierdCampsL[[i]][1, 'campaign'], ylim = c(-75, -25), xlim = c(-25, 0),
+       pch = 19, ylab = 'd2H (permil)', xlab = 'd18O (permil)')
+  abline(a = wierdCampsL[[i]][1, 'estimate'], b = wierdCampsL[[i]][1, 'estimate.slope'])
+  abline(10, 8, lty = 2)
+  legend('bottomright', legend = c('plant', 'swl', 'GMWL'), pch = c(19, NA, NA), lty = c(NA, 1, 2))
+}
 
-view(rareoffset)
-lengthplant<-offst %>% count(campaign,species_plant)
+# str (rareoffset)
+# rareoffset<- rareoffset %>%
+#   select(campaign, d18O_permil_plant, d2H_permil_plant, estimate.slope, estimate, offset)
+# 
+# view(rareoffset)
+lengthplant<-offset %>% count(campaign,species_plant)
 
-means_offset<-offst %>%
+means_offset<-offset %>%
   group_by(campaign,species_plant)%>%
   summarise(mean_offset=mean(offset,na.rm=T),se_offset=sd(offset)/sqrt(length(offset)),count=n())
 hist(means_offset$mean_offset)
