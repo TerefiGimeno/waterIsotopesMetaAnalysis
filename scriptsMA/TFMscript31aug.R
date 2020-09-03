@@ -10,7 +10,6 @@ drive_download("https://docs.google.com/spreadsheets/d/1Z7HathxScqACg5vBxWm5dBTb
                type = 'csv', path = 'dataMA/meta_sample.csv', overwrite = T)
 meta <- read.csv('dataMA/meta_sample.csv', sep = ",")
 
-# change URL here
 drive_download("https://docs.google.com/spreadsheets/d/1oRfLFvQthr_ZxMYjOSYpnmdbclQgxbz2waraHTafJ5U/edit#gid=0",
                type = 'csv', path = 'dataMA/source_sample.csv', overwrite = T)
 source <- read.csv('dataMA/source_sample.csv', sep = ",")
@@ -166,8 +165,11 @@ rm(campNames, swlplotL, multiple, rsquared, length, slope, intercept)
 meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
 authorYearPlot<- source %>% select (campaign, authorYearPlot)
 authorYearPlot<- unique(authorYearPlot)
-swl<- merge(swl, authorYearPlot, by='campaign')
-metasource<- left_join(swl, meta, by='authorYearPlot')
+meta <- merge(authorYearPlot, meta, by = 'authorYearPlot', all.x = T, all.y = F)
+# on this step the nrow of meta increases because there are studies with multiple sampling campaigns within a site (plot)
+
+metasource <- left_join(swl, meta, by= 'campaign')
+# here the nrow of swl increases because there are campaigns where multiple species were measured for the same swl
 
 #we eliminate studies without LMWL (experimental)
 # turn non-sense values of slope and intercept of lmwl into NA'
@@ -182,28 +184,36 @@ slopedifference<-metasource %>%
 hist(slopedifference$diff)#looks nice
 # remove repetead code
 rm(authorYearPlot)
+# if yo want to run a model with slopedifference, make sure repeated values are removed to avoid pseudo-replication
 
 ###########offset############################
 
 hist(plant$d2H_permil_plant)
 hist(plant$d18O_permil_plant)
 
-#plant$authorYear <- paste0(plant$author, '_', plant$year)
+plant$authorYear <- paste0(plant$author, '_', plant$year)
 plant$campaign <- paste0(plant$author, '_', plant$year, '_', plant$date, '_', plant$plotR)
-#plant$authorYearPlot <- paste0(plant$authorYear, '_', plant$plotR)
-
-offset <- left_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant')],
-                     metasource, by = 'campaign')
+meta$authorYear <- paste0(meta$author, '_', meta$year)
+crap <- meta %>%
+  select(authorYear, pool_plant) %>%
+  unique
+plant <- left_join(plant, crap, by = 'authorYear')
+rm(crap)
 # drop values measured on leaves and exclude those that do not represent plant pool water
-plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')  #we don't want leaves
+plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
+
+offset <- left_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant', 'season', 'natural')],
+                     swl, by = 'campaign')
+# the nrow of offset should be same as in plant
 
 ###let's calculate the offset!
 # equation (1) in Barbeta et al. 2019 HESS
 offset$offset <- offset$d2H_permil_plant - offset$estimate.slope*offset$d18O_permil_plant - offset$estimate
+offset[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(offset$campaign, '_', 4)
 
 hist(offset$offset) ###weird things, lets fix them
 
-rareoffset<-subset(offset,offset>25)
+rareoffset<-subset(offset, offset > 25 | offset < -75)
 #rareoffset<- unique(rareoffset)
 hist(rareoffset$offset)
 wierdCamps <- unique(rareoffset$campaign)
@@ -222,20 +232,58 @@ for(i in 1:length(wierdCampsL)){
   legend('bottomright', legend = c('plant', 'swl', 'GMWL'), pch = c(19, NA, NA), lty = c(NA, 1, 2))
 }
 
-# str (rareoffset)
-# rareoffset<- rareoffset %>%
-#   select(campaign, d18O_permil_plant, d2H_permil_plant, estimate.slope, estimate, offset)
-# 
-# view(rareoffset)
+str (rareoffset)
+rareoffset<- rareoffset %>%
+  select(campaign, d18O_permil_plant, d2H_permil_plant, estimate.slope, estimate, offset)
+
+view(rareoffset)
+offset <- subset(offset, author != 'Bertrand' & author != 'Eggemeyer')
+rm(wierdCamps, wierdCampsL, rareoffset)
+
 lengthplant<-offset %>% count(campaign,species_plant)
 
 means_offset<-offset %>%
   group_by(campaign,species_plant)%>%
-  summarise(mean_offset=mean(offset,na.rm=T),se_offset=sd(offset)/sqrt(length(offset)),count=n())
+  summarise(mean_offset=mean(offset,na.rm=T),
+            se_offset=(sd(offset, na.rm=T)/sqrt(length(which(!is.na(offset))))),
+            count_offset=n())
 hist(means_offset$mean_offset)
 
 
 ######database######
+modeldata <- left_join(means_offset, swl, by = 'campaign')
+modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
+modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '_', 4)
+modeldata$authorYearPlot <- paste0(modeldata$author, '_', modeldata$year, '_', modeldata$plotR)
+meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 'climate_class')]
+source('scriptsMA/basicFunTEG.R')
+meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
+modeldata <- left_join(modeldata, meta_clim_short, by = 'authorYearPlot')
+
+modeldata$species_metaR <- modeldata$species_plant
+# check that species_metaR from meta_data and species_plant from plant_data are actually the same
+
+meta_spp_short <- meta[, c('species_metaR', 'pft', 'leaf_habit', 'leaf_shape', 'plant_group', 'growth_form')]
+meta_spp_short <- rmDup(meta_spp_short, 'species_metaR')
+meta_spp_short <- meta_spp_short[which(!is.na(meta_spp_short$species_metaR)),]
+# create variable woody or non-woody
+meta_spp_short$woodiness <- ifelse(meta_spp_short$growth_form == 'tree' | meta_spp_short$growth_form == 'shrub', 
+                                   'woddy', 'non-woody')
+# turn non-applicable into NA's
+meta_spp_short[which(meta_spp_short$leaf_habit == "not applicable"), 'leaf_habit'] <- NA
+meta_spp_short[which(meta_spp_short$leaf_shape == "not applicable"), 'leaf_shape'] <- NA
+meta_spp_short[which(meta_spp_short$plant_group == "not applicable"), 'plant_group'] <- NA
+# get rid of class 'liana' because there is only one observation
+meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft')] <- NA
+
+modeldata <- left_join(modeldata, meta_spp_short, by = 'species_metaR')
+modeldata[, c('author', 'year', 'date', 'plot')] <- str_split_fixed(modeldata$campaign, '_', 4)
+# this is your random term for the model
+modeldata$authorYear <- paste0(modeldata$author, '_', modeldata$year)
+
+
+# not checked any further
+
 source$authorYearJournal<- paste0(source$authorYear, '_', source$journal)
 
 sourcemerge<-source %>%
@@ -292,10 +340,10 @@ colnames(modeldata)<- c("study","campaign","natural","species_plant","leaf_habit
 #lang Index
 modeldata$lang<- modeldata$map/modeldata$mat
 
-#woodness (not working)
-modeldata$woodness<- "non woody"
-modeldata$woodness[modeldata$growth_form == "shrub"] <- "shrub"
-modeldata$woodness[modeldata$growth_form == "tree"] <- "tree"
+# #woodness (not working)
+# modeldata$woodness<- "non woody"
+# modeldata$woodness[modeldata$growth_form == "shrub"] <- "shrub"
+# modeldata$woodness[modeldata$growth_form == "tree"] <- "tree"
 
 
 write.csv(modeldata,"C:\\Users\\Jabier\\Desktop\\modeldataoutliers.csv")
