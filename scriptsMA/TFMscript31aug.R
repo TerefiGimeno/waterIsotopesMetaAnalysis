@@ -246,7 +246,7 @@ means_offset<-offset %>%
   group_by(campaign,species_plant)%>%
   summarise(mean_offset=mean(offset,na.rm=T),
             se_offset=(sd(offset, na.rm=T)/sqrt(length(which(!is.na(offset))))),
-            count_offset=n())
+            count_offset=n(), natural=natural[1])
 hist(means_offset$mean_offset)
 
 
