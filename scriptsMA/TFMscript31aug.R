@@ -1,3 +1,6 @@
+##########Load Teresa's custom functions########################
+source('scriptsMA/basicFunTEG.R')
+
 ##########Load data########################
 library(googledrive)
 library(tidyverse)
@@ -125,9 +128,20 @@ hist(swl$r.squared)
 swl<-subset(swl,p.value.slope<0.05&n>2&estimate.slope>0)   #cutoff non-significant and poorly fit regressions
 hist(swl$estimate.slope)
 
+meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_', meta$plotR)
+meta_lmwl <- meta[, c('authorYearPlot', 'slope_LMWL', 'intercept_LMWL')]
+meta_lmwl <- rmDup(meta_lmwl, 'authorYearPlot')
+
+swl[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(swl$campaign, '_', 4)
+swl$authorYearPlot <- paste0(swl$author, '_', swl$year, '_', swl$plotR)
+swl <- left_join(swl, meta_lmwl, by = 'authorYearPlot')
+swl <- swl[, c("campaign","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
+               "statistic.slope","p.value.slope", 'slope_LMWL', 'intercept_LMWL')]
+
 ####lets screen the plots
 
-swlplot<- left_join(source, swl, by = 'campaign')
+swlplot <- left_join(source, swl, by = 'campaign')
+swlplot <- subset(swlplot, p.value.slope < 0.05 & n > 2 & estimate.slope > 0)
 # split in groups to see the plots more clearly
 campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
 campNames$campaign <- unique(swlplot$campaign)
@@ -162,28 +176,28 @@ rm(campNames, swlplotL, multiple, rsquared, length, slope, intercept)
 ######SWL-LMWL##########################
 #meta$authorYear <- paste0(meta$author, '_', meta$year)
 
-meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
-authorYearPlot<- source %>% select (campaign, authorYearPlot)
-authorYearPlot<- unique(authorYearPlot)
-meta <- merge(authorYearPlot, meta, by = 'authorYearPlot', all.x = T, all.y = F)
-# on this step the nrow of meta increases because there are studies with multiple sampling campaigns within a site (plot)
-
-metasource <- left_join(swl, meta, by= 'campaign')
-# here the nrow of swl increases because there are campaigns where multiple species were measured for the same swl
-
-#we eliminate studies without LMWL (experimental)
-# turn non-sense values of slope and intercept of lmwl into NA'
-metasource[which(metasource$slope_LMWL >= 100), c('slope_LMWL', 'intercept_LMWL')] <- NA
-
-metasource$slopediff<- metasource$slope_LMWL-metasource$estimate.slope
-
-slopedifference<-metasource %>%
-  group_by(campaign)%>%
-  summarise(diff=mean(slopediff,na.rm=T),count=n())
-
-hist(slopedifference$diff)#looks nice
-# remove repetead code
-rm(authorYearPlot)
+# meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
+# authorYearPlot<- source %>% select (campaign, authorYearPlot)
+# authorYearPlot<- unique(authorYearPlot)
+# meta <- merge(authorYearPlot, meta, by = 'authorYearPlot', all.x = T, all.y = F)
+# # on this step the nrow of meta increases because there are studies with multiple sampling campaigns within a site (plot)
+# 
+# metasource <- left_join(swl, meta, by= 'campaign')
+# # here the nrow of swl increases because there are campaigns where multiple species were measured for the same swl
+# 
+# #we eliminate studies without LMWL (experimental)
+# # turn non-sense values of slope and intercept of lmwl into NA'
+# metasource[which(metasource$slope_LMWL >= 100), c('slope_LMWL', 'intercept_LMWL')] <- NA
+# 
+# metasource$slopediff<- metasource$slope_LMWL-metasource$estimate.slope
+# 
+# slopedifference<-metasource %>%
+#   group_by(campaign)%>%
+#   summarise(diff=mean(slopediff,na.rm=T),count=n())
+# 
+# hist(slopedifference$diff)#looks nice
+# # remove repetead code
+# rm(authorYearPlot)
 # if yo want to run a model with slopedifference, make sure repeated values are removed to avoid pseudo-replication
 
 ###########offset############################
@@ -209,6 +223,10 @@ offset <- left_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant
 ###let's calculate the offset!
 # equation (1) in Barbeta et al. 2019 HESS
 offset$offset <- offset$d2H_permil_plant - offset$estimate.slope*offset$d18O_permil_plant - offset$estimate
+# calcualte the d-excess with the slope of the GMWL (8)
+offset$dexcess_gmwl <- offset$d2H_permil_plant - 8 * offset$d18O_permil_plant
+# calculate d-excess with the slope of the corresponding LMWL
+offset$dexcess <- offset$d2H_permil_plant - offset$slope_LMWL * offset$d18O_permil_plant
 offset[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(offset$campaign, '_', 4)
 
 hist(offset$offset) ###weird things, lets fix them
@@ -244,9 +262,10 @@ lengthplant<-offset %>% count(campaign,species_plant)
 
 means_offset<-offset %>%
   group_by(campaign,species_plant)%>%
-  summarise(mean_offset=mean(offset,na.rm=T),
-            se_offset=(sd(offset, na.rm=T)/sqrt(length(which(!is.na(offset))))),
-            count_offset=n(), natural=natural[1])
+  summarise(mean_offset=mean(offset,na.rm=T), se_offset = s.err.na(offset),
+            mean_dex_gmwl=mean(dexcess_gmwl, na.rm=T), se_dex_gmwl = s.err.na(dexcess_gmwl),
+            mean_dex_lmwl=mean(dexcess, na.rm=T), se_dex_lmwl = s.err.na(dexcess),
+            count_offset=n(), natural=natural[1], season=season[1])
 hist(means_offset$mean_offset)
 
 
@@ -256,7 +275,6 @@ modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '_', 4)
 modeldata$authorYearPlot <- paste0(modeldata$author, '_', modeldata$year, '_', modeldata$plotR)
 meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 'climate_class')]
-source('scriptsMA/basicFunTEG.R')
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
 modeldata <- left_join(modeldata, meta_clim_short, by = 'authorYearPlot')
 
@@ -267,8 +285,8 @@ meta_spp_short <- meta[, c('species_metaR', 'pft', 'leaf_habit', 'leaf_shape', '
 meta_spp_short <- rmDup(meta_spp_short, 'species_metaR')
 meta_spp_short <- meta_spp_short[which(!is.na(meta_spp_short$species_metaR)),]
 # create variable woody or non-woody
-meta_spp_short$woodiness <- ifelse(meta_spp_short$growth_form == 'tree' | meta_spp_short$growth_form == 'shrub', 
-                                   'woddy', 'non-woody')
+meta_spp_short$woodiness <- ifelse(meta_spp_short$growth_form == 'tree' | meta_spp_short$growth_form == 'shrub',
+                                   meta_spp_short$growth_form, 'non-woody')
 # turn non-applicable into NA's
 meta_spp_short[which(meta_spp_short$leaf_habit == "not applicable"), 'leaf_habit'] <- NA
 meta_spp_short[which(meta_spp_short$leaf_shape == "not applicable"), 'leaf_shape'] <- NA
