@@ -73,10 +73,10 @@ str(source)  ###check the type of variable
 # source<-subset(source,!d2H_permil_source=="NA")
 # source<-subset(source,!d18O_permil_source=="NA") ##clean NA
 # source$year<-as.factor(source$year)
-source$authorYear <- paste0(source$author, '_', source$year)
-source$authorYearDate <- paste0(source$author, '_', source$year, '_', source$date)
-source$authorYearPlot <- paste0(source$author, '_', source$year, '_', source$plotR)
-source$campaign <- paste0(source$authorYearDate, '_', source$plotR)
+source$authorYear <- paste0(source$author, '-', source$year)
+source$authorYearDate <- paste0(source$author, '-', source$year, '-', source$date)
+source$authorYearPlot <- paste0(source$author, '-', source$year, '-', source$plotR)
+source$campaign <- paste0(source$authorYearDate, '-', source$plotR)
 n_distinct(source$campaign)
 
 source<-subset(source,label_pool=="bulk") ##only bulk soil
@@ -115,13 +115,9 @@ hist(slope$estimate)##the slopes should be positive, it will be fixed in followi
 
 swl<-merge(intercept,slope,by='campaign')   ###create a new table with separate columns for intercept and slope
 
-swl0<- source %>% select(campaign,authorYearPlot)
-swl0<- left_join(swl, swl0, by='campaign')
-swl<-unique(swl0)
-
 ###give proper names
 colnames(swl)<-c("campaign","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
-                 "statistic.slope","p.value.slope","authorYearPlot")
+                 "statistic.slope","p.value.slope")
 ##paste rsquareds
 swl<-merge(swl,rsquared,by='campaign')
 
@@ -133,20 +129,24 @@ hist(swl$r.squared)
 swl<-subset(swl,p.value.slope<0.05&n>2&estimate.slope>0)   #cutoff non-significant and poorly fit regressions
 hist(swl$estimate.slope)
 
-meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_', meta$plotR)
+swl[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(swl$campaign, '-', 4)
+swl$authorYearPlot <- paste0(swl$author, '-', swl$year, '-', swl$plotR)
+
+meta$authorYearPlot <- paste0(meta$author, '-', meta$year, '-', meta$plotR)
 meta_lmwl <- meta[, c('authorYearPlot', 'slope_LMWL', 'intercept_LMWL')]
+meta_lmwl[which(meta_lmwl$slope_LMWL > 1000), c('slope_LMWL', 'intercept_LMWL')] <- NA
 meta_lmwl<- rmDup(meta_lmwl, 'authorYearPlot')
 n_distinct(swl$authorYearPlot)
  
 
-#swl[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(swl$campaign, '_', 4)
-#swl$authorYearPlot <- paste0(swl$author, '_', swl$year, '_', swl$plotR)
+#swl[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(swl$campaign, '-', 4)
+#swl$authorYearPlot <- paste0(swl$author, '-', swl$year, '-', swl$plotR)
 swl <- left_join(swl, meta_lmwl, by = 'authorYearPlot')
-swl <- swl[, c("campaign","authorYearPlot","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
-               "statistic.slope","p.value.slope",'r.squared','n','slope_LMWL','intercept_LMWL')]
+# swl <- swl[, c("campaign","authorYearPlot","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
+#                "statistic.slope","p.value.slope",'r.squared','n','slope_LMWL','intercept_LMWL')]
 
-#meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_', meta$plotR)
-#source$authorYearPlot <- paste0(source$author, '_', source$year, '_', source$plotR)
+#meta$authorYearPlot <- paste0(meta$author, '-', meta$year, '-', meta$plotR)
+#source$authorYearPlot <- paste0(source$author, '-', source$year, '-', source$plotR)
 ####lets screen the plots
 
 swlplot <- left_join(source, swl, by = 'campaign')
@@ -173,7 +173,7 @@ for(i in 1:ceiling((nrow(campNames)/20))){
 
 windows(12, 8)
 # enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
-ggplot(data=swlplotL[[14]],aes(x=d18O_permil_source,y=d2H_permil_source))+
+ggplot(data=swlplotL[[i]],aes(x=d18O_permil_source,y=d2H_permil_source))+
   geom_point()+
   geom_smooth(method=lm,se=F)+
   facet_wrap(~campaign)+
@@ -183,9 +183,9 @@ ggplot(data=swlplotL[[14]],aes(x=d18O_permil_source,y=d2H_permil_source))+
 rm(campNames, swlplotL, multiple, rsquared, length, slope, intercept)
 
 ######SWL-LMWL##########################
-#meta$authorYear <- paste0(meta$author, '_', meta$year)
+#meta$authorYear <- paste0(meta$author, '-', meta$year)
 
-# meta$authorYearPlot <- paste0(meta$author, '_', meta$year, '_',meta$plotR)
+# meta$authorYearPlot <- paste0(meta$author, '-', meta$year, '-',meta$plotR)
 # authorYearPlot<- source %>% select (campaign, authorYearPlot)
 # authorYearPlot<- unique(authorYearPlot)
 # meta <- merge(authorYearPlot, meta, by = 'authorYearPlot', all.x = T, all.y = F)
@@ -214,10 +214,10 @@ rm(campNames, swlplotL, multiple, rsquared, length, slope, intercept)
 hist(plant$d2H_permil_plant)
 hist(plant$d18O_permil_plant)
 
-plant$authorYear <- paste0(plant$author, '_', plant$year)
-plant$authorYearPlot <- paste0(plant$author, '_', plant$year, '_', plant_plotR)
-plant$campaign <- paste0(plant$author, '_', plant$year, '_', plant$date, '_', plant$plotR)
-meta$authorYear <- paste0(meta$author, '_', meta$year)
+plant$authorYear <- paste0(plant$author, '-', plant$year)
+plant$authorYearPlot <- paste0(plant$author, '-', plant$year, '-', plant$plotR)
+plant$campaign <- paste0(plant$author, '-', plant$year, '-', plant$date, '-', plant$plotR)
+meta$authorYear <- paste0(meta$author, '-', meta$year)
 crap <- meta %>%
   select(authorYear, pool_plant) %>%
   unique
@@ -228,7 +228,7 @@ plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
 
 offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant', 'season', 'natural')],
                     swl, by = 'campaign') #inner join because we dont want plant campaigns matching issin source ones (non significative)
-offset0<- rmDup(offset, 'campaign')
+# offset0<- rmDup(offset, 'campaign')
 # the nrow of offset should be same as in plant
 
 ###let's calculate the offset!
@@ -238,7 +238,7 @@ offset$offset <- offset$d2H_permil_plant - offset$estimate.slope*offset$d18O_per
 offset$dexcess<- offset$d2H_permil_plant - 8 * offset$d18O_permil_plant
 # calculate lc-excess with the slope of the corresponding LMWL
 offset$lcexcess <- offset$d2H_permil_plant - offset$slope_LMWL * offset$d18O_permil_plant -offset$intercept_LMWL
-#offset[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(offset$campaign, '_', 4)
+#offset[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(offset$campaign, '-', 4)
 
 hist(offset$offset) ###weird things, lets fix them
 
@@ -266,7 +266,7 @@ hist(offset$offset) ###weird things, lets fix them
   #select(campaign, d18O_permil_plant, d2H_permil_plant, estimate.slope, estimate, offset)
 
 #view(rareoffset)
-#offset <- subset(offset, author != 'Bertrand' & author != 'Eggemeyer')
+offset <- subset(offset, author != 'Bertrand' & author != 'Eggemeyer')
 #rm(wierdCamps, wierdCampsL, rareoffset)
 
 lengthplant<-offset %>% count(campaign,species_plant)
@@ -284,15 +284,15 @@ hist(means_offset$mean_dexcess)
 
 #lets fix the outliers for the offset
 
-rareoffset<-subset(means_offset, mean_offset > 25 | mean_offset < -50)
-means_offset <- subset(means_offset,mean_offset < 50) 
+# rareoffset<-subset(means_offset, mean_offset > 25 | mean_offset < -50)
+# means_offset <- subset(means_offset,mean_offset < 50) 
 #data over 50 belonged to eggmeyer and neef further review
 
 ######database######
 modeldata <- inner_join(means_offset, swl, by = 'campaign')
 modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
-#modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '_', 4)
-#modeldata$authorYearPlot <- paste0(modeldata$author, '_', modeldata$year, '_', modeldata$plotR)
+modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
+modeldata$authorYearPlot <- paste0(modeldata$author, '-', modeldata$year, '-', modeldata$plotR)
 meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 'climate_class')]
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
 modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
@@ -312,11 +312,11 @@ meta_spp_short[which(meta_spp_short$leaf_shape == "not applicable"), 'leaf_shape
 meta_spp_short[which(meta_spp_short$plant_group == "not applicable"), 'plant_group'] <- NA
 # get rid of class 'liana' because there is only one observation
 meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft')] <- NA
-meta_spp_short$authorYear<- paste0(meta_spp_short$author,'_',meta_spp_short$year) # this is your random term for the model
+meta_spp_short$authorYear<- paste0(meta_spp_short$author,'-',meta_spp_short$year) # this is your random term for the model
 modeldata <- inner_join(modeldata, meta_spp_short, by = 'species_metaR')
-#modeldata[, c('author', 'year', 'date', 'plot')] <- str_split_fixed(modeldata$campaign, '_', 4)
+#modeldata[, c('author', 'year', 'date', 'plot')] <- str_split_fixed(modeldata$campaign, '-', 4)
 
-#modeldata$authorYear <- paste0(modeldata$author, '_', modeldata$year)
+#modeldata$authorYear <- paste0(modeldata$author, '-', modeldata$year)
 
 rm(lengthplant,means_offset,meta,meta_clim_short,meta_lmwl,meta_spp_short, metaWC,
    offset, plant, source, swl, swlplot)
@@ -335,7 +335,7 @@ colnames(modeldata)<- c("study","campaign","species_plant","natural","leaf_habit
                         "SWLintercept.std.error","SWLintercept.pvalue","SWLrsquared","n_SWL") 
 
 #lang Index
-modeldata$lang<- modeldata$map/modeldata$mat
+modeldata$lang<- modeldata$mapWC/modeldata$matWC
 
 #absolute offset
 
