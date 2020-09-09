@@ -241,7 +241,8 @@ offset$lcexcess <- offset$d2H_permil_plant - offset$slope_LMWL * offset$d18O_per
 #offset[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(offset$campaign, '-', 4)
 
 hist(offset$offset) ###weird things, lets fix them
-
+hist(offset$dexcess)
+hist(offset$lcexcess)
 
 #rareoffset<- unique(rareoffset)
 #hist(rareoffset$offset)
@@ -293,6 +294,8 @@ modeldata <- inner_join(means_offset, swl, by = 'campaign')
 modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
 modeldata$authorYearPlot <- paste0(modeldata$author, '-', modeldata$year, '-', modeldata$plotR)
+# this is your random term
+modeldata$authorYear <- paste0(modeldata$author, '-', modeldata$year)
 meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 'climate_class')]
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
 modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
@@ -300,7 +303,7 @@ modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
 modeldata$species_metaR <- modeldata$species_plant
 # check that species_metaR from meta_data and species_plant from plant_data are actually the same
 
-meta_spp_short <- meta[, c('author','year','species_metaR', 'pft', 'leaf_habit', 'leaf_shape', 'plant_group', 'growth_form')]
+meta_spp_short <- meta[, c('species_metaR', 'pft', 'leaf_habit', 'leaf_shape', 'plant_group', 'growth_form')]
 meta_spp_short <- rmDup(meta_spp_short, 'species_metaR')
 meta_spp_short <- meta_spp_short[which(!is.na(meta_spp_short$species_metaR)),]
 # create variable woody or non-woody
@@ -312,8 +315,8 @@ meta_spp_short[which(meta_spp_short$leaf_shape == "not applicable"), 'leaf_shape
 meta_spp_short[which(meta_spp_short$plant_group == "not applicable"), 'plant_group'] <- NA
 # get rid of class 'liana' because there is only one observation
 meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft')] <- NA
-meta_spp_short$authorYear<- paste0(meta_spp_short$author,'-',meta_spp_short$year) # this is your random term for the model
-modeldata <- inner_join(modeldata, meta_spp_short, by = 'species_metaR')
+# here do left_join because otherwise you lose those for which the species is not defined in the plant_data file
+modeldata <- left_join(modeldata, meta_spp_short, by = 'species_metaR')
 #modeldata[, c('author', 'year', 'date', 'plot')] <- str_split_fixed(modeldata$campaign, '-', 4)
 
 #modeldata$authorYear <- paste0(modeldata$author, '-', modeldata$year)
@@ -330,7 +333,7 @@ modeldata<-modeldata %>%
 #give proper names
 
 colnames(modeldata)<- c("study","campaign","species_plant","natural","leaf_habit","leaf_shape","plant_group","woodiness","growth_form",
-                        "season","climate_class","log","lat","elevation","map","mat","mean_offset","se_offset",
+                        "woodiness", "season","climate_class","log","lat","elevation","map","mat","mean_offset","se_offset",
                         "n_offset","mean_dexcess","se_dexcess","mean_lcexcess","se_lcexcess","SWLslope","SWLslope.std.error","SWLslope.pvalue","SWLintercept",
                         "SWLintercept.std.error","SWLintercept.pvalue","SWLrsquared","n_SWL") 
 
