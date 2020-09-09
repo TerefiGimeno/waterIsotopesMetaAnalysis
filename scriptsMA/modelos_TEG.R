@@ -1,6 +1,4 @@
-# write.csv(modeldata, "C:\\Users\\JAVI\\Desktop\\pRojects\\waterIsotopesMetaAnalysis\\dataMA\\modeldata.csv")  
-# source('modeldata/dataMA')
-# rm(swl0, rareoffset)
+source('scriptsMA/generate_modeldata.R')
 
 #######models (SWL)#######
 
@@ -23,21 +21,19 @@ library(GGally)
 library(MuMIn)
 library(broom.mixed)
 library(visreg)
-
-
 # load this package to get p-values
 library(lmerTest)
 
 #Lets begin with SWL slope 
 
-natdata<- subset(modeldata, natural== 'natural') #reject hydro-managed plots
+natdata <- subset(modeldata, natural== 'natural') #reject hydro-managed plots
 
 #we dont want not applicable values
 # natdata[which(natdata$season == "not applicable"), 'season'] <- NA
 
 #general model
-swlbest2 <-lmer(statistic.slope ~ climate_class +
-                 (1|authorYear) , data=natdata,
+swlbest2 <-lmer(SWLslope ~ climate_class +
+                 (1|study) , data=natdata,
                na.action = "na.omit",REML = TRUE)
 
 swlbest2 <-lmer(log(statistic.slope) ~ lang +
