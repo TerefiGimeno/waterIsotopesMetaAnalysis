@@ -23,6 +23,7 @@ library(broom.mixed)
 library(visreg)
 # load this package to get p-values
 library(lmerTest)
+library(emmeans)
 
 #Lets begin with SWL slope 
 
@@ -35,153 +36,110 @@ natdata <- subset(modeldata, natural== 'natural') #reject hydro-managed plots
 swlbest2 <-lmer(SWLslope ~ climate_class +
                  (1|study) , data=natdata,
                na.action = "na.omit",REML = TRUE)
+summary(swlbest2)
+anova(swlbest2)
+emmeans(swlbest2, list(pairwise ~ climate_class), adjust = "tukey")
+visreg(swlbest2, xvar = "climate_class",
+       scale = "response", gg=TRUE)
+# no significant differences in swl among climate classes
 
-swlbest2 <-lmer(log(statistic.slope) ~ lang +
-                  (1|authorYear) , data=natdata,
+swlbest2 <-lmer(SWLslope ~ lang +
+                  (1|study) , data=natdata,
                 na.action = "na.omit",REML = TRUE)
+myresplot(swlbest2, natdata)
+summary(swlbest2)
+plot(natdata$SWLslope ~ natdata$lang, pch = 19, col = as.factor(natdata$climate_class),
+     ylab = 'log (slope SWL)', xlab = 'Lang Index (mm/c)')
+legend('bottomright', legend = levels(as.factor(natdata$climate_class)), pch = 19, col = 1:4, bty = 'n')
+plot(natdata$SWLslope ~ natdata$lang, pch = 19, col = as.factor(natdata$climate_class),
+     ylab = 'log (slope SWL)', xlab = 'Lang Index (mm/c)', xlim = c(0, 450))
 
+# important disequilibrium in sample size across climate_classes
+doBy::summaryBy(SWLslope ~ season + climate_class, FUN = lengthWithoutNA, data = subset(natdata, season != 'not applicable'))
+doBy::summaryBy(SWLslope ~ climate_class, FUN = lengthWithoutNA, data = natdata)
 
-swlbest <-lmer(statistic.slope ~ climate_class*season +
-                 (1|authorYear) , data=subset(natdata, season != 'not applicable'),
+swlbest <-lmer(SWLslope ~ climate_class*season +
+                 (1|study) , data=subset(natdata, season != 'not applicable'),
                na.action = "na.omit",REML = TRUE) #has to be true
 
 summary(swlbest)
 myresplot(swlbest, natdata) #looks good
-hist(natdata$statistic.slope) 
-
-visreg(swlbest, xvar = "season",
-       scale = "response", gg=TRUE) 
-visreg(swlbest, xvar = "climate_class",
-       scale = "response", gg=TRUE) #both makes sense
-
-visreg(swlbest, xvar = "climate_class", by="season",
+anova(swlbest)
+emmeans(swlbest, list(pairwise ~ climate_class*season), adjust = "tukey")
+visreg(swlbest, xvar = "season", by = 'climate_class',
        scale = "response", gg=TRUE)
+# no significant differences neither among climate classes, nor among seasons
 
-ggplot(data=subset(natdata,!season=="NA"), aes(x=climate_class, y=SWLslope)) +
-  geom_point(alpha=0.2, aes()) +
-  geom_boxplot()+
-  facet_grid(.~season)  #i dont know how to unplot the NA's
+swlLang <- lmer(SWLslope ~ lang*season + (1|study), data = subset(natdata, season != 'not applicable'),
+                na.action = 'na.omit', REML = TRUE)
+summary(swlLang)
+# no significant effects of the Lang index or season
+windows(8, 8)
+par(mfrow=c(1, 1))
+dry <- subset(natdata, season == 'dry')
+plot(dry$SWLslope ~ dry$lang, pch = 19, col = as.factor(dry$climate_class),
+     xlim = c(0, 600), ylim= c(0, 12), ylab = 'SWL slope', xlab = 'Lang Index (mm/C)')
+wet <- subset(natdata, season == 'wet')
+points(wet$SWLslope ~ wet$lang, pch = 17, col = as.factor(wet$climate_class))
+legend('bottomright', legend=c(levels(as.factor(dry$climate_class)), 'dry', 'wet'), pch = c(rep(15, 4), 1, 2),
+       col =c(1:4, 'black', 'black'), bty = 'n')
+rm(wet, dry)
 
+offsetnull <-lmer(mean_offset ~ (1|study/season) , data=modeldata,
+                na.action = "na.omit",REML = TRUE)
+lcexnull <-lmer(mean_lcexcess ~ (1|study) , data=modeldata,
+                  na.action = "na.omit",REML = TRUE)
+summary(offsetnull)
+summary(lcexnull)
+# the overall mean offset is significantly negative :-)
+offsetClim <- lmer(mean_offset ~ climate_class + (1|study) , data=natdata,
+                      na.action = "na.omit",REML = TRUE)
 
-##We are going to see what happends inside each climate class for the SWL
-
-natdata_arid <- natdata %>% 
-  filter(climate_class=="arid")
-
-natdata_cold <- natdata %>% 
-  filter(climate_class=="cold")
-
-natdata_trop <- natdata %>% 
-  filter(climate_class=="tropical")
-
-natdata_warm <- natdata %>% 
-  filter(climate_class=="warm")
-
-######SWL_warm########
-
-
-swlbest_warm <- lmer(SWLslope ~ mat:season + map:season + season +
-                       (1|study), data=natdata_warm, na.action = "na.omit", REML = TRUE)
-
-#####este no lo he modificado de : a *, tratadlo como veais
-
-summary(swlbest_warm)
-anova(swlbest_warm)
-myresplot(swlbest_warm, natdata_warm0)
-hist(natdata_warm$SWLslope)
-
-
-visreg(swlbest_warm, xvar = "map", by = "season", 
+anova(offsetClim)
+visreg(offsetClim, xvar = "climate_class",
        scale = "response", gg=TRUE)
-visreg(swlbest_warm, xvar = "mat", by = "season", 
-       scale = "response", gg=TRUE)
+# there are no significant overall differences in offset among climate classes
+offsetClimSeason <- lmer(mean_offset ~ climate_class*season + (1|study) ,
+                      data=subset(natdata, season != 'not applicable'),
+                      na.action = "na.omit",REML = TRUE)
+summary(offsetClimSeason)
+# no significant differenes neither among climate classes, nor between seasons
+offsetLang <- lmer(mean_offset ~ lang + (1|study) , data=natdata,
+                      na.action = "na.omit",REML = TRUE)
+summary(offsetLang)
+# no significant overall effect of the Lang index on the offset
 
-#interesting. SWL slope increases with map (gets closer to lmwl) in dry and wet plots. 
-#but its more drastic in dry season plots. For mat, it increases in dry seasons but decreases on wet ones
-#(I thought that it'll also decrease un dry seasons)
+offsetLangSeason <- lmer(mean_offset ~ lang*season + (1|study) ,
+                         data=subset(natdata, season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+summary(offsetLangSeason)
+anova(offsetLangSeason)
+# the Lang Index appears to have a negative effect on the magnitude of the offset: the larger the value of 
+#  the Lang index (i.e. the more humid), the more negative the offset becomes
+windows(8, 8)
+par(mfrow=c(1, 1))
+dry <- subset(natdata, season == 'dry')
+plot(dry$mean_offset ~ dry$lang, pch = 19, col = as.factor(dry$climate_class),
+     xlim = c(0, 600), ylim= c(-32, 40), ylab = 'offset (permil)', xlab = 'Lang Index (mm/C)')
+wet <- subset(natdata, season == 'wet')
+points(wet$mean_offset ~ wet$lang, pch = 17, col = as.factor(wet$climate_class))
+legend('bottomright', legend=c(levels(as.factor(dry$climate_class)), 'dry', 'wet'), pch = c(rep(15, 4), 1, 2),
+       col =c(1:4, 'black', 'black'), bty = 'n')
+rm(wet, dry)
 
-ggplot(data=subset(natdata_warm,!season=="NA"), aes(x=map, y=SWLslope, colour=season)) +
-  geom_point(alpha=0.2) +
-  geom_smooth(method=lm,se=F) +
-  facet_grid(season ~ .)
-
-ggplot(data=subset(natdata_warm,!season=="NA"), aes(x=mat, y=SWLslope)) +
-  geom_point(alpha=0.2) +
-  geom_smooth(method=lm,se=F)  +
-  facet_grid(season ~ .)
-#not the same results
-
-######SWL_arid#######
-
-swlbest_arid<- lmer(SWLslope ~  map*season + 
-                      (1|study), data=natdata_arid, na.action = "na.omit", REML = TRUE)
-
-
-summary(swlbest_arid)
-anova(swlbest_arid)
-myresplot(swlbest_arid, natdata_arid)
-hist(natdata_warm$SWLslope)
-
-
-visreg(swlbest_warm, xvar = "season", 
-       scale = "response", gg=TRUE) #slopes are stepper in wet seasons (makes sense)
-
-ggplot(data=subset(natdata_arid,!season=="NA"), aes(x=season, y=SWLslope)) +
-  geom_point(alpha=0.2) +
-  geom_boxplot() #different results as before
-
-######SWL_tropical#######
-
-swlbest_tropical<- lmer(SWLslope ~ mat*season  + 
-                          (1|study), data=natdata_trop, na.action = "na.omit", REML = TRUE)
-
-
-summary(swlbest_tropical)
-anova(swlbest_tropical)
-myresplot(swlbest_tropical, natdata_trop) #strange...
-hist(natdata_trop$SWLslope) #...
-
-
-visreg(swlbest_warm, xvar = "mat", by= "season",
-       scale = "response", gg=TRUE) #similar as found in SWLwarm model
-
-ggplot(data=subset(natdata_trop,!season=="NA"), aes(x=mat, y=SWLslope)) +
-  geom_point(alpha=0.2) +
-  geom_smooth(method=lm,se=F)  +
-  facet_grid(season ~ .) #opposite as the visreg
-
-######SWL_cold#######
-
-swlbest_cold<- lmer(SWLslope ~ lang*season +
-                      (1|study), data=natdata_cold, na.action = "na.omit",REML = TRUE)
-
-
-summary(swlbest_cold)
-anova(swlbest_cold)
-myresplot(swlbest_cold, natdata_cold) 
-hist(natdata_cold$SWLslope) #...
-
-
-visreg(swlbest_cold, xvar = "lang", by= "season",
-       scale = "response", gg=TRUE) #makes sense with the warm and tropical findings
-
-
-ggplot(data=subset(natdata_cold,!season=="NA"), aes(x=lang, y=SWLslope)) +
-  geom_point(alpha=0.2) +
-  geom_smooth(method=lm,se=F)  +
-  facet_grid(season ~ .) #similar as the visreg
 
 #####offset model (pft)######
 
+offsetnull <- lmer(mean_offset ~ (1|study/season), data=modeldata, na.action = "na.omit",REML = TRUE)
+summary(offsetnull)
+
 #plant group
 offGroup<-lmer(mean_offset ~plant_group  +
-                 (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+                 (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
 
 summary(offGroup)
+anova(offGroup)
 myresplot(offGroup, modeldata) 
 hist(modeldata$mean_offset) 
-
-
 visreg(offGroup, xvar = "plant_group", 
        scale = "response", gg=TRUE) #low effect
 
@@ -193,7 +151,7 @@ ggplot(data=subset(modeldata,!plant_group=="NA"), aes(x=plant_group, y=mean_offs
 
 #woodiness
 offwood<-lmer(mean_offset ~woodiness  +
-                (1|study), data=modeldata, na.action = "na.omit",REML = TRUE)
+                (1|study/season), data=modeldata, na.action = "na.omit",REML = TRUE)
 
 summary(offwood)
 myresplot(offwood, modeldata) 
@@ -208,13 +166,17 @@ ggplot(data=modeldata, aes(x=woodiness, y=mean_offset)) +
   geom_boxplot() #similar results 
 
 #leaf habit
-offhabit<-lmer(mean_offset ~leaf_habit  +
-                 (1|study), data=modeldata, na.action = "na.omit",REML = TRUE)
-
+doBy::summaryBy(mean_offset ~ leaf_habit, FUN = lengthWithoutNA, data = modeldata)
+# discard semi-deciduous (only 3 observations)
+offhabit<-lmer(mean_offset ~leaf_habit  + (1|study/season),
+               data= subset(modeldata[which(modeldata$woodiness!='non-woody'),], leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+               na.action = "na.omit",REML = TRUE)
 summary(offhabit)
 myresplot(offhabit, modeldata) 
-hist(modeldata$mean_offset) 
-
+hist(modeldata$mean_offset)
+visreg(offhabit, xvar = "leaf_habit", 
+       scale = "response", gg=TRUE)
+# significant difference: deciduous more negative offset than evergreen
 
 visreg(offhabit, xvar = "leaf_habit", 
        scale = "response", gg=TRUE) 
@@ -222,61 +184,4 @@ visreg(offhabit, xvar = "leaf_habit",
 ggplot(data=modeldata, aes(x=leaf_habit, y=mean_offset)) +
   geom_point(alpha=0.2) +
   geom_boxplot() 
-
-#leaf shape
-offshape<-lmer(mean_offset ~leaf_shape  +
-                 (1|study), data=modeldata, na.action = "na.omit",REML = TRUE)
-
-summary(offshape)
-myresplot(offhabit, modeldata) 
-hist(modeldata$mean_offset) 
-
-
-visreg(offshape, xvar = "leaf_shape", 
-       scale = "response", gg=TRUE) 
-
-
-ggplot(data=modeldata, aes(x=leaf_shape , y=mean_offset)) +
-  geom_point(alpha=0.2) +
-  geom_boxplot() 
-
-AIC(offGroup,offhabit,offshape,offwood) #offgroup is the best but shape also
-
-#####offset model (climate)######
-
-offbest_climate<- lmer(mean_offset ~ lang*season + 
-                         (1|study), data=natdata, na.action = "na.omit",REML = TRUE)
-
-
-summary(offbest_climate)
-anova(offbest_climate)
-myresplot(offbest_climate, natdata) 
-hist(natdata$mean_offset) 
-
-
-visreg(offbest_climate, xvar = "lang", by= "season",
-       scale = "response", gg=TRUE) #looks similar for dry and wet seasons. less humidity, more offset (makes sense)
-
-ggplot(data=subset(natdata,!season=="NA"),aes(x=lang, y=mean_offset)) +
-  geom_point(alpha=0.2) +
-  geom_smooth(method=lm,se=F)  +
-  facet_grid(season ~ .) #similar as the visreg
-
-##### offset's general model########
-
-offgeneral<- lmer(mean_offset ~ lang*season + plant_group +
-                    (1|study), data=natdata, na.action = "na.omit",REML = TRUE)
-
-summary(offgeneral)
-anova(offgeneral)
-myresplot(offgeneral, natdata) 
-hist(natdata$mean_offset) 
-
-
-visreg(offgeneral, xvar = "lang", by= "season",
-       scale = "response", gg=TRUE) #looks similar for dry and wet seasons. less humidity, more offset (makes sense)
-visreg(offgeneral, xvar = "lang", by= "plant_group",
-       scale = "response", gg=TRUE) #same patterns
-visreg(offgeneral, xvar = "lang", 
-       scale = "response", gg=TRUE) #same pattern
 
