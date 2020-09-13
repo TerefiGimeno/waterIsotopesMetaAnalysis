@@ -1,5 +1,5 @@
 source('scriptsMA/generate_modeldata.R')
-n_distinct(modeldata$species_plant)
+
 myresplot <- function(x,df) { #Home-made residual plot
   e <- resid(x, type="pearson")
   f <- fitted(x)
@@ -24,259 +24,623 @@ library(performance)
 library(lmerTest)
 library(emmeans)
 
-natdata <- subset(modeldata, natural== 'natural') #reject hydro-managed plots, modeldata for pft models
 
-########SWL######
+natdata <- subset(modeldata, natural== 'natural') #for climatic 
+natdata0<-natdata
+natdata0[which(natdata0$season == "not applicable"), 'season'] <- NA
+################ A) models with study alone as random factor#################
 
-swlbest1 <-lmer(SWLslope ~ 
-                  (1|study/season), data=natdata,
+#SWL
+
+swlA0 <-lmer(SWLslope ~ (1|study) , data=modeldata,
                 na.action = "na.omit",REML = FALSE)
 
-swlbest1.1<- lmer(SWLslope ~  (1|study), data = subset(natdata, season != 'not applicable'),
-               na.action = 'na.omit', REML = FALSE)
-
-swlbest1.2<- lmer(SWLslope ~  (1|study/season), data = subset(natdata, season != 'not applicable'),
-                na.action = 'na.omit', REML = FALSE)
-
-swlbest2 <-lmer(SWLslope ~ climate_class +
-                  (1|study/season), data=natdata,
+swlA1<-lmer(SWLslope ~ climate_class*season + (1|study) , data=natdata,
                 na.action = "na.omit",REML = FALSE)
 
-swlbest3 <-lmer(SWLslope ~ map*mat +
-                  (1|study/season), data=natdata,
+swlA2 <-lmer(SWLslope ~ climate_class + (1|study) , data=natdata,
                 na.action = "na.omit",REML = FALSE)
 
-swlbest4 <-lmer(SWLslope ~ map +
-                (1|study/season), data=natdata,
+swlA3 <-lmer(SWLslope ~ season + (1|study) , data=natdata,
                 na.action = "na.omit",REML = FALSE)
 
-swlbest4.1 <-lmer(SWLslope ~ map +
-                  (1|study/season), subset(natdata, season != 'not applicable'),
-                  na.action = 'na.omit', REML = FALSE)
+swlA4 <-lmer(SWLslope ~ season*lang + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
 
-swlbest4.2 <-lmer(SWLslope ~ map +
-                  (1|study/season), data=natdata,
+swlA5 <-lmer(SWLslope ~ season*map + season*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA6 <-lmer(SWLslope ~ season*map + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA7 <-lmer(SWLslope ~ season*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA8 <-lmer(SWLslope ~ map*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA9 <-lmer(SWLslope ~ map + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA10 <-lmer(SWLslope ~ mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlA11 <-lmer(SWLslope ~ lang + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+AIC(swlA0,swlA1,swlA2,swlA3,swlA4,swlA5,swlA6,swlA7,swlA8,swlA9,swlA10,swlA11)
+
+swlAbest1<-lmer(SWLslope ~ season*lang + (1|study) , data=natdata,
+                  na.action = "na.omit",REML = TRUE)
+
+swlAbest2<-lmer(SWLslope ~ map + (1|study) , data=natdata,
+                 na.action = "na.omit",REML = TRUE)
+  
+swlAbest3<-lmer(SWLslope ~ season*lang + (1|study) , data=natdata,
+                 na.action = "na.omit",REML = TRUE)
+  
+AIC(swlAbest1,swlAbest2,swlAbest3)  
+
+swlAbest<-lmer(SWLslope ~ map + (1|study) , data=natdata,
+               na.action = "na.omit",REML = TRUE)
+
+summary(swlAbest)
+
+#offset climate
+
+offclimA0 <-lmer(mean_offset ~ (1|study) , data=modeldata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA1<-lmer(mean_offset ~ climate_class*season + (1|study) , data=natdata,
+            na.action = "na.omit",REML = FALSE)
+
+offclimA2 <-lmer(mean_offset ~ climate_class + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA3 <-lmer(mean_offset ~ season + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA4 <-lmer(mean_offset ~ season*lang + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA5 <-lmer(mean_offset ~ season*map + season*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA6 <-lmer(mean_offset ~ season*map + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA7 <-lmer(mean_offset ~ season*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA8 <-lmer(mean_offset ~ map*mat + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA9 <-lmer(mean_offset ~ map + (1|study) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+offclimA10 <-lmer(mean_offset ~ mat + (1|study) , data=natdata,
+              na.action = "na.omit",REML = FALSE)
+
+offclimA11 <-lmer(mean_offset ~ lang + (1|study) , data=natdata,
+              na.action = "na.omit",REML = FALSE)
+
+offclimA12<-lmer(mean_offset ~ SWLslope + (1|study) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimA13<-lmer(mean_offset ~ SWLslope*season + (1|study) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+AIC(offclimA0,offclimA1,offclimA2,offclimA3,offclimA4,offclimA5,offclimA6,
+    offclimA7,offclimA8,offclimA9,offclimA10,offclimA11, offclimA12, offclimA13)
+
+offclimAbest<-lmer(mean_offset ~ SWLslope*season + (1|study) , data=natdata,
+                    na.action = "na.omit",REML = TRUE)
+
+summary(offclimAbest)
+emmeans(offclimAbest, list(pairwise ~ SWLslope*season), adjust = "tukey") # i dont really know how to interpret this
+
+#offset pft
+
+offplantgroupA<-lmer(mean_offset ~plant_group  +
+                     (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+offleafhabitA<-lmer(mean_offset ~leaf_habit  + (1|study),
+                    data= subset(modeldata[which(modeldata$woodiness!='non-woody'),], leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+                    na.action = "na.omit",REML = TRUE)
+
+offwoodA<-lmer(mean_offset ~woodiness  +
+                 (1|study), data=modeldata, na.action = "na.omit",REML = TRUE)
+
+
+offleafshapeA<-lmer(mean_offset ~leaf_shape  +
+                      (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+
+AIC(offplantgroupA,offleafhabitA,offleafshapeA,offwoodA) #shape and group. Group has more ecological logic
+
+offpftA<-lmer(mean_offset ~plant_group  +
+                (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+#ofset general
+
+offA<-lmer(mean_offset ~plant_group  + SWLslope*season +
+             (1|study), data=subset(natdata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+############# B) models with study and season (with not applicble values) as random factor##########
+
+#SWL
+
+swlB0 <-lmer(SWLslope ~ (1|study/season) , data=modeldata,
+             na.action = "na.omit",REML = FALSE)
+
+swlB1 <-lmer(SWLslope ~ climate_class + (1|study/season) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlB2 <-lmer(SWLslope ~ map*mat + (1|study/season) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlB3 <-lmer(SWLslope ~ map + (1|study/season) , data=natdata,
+             na.action = "na.omit",REML = FALSE)
+
+swlB4 <-lmer(SWLslope ~ mat + (1|study/season) , data=natdata,
+              na.action = "na.omit",REML = FALSE)
+
+swlB5 <-lmer(SWLslope ~ lang + (1|study/season) , data=natdata,
+              na.action = "na.omit",REML = FALSE)
+
+AIC(swlB0,swlB1,swlB2,swlB3,swlB4,swlB5)
+
+swlBbest<-lmer(SWLslope ~ map + (1|study/season) , data=natdata,
+               na.action = "na.omit",REML = TRUE)
+
+summary(swlBbest)
+
+#offset climate
+
+offclimB0 <-lmer(mean_offset ~ (1|study/season) , data=modeldata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimB1 <-lmer(mean_offset ~ climate_class + (1|study/season) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimB2 <-lmer(mean_offset ~ map*mat + (1|study/season) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimB3 <-lmer(mean_offset ~ map + (1|study/season) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimB4 <-lmer(mean_offset ~ mat + (1|study/season) , data=natdata,
+                  na.action = "na.omit",REML = FALSE)
+
+offclimB5 <-lmer(mean_offset ~ lang + (1|study/season) , data=natdata,
+                  na.action = "na.omit",REML = FALSE)
+
+offclimB6<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata,
+                 na.action = "na.omit",REML = FALSE)
+
+
+AIC(offclimB0,offclimB1,offclimB2,offclimB3,offclimB4,offclimB5,offclimB6)
+
+offclimBbest<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata,
+                    na.action = "na.omit",REML = FALSE)
+
+summary(offclimBbest)
+
+#offset pft
+
+offplantgroupB<-lmer(mean_offset ~plant_group  +
+                       (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+offleafhabitB<-lmer(mean_offset ~leaf_habit  + (1|study/season),
+                    data= subset(modeldata[which(modeldata$woodiness!='non-woody'),], leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+                    na.action = "na.omit",REML = TRUE)
+
+offwoodB<-lmer(mean_offset ~woodiness  +
+                 (1|study/season), data=modeldata, na.action = "na.omit",REML = TRUE)
+
+
+offleafshapeB<-lmer(mean_offset ~leaf_shape  +
+                      (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+
+AIC(offplantgroupB,offleafhabitB,offleafshapeB,offwoodB) #shape and group. Group has more ecological logic
+
+offpftB<-lmer(mean_offset ~plant_group  +
+                (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+
+#ofset general
+
+offB<- lmer(mean_offset ~plant_group  + SWLslope +
+              (1|study), data=subset(natdata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+
+
+############# C) models with study and season (without not applicble values) as random factor##########
+
+#SWL
+
+swlC0 <-lmer(SWLslope ~ (1|study/season) , data=subset(modeldata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+swlC1 <-lmer(SWLslope ~ climate_class + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+swlC2 <-lmer(SWLslope ~ map*mat + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+swlC3 <-lmer(SWLslope ~ map + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+swlC4 <-lmer(SWLslope ~ mat + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+swlC5 <-lmer(SWLslope ~ lang + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+             na.action = "na.omit",REML = FALSE)
+
+AIC(swlC0,swlC1,swlC2,swlC3,swlC4,swlC5)
+
+swlCbest1<-lmer(SWLslope ~ map + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+               na.action = "na.omit",REML = TRUE)
+swlCbest2<-lmer(SWLslope ~ lang+ (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                na.action = "na.omit",REML = TRUE)
+
+AIC(swlCbest1, swlCbest2) #both are similar
+
+
+
+#offset climate
+
+offclimC0 <-lmer(mean_offset ~ (1|study/season) , data=modeldata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC1 <-lmer(mean_offset ~ climate_class + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC2 <-lmer(mean_offset ~ map*mat + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC3 <-lmer(mean_offset ~ map + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC4 <-lmer(mean_offset ~ mat + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC5 <-lmer(mean_offset ~ lang + (1|study/season) , data=subset(natdata, season != 'not applicable'),
+                 na.action = "na.omit",REML = FALSE)
+
+offclimC6<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=subset(natdata, season != 'not applicable'),
                 na.action = "na.omit",REML = FALSE)
 
-swlbest5 <-lmer(SWLslope ~ mat +
-                (1|study), data=natdata,
+
+AIC(offclimC0,offclimC1,offclimC2,offclimC3,offclimC4,offclimC5,offclimC6)
+
+offclimCbest1<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata,
+                   na.action = "na.omit",REML = TRUE)
+
+offclimCbest2<-lmer(mean_offset ~ lang + (1|study/season) , data=natdata,
+                    na.action = "na.omit",REML = TRUE)
+
+AIC(offclimCbest1, offclimCbest2)
+
+offclimCbest<- lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata,
+                    na.action = "na.omit",REML = TRUE)
+
+summary(offclimCbest)
+
+#offset pft
+
+offplantgroupC<-lmer(mean_offset ~plant_group  +
+                       (1|study/season), data=subset(modeldata, !woodiness=="non-woody", season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+
+offleafhabitC<-lmer(mean_offset ~leaf_habit  + (1|study/season),
+                    data= subset(modeldata[which(modeldata$woodiness!='non-woody'),],leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+                    na.action = "na.omit",REML = TRUE) #struggling with this one
+
+
+offwoodC<-lmer(mean_offset ~woodiness  +
+                 (1|study/season), data=subset(modeldata, season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+
+
+offleafshapeC<-lmer(mean_offset ~leaf_shape  +
+                      (1|study/season), data=subset(modeldata, !woodiness=="non-woody", season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+
+
+AIC(offplantgroupC,offleafhabitC,offleafshapeC,offwoodC) #wood and by far 8strange how it changed...suspicious)
+
+offpftC<-lmer(mean_offset ~woodiness  +
+                (1|study/season), data=subset(modeldata, season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+
+#ofset general
+
+offC<- lmer(mean_offset ~woodiness  + SWLslope +
+              (1|study/season), data=subset(natdata, season != 'not applicable'), na.action = "na.omit",REML = TRUE)
+
+
+#####D) models as A but not applicable(season)= NA############
+
+#SWL
+
+swlD0 <-lmer(SWLslope ~ (1|study) , data=modeldata,
+             na.action = "na.omit",REML = FALSE)
+
+swlD1<-lmer(SWLslope ~ climate_class*season + (1|study) , data=natdata0,
+            na.action = "na.omit",REML = FALSE)
+
+swlD2 <-lmer(SWLslope ~ climate_class + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD3 <-lmer(SWLslope ~ season + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD4 <-lmer(SWLslope ~ season*lang + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD5 <-lmer(SWLslope ~ season*map + season*mat + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD6 <-lmer(SWLslope ~ season*map + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD7 <-lmer(SWLslope ~ season*mat + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD8 <-lmer(SWLslope ~ map*mat + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD9 <-lmer(SWLslope ~ map + (1|study) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlD10 <-lmer(SWLslope ~ mat + (1|study) , data=natdata0,
+              na.action = "na.omit",REML = FALSE)
+
+swlD11 <-lmer(SWLslope ~ lang + (1|study) , data=natdata0,
+              na.action = "na.omit",REML = FALSE)
+
+AIC(swlD0,swlD1,swlD2,swlD3,swlD4,swlD5,swlD6,swlD7,swlD8,swlD9,swlD10,swlD11)
+
+swlAbest1<-lmer(SWLslope ~ season*lang + (1|study) , data=natdata0,
+                na.action = "na.omit",REML = TRUE)
+
+swlAbest2<-lmer(SWLslope ~ map + (1|study) , data=natdata0,
+                na.action = "na.omit",REML = TRUE)
+
+swlAbest3<-lmer(SWLslope ~ season*lang + (1|study) , data=natdata0,
+                na.action = "na.omit",REML = TRUE)
+
+AIC(swlAbest1,swlAbest2,swlAbest3)  
+
+swlDbest<-lmer(SWLslope ~ season*map + (1|study) , data=natdata0,
+               na.action = "na.omit",REML = FALSE)
+
+
+summary(swlDbest)
+
+#offset climate
+
+offclimD0 <-lmer(mean_offset ~ (1|study) , data=modeldata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD1<-lmer(mean_offset ~ climate_class*season + (1|study) , data=natdata0,
                 na.action = "na.omit",REML = FALSE)
 
-swlbest6 <-lmer(SWLslope ~ lang +
-                (1|study/season), data=natdata,
-                na.action = "na.omit",REML = FALSE)
+offclimD2 <-lmer(mean_offset ~ climate_class + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD3 <-lmer(mean_offset ~ season + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD4 <-lmer(mean_offset ~ season*lang + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD5 <-lmer(mean_offset ~ season*map + season*mat + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD6 <-lmer(mean_offset ~ season*map + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD7 <-lmer(mean_offset ~ season*mat + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD8 <-lmer(mean_offset ~ map*mat + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD9 <-lmer(mean_offset ~ map + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD10 <-lmer(mean_offset ~ mat + (1|study) , data=natdata0,
+                  na.action = "na.omit",REML = FALSE)
+
+offclimD11 <-lmer(mean_offset ~ lang + (1|study) , data=natdata0,
+                  na.action = "na.omit",REML = FALSE)
+
+offclimD12<-lmer(mean_offset ~ SWLslope + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimD13<-lmer(mean_offset ~ SWLslope*season + (1|study) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+AIC(offclimD0,offclimD1,offclimD2,offclimD3,offclimD4,offclimD5,offclimD6,
+    offclimD7,offclimD8,offclimD9,offclimD10,offclimD11, offclimD12, offclimD13)
+
+offclimDbest1<-lmer(mean_offset ~ SWLslope*season + (1|study) , data=natdata0,
+                   na.action = "na.omit",REML = TRUE)
+offclimDbest2<-lmer(mean_offset ~ season*map + (1|study) , data=natdata0,
+                    na.action = "na.omit",REML = TRUE)
+
+AIC(offclimDbest1,offclimDbest2)
+
+offclimDbest<-lmer(mean_offset ~ SWLslope*season + (1|study) , data=natdata0,
+                   na.action = "na.omit",REML = TRUE)
+
+summary(offclimAbest)
+emmeans(offclimAbest, list(pairwise ~ SWLslope*season), adjust = "tukey") # i dont really know how to interpret this
+
+#offset pft
+
+offplantgroupD<-lmer(mean_offset ~plant_group  +
+                       (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+offleafhabitD<-lmer(mean_offset ~leaf_habit  + (1|study),
+                    data= subset(modeldata[which(modeldata$woodiness!='non-woody'),], leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+                    na.action = "na.omit",REML = TRUE)
+
+offwoodD<-lmer(mean_offset ~woodiness  +
+                 (1|study), data=modeldata, na.action = "na.omit",REML = TRUE)
 
 
-swlbest0 <-lmer(SWLslope ~ climate_class*season +
-                 (1|study) , data=subset(natdata, season != 'not applicable'),
-               na.action = "na.omit",REML = FALSE) 
+offleafshapeD<-lmer(mean_offset ~leaf_shape  +
+                      (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
 
-swlbest00 <-lmer(SWLslope ~ map*season +
-                  (1|study) , data=subset(natdata, season != 'not applicable'),
+
+AIC(offplantgroupD,offleafhabitD,offleafshapeD,offwoodD) #shape and group. Group has more ecological logic
+
+offpftD<-lmer(mean_offset ~plant_group  +
+                (1|study), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+#ofset general
+
+offD<-lmer(mean_offset ~plant_group  + map*season +
+             (1|study), data=subset(natdata0, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+##### E) models as C but not applicable(season)= NA############
+
+#SWL
+
+swlE0 <-lmer(SWLslope ~ (1|study/season) ,data=modeldata,
+             na.action = "na.omit",REML = FALSE)
+
+swlE1 <-lmer(SWLslope ~ climate_class + (1|study/season) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlE2 <-lmer(SWLslope ~ map*mat + (1|study/season) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlE3 <-lmer(SWLslope ~ map + (1|study/season) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlE4 <-lmer(SWLslope ~ mat + (1|study/season) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+swlE5 <-lmer(SWLslope ~ lang + (1|study/season) , data=natdata0,
+             na.action = "na.omit",REML = FALSE)
+
+AIC(swlE0,swlE1,swlE2,swlE3,swlE4,swlE5)
+
+swlEbest1<-lmer(SWLslope ~ map + (1|study/season) , data=natdata0,
+                na.action = "na.omit",REML = TRUE)
+swlEbest2<-lmer(SWLslope ~ lang + (1|study/season) , data=natdata0,
+                na.action = "na.omit",REML = TRUE)
+
+AIC(swlEbest1, swlEbest2) #both are similar
+
+
+#offset climate
+
+offclimE0 <-lmer(mean_offset ~ (1|study/season) , data=modeldata,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE1 <-lmer(mean_offset ~ climate_class + (1|study/season) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE2 <-lmer(mean_offset ~ map*mat + (1|study/season) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE3 <-lmer(mean_offset ~ map + (1|study/season) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE4 <-lmer(mean_offset ~ mat + (1|study/season) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE5 <-lmer(mean_offset ~ lang + (1|study/season) , data=natdata0,
+                 na.action = "na.omit",REML = FALSE)
+
+offclimE6<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata0,
                 na.action = "na.omit",REML = FALSE) 
- 
-AIC(swlbest1,swlbest1.1,swlbest1.2,swlbest2,swlbest3,swlbest4,swlbest4.1,swlbest4.2,swlbest5,swlbest6,swlbest0,swlbest00)
-
-summary(swlbest4.1)
-summary(swlbest00)
-
-emmeans(swlbest00, list(pairwise ~ season), adjust = "tukey")
-#we dont want not applicable values
-# natdata[which(natdata$season == "not applicable"), 'season'] <- NA
-
-#general model
-swlbest11 <-lmer(SWLslope ~ climate_class +
-                  (1|study), data=natdata,
-                na.action = "na.omit",REML = TRUE)
-summary(swlbest1)
-anova(swlbest1)
-emmeans(swlbest1, list(pairwise ~ climate_class), adjust = "tukey")
-visreg(swlbest1, xvar = "climate_class",
-       scale = "response", gg=TRUE)
-check_model(swlbest1)
-
-# no significant differences in swl among climate classes
-
-swlbest2 <-lmer(SWLslope ~ lang +
-                  (1|study) , data=natdata,
-                na.action = "na.omit",REML = TRUE)
-myresplot(swlbest2, natdata)
-summary(swlbest2)
-visreg(swlbest2, xvar = "lang",
-       scale = "response", gg=TRUE)
-plot(natdata$SWLslope ~ natdata$lang, pch = 19, col = as.factor(natdata$climate_class),
-     ylab = 'log (slope SWL)', xlab = 'Lang Index (mm/c)')
-legend('bottomright', legend = levels(as.factor(natdata$climate_class)), pch = 19, col = 1:4, bty = 'n')
-plot(natdata$SWLslope ~ natdata$lang, pch = 19, col = as.factor(natdata$climate_class),
-     ylab = 'log (slope SWL)', xlab = 'Lang Index (mm/c)', xlim = c(0, 450))
-
-# important disequilibrium in sample size across climate_classes
-#doBy::summaryBy(SWLslope ~ season + climate_class, FUN = lengthWithoutNA, data = subset(natdata, season != 'not applicable'))
-#doBy::summaryBy(SWLslope ~ climate_class, FUN = lengthWithoutNA, data = natdata)
-summarise(group_by(modeldata, climate_class), count = lengthWithoutNA(mean_offset))
-summarise(group_by(natdata, climate_class), count = lengthWithoutNA(mean_offset))
-
-swlbest <-lmer(SWLslope ~ climate_class*season +
-                 (1|study) , data=subset(natdata, season != 'not applicable'),
-               na.action = "na.omit",REML = TRUE) #has to be true
-
-summary(swlbest)
-myresplot(swlbest, natdata) #looks good
-anova(swlbest)
-emmeans(swlbest, list(pairwise ~ climate_class*season), adjust = "tukey")
-visreg(swlbest, xvar = "season", by = 'climate_class',
-       scale = "response", gg=TRUE)
-# no significant differences neither among climate classes, nor among seasons
-
-swlLang <- lmer(SWLslope ~ lang*season + (1|study)-1, data = subset(natdata, season != 'not applicable'),
-                na.action = 'na.omit', REML = TRUE)
-summary(swlLang)
-# no significant effects of the Lang index or season
-windows(8, 8)
-par(mfrow=c(1, 1))
-dry <- subset(natdata, season == 'dry')
-plot(dry$SWLslope ~ dry$lang, pch = 19, col = as.factor(dry$climate_class),
-     xlim = c(0, 600), ylim= c(0, 12), ylab = 'SWL slope', xlab = 'Lang Index (mm/C)')
-wet <- subset(natdata, season == 'wet')
-points(wet$SWLslope ~ wet$lang, pch = 17, col = as.factor(wet$climate_class))
-legend('bottomright', legend=c(levels(as.factor(dry$climate_class)), 'dry', 'wet'), pch = c(rep(15, 4), 1, 2),
-       col =c(1:4, 'black', 'black'), bty = 'n')
-rm(wet, dry)
-
-swlnull<- lmer(SWLslope ~  (1|study), data = subset(natdata, season != 'not applicable'),
-               na.action = 'na.omit', REML = TRUE)
-
-summary(swlnull)
-anova(swlnull)
-emmeans(swlnull, list(pairwise ~ climate_class), adjust = "tukey")
-visreg(swlnull, xvar = "climate_class",
-       scale = "response", gg=TRUE)
-check_model(swlnull)
-AIC(swlnull,swlbest,swlbest1,swlbest2,swlLang)
 
 
-####map##########
+AIC(offclimE0,offclimE1,offclimE2,offclimE3,offclimE4,offclimE5,offclimE6)
 
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(sf)
-library(rgeos)
-theme_set(theme_bw())
+offclimEbest1<-lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata0,
+                    na.action = "na.omit",REML = TRUE)
 
-#world map load
-world <- ne_countries(scale = "medium", returnclass = "sf")
+offclimEbest2<-lmer(mean_offset ~ lang + (1|study/season) , data=natdata0,
+                    na.action = "na.omit",REML = TRUE)
 
-#dataframe of coords and climate:
-sites <- data.frame(modeldata$log, modeldata$lat)
-names(sites)[1] <- "longitude"
-names(sites)[2] <- "latitude"
-sites<- unique(sites)
-sites<- subset(sites, !longitude== "NA")
+AIC(offclimEbest1, offclimEbest2)
 
-#same projections (for WGS84 CRS code is #4326)
-sites<- st_as_sf(sites, coords = c("longitude", "latitude"), 
-                 crs = 4326, agr = "constant")
+offclimEbest<- lmer(mean_offset ~ SWLslope + (1|study/season) , data=natdata0,
+                    na.action = "na.omit",REML = TRUE)
 
-#plot:
-map<-ggplot(data = world) +
-  geom_sf() +
-  geom_sf(data = sites, size = 3.7, shape = 21, 
-          fill = "dodgerblue2", color="dodgerblue3", alpha=0.9) +
-  coord_sf(xlim = c(-170, 170), ylim = c(-90, 90), expand = FALSE)
-x11()
-map
+summary(offclimCbest)
 
-ggsave("map.jpg", map, width = 20, height = 10, dpi = 900)
+#offset pft
 
-rm(map, sites, world)
+offplantgroupE<-lmer(mean_offset ~plant_group  +
+                       (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+
+offleafhabitE<-lmer(mean_offset ~leaf_habit  + (1|study/season),
+                    data= subset(modeldata[which(modeldata$woodiness!='non-woody'),],leaf_habit == 'deciduous' | leaf_habit == 'evergreen'),
+                    na.action = "na.omit",REML = TRUE) 
 
 
+offwoodE<-lmer(mean_offset ~woodiness  +
+                 (1|study/season), data=subset(modeldata, season != 'not applicable'), na.action = "na.omit",REML = TRUE)
 
 
-summarise(group_by(modeldata, season), count = lengthWithoutNA(season))
-n_distinct(modeldata$species_plant)
-arid <- natdata %>% 
-  filter(climate_class=="arid")
-
-n_distinct(arid$campaign)
-n_distinct(arid$study)
-n_distinct(arid$species_plant)
-summarise(group_by(arid, season), count = lengthWithoutNA(season))
-mean(arid$SWLslope)
-max(arid$SWLslope)
-min(arid$SWLslope)
-mean(arid$mean_lcexcess)
-max(arid$mean_lcexcess)
-min(arid$mean_lcexcess)
-mean(arid$mean_offset)
-max(arid$mean_offset)
-min(arid$lcexcess)
+offleafshapeE<-lmer(mean_offset ~leaf_shape  +
+                      (1|study/season), data=subset(modeldata, !woodiness=="non-woody", season != 'not applicable'), na.action = "na.omit",REML = TRUE)
 
 
-tropical <- natdata %>% 
-  filter(climate_class=="tropical")
+AIC(offplantgroupC,offleafhabitC,offleafshapeC,offwoodC) #group and shape. again we chose group
 
-n_distinct(tropical$campaign)
-n_distinct(tropical$study)
-n_distinct(tropical$species_plant)
-summarise(group_by(tropical, season), count = lengthWithoutNA(season))
-mean(tropical$SWLslope)
-max(tropical$SWLslope)
-min(tropical$SWLslope)
-mean(tropical$mean_lcexcess)
-max(tropical$mean_lcexcess)
-min(tropical$mean_lcexcess)
-mean(tropical$mean_offset)
-max(tropical$mean_offset)
-min(tropical$lcexcess)
+offpftE<-lmer(mean_offset ~plant_group  +
+                (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+#ofset general
 
-warm <- natdata %>% 
-  filter(climate_class=="warm")
+offE<- lmer(mean_offset ~plant_group  + SWLslope +
+              (1|study/season), data=natdata0, na.action = "na.omit",REML = TRUE)
 
-n_distinct(warm$campaign)
-n_distinct(warm$study)
-n_distinct(warm$species_plant)
-summarise(group_by(warm, season), count = lengthWithoutNA(season))
-mean(warm$SWLslope)
-max(warm$SWLslope)
-min(warm$SWLslope)
-mean(warm$mean_lcexcess)
-max(warm$mean_lcexcess)
-min(warm$mean_lcexcess)
-mean(warm$mean_offset)
-max(warm$mean_offset)
-min(warm$lcexcess)
+####### SUMMARY compare A, B, C, D and E##########
 
+#SWL
 
+AIC(swlAbest,swlBbest,swlCbest1,swlCbest2,swlDbest,swlEbest1,swlEbest2) #D > C(1,2),E(1,2) > B > A
 
-cold <- modeldata %>% 
-  filter(climate_class=="cold")
+summary(swlAbest)
+summary(swlBbest)
+summary(swlCbest1)
+summary(swlCbest2)
+summary(swlDbest)
+summary(swlEbest1)
+summary(swlEbest2)
 
-n_distinct(cold$campaign)
-n_distinct(cold$study)
-n_distinct(cold$species_plant)
-summarise(group_by(cold, season), count = lengthWithoutNA(season))
-mean(cold$SWLslope)
-max(cold$SWLslope)
-min(cold$SWLslope)
-mean(cold$mean_lcexcess)
-max(cold$mean_lcexcess)
-min(cold$mean_lcexcess)
-mean(cold$mean_offset)
-max(cold$mean_offset)
-min(cold$lcexcess)
+#offset climate
 
+AIC (offclimAbest, offclimBbest, offclimCbest, offclimDbest, offclimEbest) #(E>D)>A>(C,B)
 
-angio<- modeldata %>% filter(plant_group=="angiosperm")
-gymno<- modeldata %>% filter(plant_group=="gymnosperm")
+summary(offclimAbest)
+summary(offclimBbest)
+summary(offclimCbest)
+summary(offclimDbest)
+summary(offclimEbest)
 
-n_distinct(angio$species_plant)
-n_distinct(gymno$species_plant)
-n_distinct(natdata$campaign, natdata$season)
+#offset pft
 
-dry<- natdata %>% filter(season=="dry")
-n_distinct(dry$campaign)
-wet<- natdata %>% filter(season=="wet")
-n_distinct(wet$campaign)
-not<- natdata %>% filter(season=="not applicable")          
-n_distinct(not$campaign)
+AIC(offpftA, offpftB, offpftC, offpftD, offpftE) #C > (A,B,D,E)
+
+summary(offpftA) 
+summary(offpftB)
+summary(offpftC)
+summary(offpftD)
+summary(offpftE)
+
+#ofset general 
+
+AIC(offA,offB,offC,offD,offE) #D>>E>A > (B,C)
+
+summary(offA)
+summary(offB)
+summary(offC)
+summary(offD)
+summary(offE)
