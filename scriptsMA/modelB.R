@@ -25,7 +25,7 @@ library(lmerTest)
 library(emmeans)
 
 
-natdata <- subset(modeldata, natural== 'natural') ¡
+natdata <- subset(modeldata, natural== 'natural')
 
 ######SWL#######
 
@@ -64,12 +64,14 @@ visreg(swlbest, xvar = "map",
 
 #offset climate
 
-
 offclim1 <-lmer(mean_offset ~ climate_class + (1|study/season) , data=natdata,
                  na.action = "na.omit",REML = FALSE)
 
 offclim2 <-lmer(mean_offset ~ map*mat + (1|study/season) , data=natdata,
                  na.action = "na.omit",REML = FALSE)
+
+offclim2b <-lmer(mean_offset ~ map + mat + (1|study/season) , data=natdata,
+               na.action = "na.omit",REML = FALSE)
 
 offclim3 <-lmer(mean_offset ~ map + (1|study/season) , data=natdata,
                  na.action = "na.omit",REML = FALSE)
@@ -81,7 +83,7 @@ offclim5 <-lmer(mean_offset ~ lang + (1|study/season) , data=natdata,
                  na.action = "na.omit",REML = FALSE)
 
 
-AIC(offclim1,offclim2,offclim3,offclim4,offclim5)
+AIC(offclim1,offclim2, offclim2b, offclim3,offclim4,offclim5)
 
 offclimbest<-lmer(mean_offset ~ map + (1|study/season) , data=natdata,
                    na.action = "na.omit",REML = TRUE)
@@ -121,10 +123,12 @@ visreg(offwood, xvar = "woodiness",
 
 offleafshape<-lmer(mean_offset ~leaf_shape  +
                       (1|study/season), data=subset(modeldata, !woodiness=="non-woody"), na.action = "na.omit",REML = TRUE)
+offleafshape2<-lmer(mean_offset ~leaf_shape  +
+                     (1|study/season), data= modeldata, na.action = "na.omit",REML = TRUE)
 
 check_model(offleafshape)
 summary(offleafshape)
-visreg(offleafshape)
+visreg(offleafshape2)
 
 AIC(offplantgroup,offleafhabit,offleafshape,offwood) # (REML=FALSE) shape and group. Group has more ecological logic
 

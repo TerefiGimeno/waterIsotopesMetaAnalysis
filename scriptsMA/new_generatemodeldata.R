@@ -54,7 +54,7 @@ colnames(metaWC)<- c("log","lat","matWC","mapWC")
 
 metaWC$matWC<- 0.1*metaWC$matWC
 # make sure you don't lose the glasshouse studies
-meta<-merge(meta, metaWC, by=c('log','lat'), all.x = T)
+meta <- merge(meta, metaWC, by=c('log','lat'), all.x = T)
 
 detach("package:raster", unload = TRUE)
 rm(WCvars, coords, points, values, metaWC)
@@ -121,26 +121,26 @@ rm(multiple, rsquared, length, slope, intercept, meta_lmwl)
 ####lets screen the plots (put back the # after screening plots to use this script faster
 #when using genratemodeldata in the model script)
 
-#swlplot <- left_join(source, swl, by = 'campaign')
-#swlplot <- subset(swlplot, p.value.slope < 0.05 & n > 2 & estimate.slope > 0)
-
-# split in groups to see the plots more clearly
-#campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
-#campNames$campaign <- unique(swlplot$campaign)
-#campNames$crapNumber <- c(1:nrow(campNames))
-#swlplot <- left_join(swlplot, campNames, by = 'campaign')
-#swlplotL <- list()
-#for(i in 1:ceiling((nrow(campNames)/20))){
-  #swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
-#}
-
-#windows(12, 8)
-# enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
-#ggplot(data=swlplotL[[1]],aes(x=d18O_permil_source,y=d2H_permil_source))+
-  #geom_point()+
-  #geom_smooth(method=lm,se=F)+
-  #facet_wrap(~campaign)+
-  #stat_cor()
+# swlplot <- left_join(source, swl, by = 'campaign')
+# swlplot <- subset(swlplot, p.value.slope < 0.05 & n > 2 & estimate.slope > 0 & label_class == 'soil')
+# 
+# # split in groups to see the plots more clearly
+# campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
+# campNames$campaign <- unique(swlplot$campaign)
+# campNames$crapNumber <- c(1:nrow(campNames))
+# swlplot <- left_join(swlplot, campNames, by = 'campaign')
+# swlplotL <- list()
+# for(i in 1:ceiling((nrow(campNames)/20))){
+#   swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
+# }
+# 
+# windows(12, 8)
+# # enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
+# ggplot(data=swlplotL[[18]],aes(x=d18O_permil_source,y=d2H_permil_source))+
+#   geom_point()+
+#   geom_smooth(method=lm,se=F)+
+#   facet_wrap(~campaign)+
+#   stat_cor()
 
 
 ###########offset############################
@@ -156,9 +156,8 @@ rm(crap)
 # drop values measured on leaves and exclude those that do not represent plant pool water
 plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
 
-offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'season', 'natural')],
+offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'natural')],
                      swl, by = 'campaign') #inner join because we dont want plant campaigns matching issin source ones (non significative)
-# the nrow of offset should be same as in plant
 
 ###let's calculate the offset!
 # equation (1) in Barbeta et al. 2019 HESS
@@ -174,18 +173,19 @@ means_offset<-offset %>%
   summarise(mean_offset=mean(offset,na.rm=T), se_offset = s.err.na(offset),
             mean_dexcess=mean(dexcess, na.rm=T), se_dexcess = s.err.na(dexcess),
             mean_lcexcess=mean(lcexcess, na.rm=T), se_lcexcess = s.err.na(lcexcess),
-            count_offset=n(), natural=natural[1], season=season[1])
+            count_offset=n(), natural=natural[1])
 
 ######database######
 modeldata <- inner_join(means_offset, swl, by = 'campaign')
-modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
 modeldata$authorYearPlot <- paste0(modeldata$author, '-', modeldata$year, '-', modeldata$plotR)
 # this is your random term
 modeldata$authorYear <- paste0(modeldata$author, '-', modeldata$year)
-meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 'climate_class')]
+meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC')]
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
-modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
+# do not use inner_join here or you will lose glasshouse studies
+# modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
+modeldata <- left_join(modeldata, meta_clim_short, by = 'authorYearPlot')
 
 modeldata$species_meta_complete <- modeldata$species_plant_complete
 # check that species_metaR from meta_data and species_plant from plant_data are actually the same
@@ -210,15 +210,14 @@ rm(means_offset, meta, meta_clim_short, meta_spp_short,
 
 modeldata<-modeldata %>%
   select(authorYear,campaign, species_plant_complete,natural,leaf_habit,leaf_shape,plant_group,growth_form,woodiness,
-         climate_class,log,lat,elevation,date,mapWC,matWC,mean_offset, se_offset, count_offset, mean_dexcess, se_dexcess, mean_lcexcess
-         ,se_lcexcess, estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,
+         log,lat,elevation,date,mapWC,matWC,mean_offset, se_offset, count_offset, mean_dexcess, se_dexcess, mean_lcexcess
+         ,se_lcexcess, estimate.slope,std.error.slope,p.value.slope,
          r.squared,n)
 
 #give proper names
 colnames(modeldata) <- c("study", "campaign", "species_plant", "natural", "leaf_habit", "leaf_shape", "plant_group",
-                         "growth_form", "woodiness", "climate_class", "log", "lat", "elevation","date",
+                         "growth_form", "woodiness", "log", "lat", "elevation","date",
                          "map", "mat", "mean_offset", "se_offset", "n_offset", "mean_dexcess", "se_dexcess",
-                         "mean_lcexcess", "se_lcexcess", "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLintercept",
-                         "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL")
+                         "mean_lcexcess", "se_lcexcess", "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLrsquared", "n_SWL")
 
 #write.csv(modeldata, "C:\\Users\\JAVI\\Desktop\\pRojects\\waterIsotopesMetaAnalysis\\dataMA\\new_modeldata.csv")  
