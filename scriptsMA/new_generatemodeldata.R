@@ -205,8 +205,8 @@ meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft
 # here do left_join because otherwise you lose those for which the species is not defined in the plant_data file
 modeldata <- left_join(modeldata, meta_spp_short, by = 'species_meta_complete')
 
-rm(means_offset, meta, meta_clim_short, meta_spp_short,
-   offset, plant, source, swl)
+rm(means_offset, meta_clim_short, meta_spp_short,
+   offset, swl)
 
 modeldata<-modeldata %>%
   select(authorYear,campaign, species_plant_complete,natural,leaf_habit,leaf_shape,plant_group,growth_form,woodiness,
