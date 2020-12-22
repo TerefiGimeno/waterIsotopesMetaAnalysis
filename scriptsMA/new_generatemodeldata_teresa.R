@@ -8,19 +8,21 @@ library(ggpubr)
 library(broom)
 library(tidyr)
 
-
+# double check that all variables that should be NUMERIC or ITEGRER are correct
 drive_download("https://docs.google.com/spreadsheets/d/1Z7HathxScqACg5vBxWm5dBTbiYMsRKGFDWu2okI2JLE/edit?usp=sharing",
                type = 'csv', path = 'dataMA/meta_sample.csv', overwrite = T)
 meta <- read.csv('dataMA/meta_sample.csv', sep = ",")
+str(meta)
 
 drive_download("https://docs.google.com/spreadsheets/d/1oRfLFvQthr_ZxMYjOSYpnmdbclQgxbz2waraHTafJ5U/edit#gid=0",
                type = 'csv', path = 'dataMA/source_sample.csv', overwrite = T)
 source <- read.csv('dataMA/source_sample.csv', sep = ",")
+str(source)
 
 drive_download("https://docs.google.com/spreadsheets/d/1v2zOeuB-b_BdiEQUMSHTz9nmm9pgRseUygD7SDmDgpo/edit?usp=sharing",
                type = 'csv', path = 'dataMA/plant_sample.csv', overwrite = T)
 plant <- read.csv('dataMA/plant_sample.csv', sep = ",")
-
+str(plant)
 
 #########WORLDCLIM############
 
@@ -65,7 +67,10 @@ source$authorYear <- paste0(source$author, '-', source$year)
 source$authorYearDate <- paste0(source$author, '-', source$year, '-', source$date)
 source$authorYearPlot <- paste0(source$author, '-', source$year, '-', source$plotR)
 source$campaign <- paste0(source$authorYearDate, '-', source$plotR)
-
+source$dateInt <- source$date
+crap <- source %>%
+  select(campaign, dateInt) %>%
+  unique
 
 multiple<-subset(source,label_class=='soil') %>%    ###this function computes the linear regressions
   nest(-campaign) %>%                       ###here you can choose which factors should be used
@@ -116,32 +121,33 @@ meta_lmwl[which(meta_lmwl$slope_LMWL > 1000), c('slope_LMWL', 'intercept_LMWL')]
 meta_lmwl<- rmDup(meta_lmwl, 'authorYearPlot')
 
 swl <- left_join(swl, meta_lmwl, by = 'authorYearPlot')
+swl <- left_join(swl, crap, by = 'campaign')
 
-rm(multiple, rsquared, length, slope, intercept, meta_lmwl)
+rm(multiple, rsquared, length, slope, intercept, meta_lmwl, crap)
 
 ####lets screen the plots (put back the # after screening plots to use this script faster
 #when using genratemodeldata in the model script)
 
-swlplot <- left_join(source, swl, by = 'campaign')
-swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
+# swlplot <- left_join(source, swl, by = 'campaign')
+# swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
 
 #split in groups to see the plots more clearly
-campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
-campNames$campaign <- unique(swlplot$campaign)
-campNames$crapNumber <- c(1:nrow(campNames))
-swlplot <- left_join(swlplot, campNames, by = 'campaign')
-swlplotL <- list()
-for(i in 1:ceiling((nrow(campNames)/20))){
-  swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
-}
-
-windows(12, 8)
-#enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
-ggplot(data=swlplotL[[21]],aes(x=d18O_permil_source,y=d2H_permil_source))+
-  geom_point()+
-  geom_smooth(method=lm,se=F)+
-  facet_wrap(~campaign)+
-  stat_cor()
+# campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
+# campNames$campaign <- unique(swlplot$campaign)
+# campNames$crapNumber <- c(1:nrow(campNames))
+# swlplot <- left_join(swlplot, campNames, by = 'campaign')
+# swlplotL <- list()
+# for(i in 1:ceiling((nrow(campNames)/20))){
+#   swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
+# }
+# 
+# windows(12, 8)
+# #enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
+# ggplot(data=swlplotL[[21]],aes(x=d18O_permil_source,y=d2H_permil_source))+
+#   geom_point()+
+#   geom_smooth(method=lm,se=F)+
+#   facet_wrap(~campaign)+
+#   stat_cor()
 
 
 ###########offset############################
@@ -157,7 +163,7 @@ rm(crap)
 # drop values measured on leaves and exclude those that do not represent plant pool water
 plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
 
-offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'season', 'natural')],
+offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'natural')],
                      swl, by = 'campaign') #inner join because we dont want plant campaigns matching issin source ones (non significative)
 # the nrow of offset should be same as in plant
 
@@ -175,11 +181,10 @@ means_offset<-offset %>%
   summarise(mean_offset=mean(offset,na.rm=T), se_offset = s.err.na(offset),
             mean_dexcess=mean(dexcess, na.rm=T), se_dexcess = s.err.na(dexcess),
             mean_lcexcess=mean(lcexcess, na.rm=T), se_lcexcess = s.err.na(lcexcess),
-            count_offset=n(), natural=natural[1], season=season[1])
+            count_offset=n(), natural=natural[1])
 
 ######database######
 modeldata <- inner_join(means_offset, swl, by = 'campaign')
-modeldata <- modeldata[which(!is.na(modeldata$term.slope)), ]
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
 modeldata$authorYearPlot <- paste0(modeldata$author, '-', modeldata$year, '-', modeldata$plotR)
 # this is your random term
@@ -188,7 +193,7 @@ meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC'
                             'climate_class','extraction_method_soil','extraction_method_plant',
                             'soil_measurement_method','xylem_measurement_method')]
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
-modeldata <- inner_join(modeldata, meta_clim_short, by = 'authorYearPlot')
+modeldata <- left_join(modeldata, meta_clim_short, by = 'authorYearPlot')
 
 modeldata$species_meta_complete <- modeldata$species_plant_complete
 # check that species_metaR from meta_data and species_plant from plant_data are actually the same
@@ -200,6 +205,7 @@ meta_spp_short <- meta_spp_short[which(!is.na(meta_spp_short$species_meta_comple
 meta_spp_short$woodiness <- ifelse(meta_spp_short$growth_form == 'tree' | meta_spp_short$growth_form == 'shrub',
                                    meta_spp_short$growth_form, 'non-woody')
 # turn non-applicable into NA's
+meta_spp_short[which(meta_spp_short$growth_form == "not applicable"), c('growth_form', 'woodiness')] <- NA
 meta_spp_short[which(meta_spp_short$leaf_habit == "not applicable"), 'leaf_habit'] <- NA
 meta_spp_short[which(meta_spp_short$leaf_shape == "not applicable"), 'leaf_shape'] <- NA
 meta_spp_short[which(meta_spp_short$plant_group == "not applicable"), 'plant_group'] <- NA
@@ -208,15 +214,15 @@ meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft
 # here do left_join because otherwise you lose those for which the species is not defined in the plant_data file
 modeldata <- left_join(modeldata, meta_spp_short, by = 'species_meta_complete')
 
-rm(means_offset, meta, meta_clim_short, meta_spp_short,
-   offset, plant, source, swl)
+rm(means_offset, meta_clim_short, meta_spp_short,
+   offset, swl)
 
 modeldata<-modeldata %>%
   select(authorYear,campaign, species_plant_complete,natural,leaf_habit,leaf_shape,plant_group,growth_form,woodiness,
          climate_class,log,lat,elevation,date,mapWC,matWC, extraction_method_soil,extraction_method_plant,
          soil_measurement_method,xylem_measurement_method, mean_offset,se_offset, count_offset, 
          mean_dexcess, se_dexcess, mean_lcexcess ,se_lcexcess,
-         estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,r.squared,n)
+         estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,r.squared,n,dateInt)
 
 #give proper names
 colnames(modeldata) <- c("study", "campaign", "species", "natural", "leaf_habit", "leaf_shape", "plant_group",
@@ -224,7 +230,7 @@ colnames(modeldata) <- c("study", "campaign", "species", "natural", "leaf_habit"
                          "map", "mat","extraction_method_soil","extraction_method_plant",
                          "soil_measurement_method","xylem_measurement_method","mean_offset", "se_offset", "n_offset", "mean_dexcess", "se_dexcess",
                          "mean_lcexcess", "se_lcexcess", "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLintercept",
-                         "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL")
+                         "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL", "dateInt")
 
 
 
@@ -258,12 +264,14 @@ modeldata <- merge(modeldata,wd, by='species', all.x=TRUE)
 
 ##myco
 
-# myco <-read.csv('dataMA/myco.csv', sep = ",")
-# 
-# myco<- myco[, c('species_plant','mico')]
-# colnames(myco)<-c('species','myco')
-# 
-# modeldata <- merge(modeldata,myco, by='species', all.x=TRUE)
+myco <-read.csv('dataMA/myco.csv', sep = ",")
+
+myco<- myco[, c('species_plant','mico')]
+colnames(myco)<-c('species','myco')
+
+modeldata <- merge(modeldata,myco, by='species', all.x=TRUE)
+
+rm(means_rap, myco, wd, rap)
 
 ##########ERA5##########
 library(sf)
@@ -290,13 +298,13 @@ t2mERA5list<- c(t2mERA5_1,t2mERA5_2,t2mERA5_3)
 
 t2mERA5<-stack(t2mERA5list)
 
-modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
+modeldata[, c('author', 'yearPublication', 'dateChr', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
 modeldata$studyPlot <- paste0(modeldata$study, '-', modeldata$plotR)
 modeldataxy1 <- modeldata[,c('studyPlot', "log","lat")]
 modeldataxy1 <- subset(modeldataxy1, !log== "NA") # por si acaso, pero me dio lo mismo
 modeldataxy1 <- rmDup(modeldataxy1, 'studyPlot')
 modeldataxy1$log_orig <- modeldataxy1$log
-modeldataxy1$log <- modeldataxy1$log_orig + 180
+modeldataxy1$log <- modeldataxy1$log_orig %% 360
 modeldataxy1 <- doBy::orderBy(~studyPlot, modeldataxy1)
 modeldataxy <- as.data.frame(modeldataxy1[, c('log', 'lat')])
 coordinates(modeldataxy) <- ~ log + lat
@@ -422,12 +430,6 @@ for (i in 1:4){
 }
 ERA5$int_smwlA <- 0.07*1000*ERA5$smwl1 + 0.21*1000*ERA5$smwl2 + 0.72*1000*ERA5$smwl3 + 1.89*1000*ERA5$smwl4
 ERA5$int_smwlB <- 0.07*1000*ERA5$smwl1 + 0.21*1000*ERA5$smwl2 + 0.72*1000*ERA5$smwl3
-k <- subset(ERA5, date >= as.Date('2013-01-01') & date <= as.Date('2013-12-31'))
-
-ggplot(data=k,aes(x=lat,y=int_smwlB))+
-  geom_point()+
-  facet_wrap(~month)
-
 
 lai_lvERA5_1<- brick(x = 'ERA5_data/19892000ERA5wateriso-002.nc',
                      varname="lai_lv")
@@ -549,45 +551,22 @@ slt$date <- lubridate::ymd(str_sub(slt$dateOdd, 2, 11))
 
 ERA5 <- left_join(ERA5, slt[, c('studyPlot', 'date', 'slt')], by = c('studyPlot', 'date'))
 
+ERA5year <- ERA5 %>%
+  group_by(studyPlot, year) %>%
+  summarise(sm1_annual = mean.na(smwl1), sm2_annual = mean.na(smwl2), sm3_annual = mean.na(smwl3),
+            sm4_annual = mean.na(smwl4), smIntA_annual = mean.na(int_smwlA), smIntB_annual = mean.na(int_smwlB),
+            temp_annual = mean.na(temp_C), laiLV_annual = mean.na(lai_lv), laiHV_annual = mean.na(lai_hv),
+            pet_annual = sum(mper), p_annual = sum(mtpr))
 
-ERA5$month <- as.character(ERA5$month)
+ERA5_all <- left_join(ERA5, ERA5year, by = c('studyPlot', 'year'))
 
-ERA5$month[ERA5$month=="ene"]<-"01"
-ERA5$month[ERA5$month=="feb"]<-"02"
-ERA5$month[ERA5$month=="mar"]<-"03"
-ERA5$month[ERA5$month=="abr"]<-"04"
-ERA5$month[ERA5$month=="may"]<-"05"
-ERA5$month[ERA5$month=="jun"]<-"06"
-ERA5$month[ERA5$month=="jul"]<-"07"
-ERA5$month[ERA5$month=="ago"]<-"08"
-ERA5$month[ERA5$month=="sep"]<-"09"
-ERA5$month[ERA5$month=="oct"]<-"10"
-ERA5$month[ERA5$month=="nov"]<-"11"
-ERA5$month[ERA5$month=="dic"]<-"12"
-
-ERA5$month <- as.factor(ERA5$month)
-
-ERA5$truedate <- paste0(ERA5$year, '', ERA5$month)
-modeldata$truedate<-modeldata$date
-
-ERA5[, c('au', 'ye', 'pl')] <- str_split_fixed(ERA5$studyPlot, '-', 3)
-
-ERA5$campaign <- paste0(ERA5$au, '-',ERA5$ye, '-',ERA5$truedate, '-', ERA5$pl)
-
-modeldata <- merge(modeldata,ERA5[, c('campaign', 'smwl1', 'smwl2', 'smwl3', 'smwl4',
-                                      'int_smwl', 'temp_C', 'lai_lv', 'lai_hv', 'mper', 'mtpr', 'slt')]
-                   , by='campaign', all.x=TRUE)
-
-modeldata_ultimate<- modeldata[, c("study", "campaign", "species", "natural", "leaf_habit", "leaf_shape", "plant_group",
-                                   "growth_form", "woodiness", "climate_class", "log", "lat", "elevation","date",
-                                   "map", "mat","extraction_method_soil","extraction_method_plant",
-                                   "soil_measurement_method","xylem_measurement_method","mean_offset", "se_offset", "n_offset", "mean_dexcess", "se_dexcess",
-                                   "mean_lcexcess", "se_lcexcess", "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLintercept",
-                                   "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL", 'smwl1', 'smwl2', 'smwl3', 'smwl4',
-                                   'int_smwl', 'temp_C', 'lai_lv', 'lai_hv', 'mper', 'mtpr', 'slt', 'RAP', "RP", "AP", "wd", "myco")]
-
-modeldata_ultimate$AP[modeldata_ultimate$AP=="NaN"]<-NA
-modeldata_ultimate$montRP[modeldata_ultimate$RP=="NaN"]<-NA
-modeldata_ultimate$montRAP[modeldata_ultimate$RAP=="NaN"]<-NA
-
-write.csv(modeldata_ultimate, "C:\\Users\\JAVI\\Desktop\\pRojects\\waterIsotopesMetaAnalysis\\dataMA\\modeldata_ultimate.csv")  
+modeldata[which(modeldata$dateInt == 99999), 'dateInt'] <- 1900
+modeldata$date <- ifelse(modeldata$dateInt <=  9999, modeldata$dateInt * 10000 + 101, modeldata$dateInt * 100 + 1)
+modeldata$date <- lubridate::ymd(modeldata$date)
+modeldata$year <- lubridate::year(modeldata$date)
+modeldata$month <- lubridate::month(modeldata$date, label = T)
+modeldata <- modeldata[ , -which(names(modeldata) %in% c("date", "log", "lat"))]
+modeldata <- left_join(modeldata, ERA5_all, by = c('studyPlot', 'year', 'month'))
+# for those studies where we cannot define the moth of sample collection only keep annual averages
+modeldata[which(modeldata$dateInt <= 9999), c("temp_C", "smwl1", "smwl2", "smwl3", "smwl4",
+                                              "int_smwlA", "int_smwlB", "lai_lv", "lai_hv", "mper", "mtpr")] <- NA

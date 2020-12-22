@@ -28,7 +28,7 @@ modeldataxy1 <- modeldata[,c('studyPlot', "log","lat")]
 modeldataxy1 <- subset(modeldataxy1, !log== "NA") # por si acaso, pero me dio lo mismo
 modeldataxy1 <- rmDup(modeldataxy1, 'studyPlot')
 modeldataxy1$log_orig <- modeldataxy1$log
-modeldataxy1$log <- modeldataxy1$log_orig + 180
+modeldataxy1$log <- ifelse(modeldataxy1$log < 0, 360 + modeldataxy1$log, modeldataxy1$log)
 modeldataxy1 <- doBy::orderBy(~studyPlot, modeldataxy1)
 modeldataxy <- as.data.frame(modeldataxy1[, c('log', 'lat')])
 coordinates(modeldataxy) <- ~ log + lat

@@ -3,7 +3,7 @@ library(raster) # package for raster manipulation
 library(rgdal) # package for geospatial analysis
 library(ggplot2) # package for plotting
 
-nc <- nc_open('adaptor.mars.internal-1608571356.8794143-27317-16-94938827-4474-487b-b2dc-1a4b9b28391c.nc')
+nc <- nc_open('ERA5_July2003_2mtemp.nc')
 
 # load package
 library(sp)
@@ -25,7 +25,7 @@ for (i in 1:nt) {
   count <- size                # begin with count=(nx,ny,...,nt), reads entire var
   count[dims] <- 1             # change to count=(nx,ny,...,1) to read 1 tstep
   
-  dt<-ncvar_get(nc, start = start, count = count)
+  dt<-ncvar_get(nc, varid = 't2m', start = start, count = count)
   
   # convert to raster
   r[i]<-raster(dt)
@@ -39,7 +39,13 @@ rt<-t(r)
 extent(rt)<-extent(c(range(lon), range(lat)))
 
 
-
+madridRome <- data.frame(row.names=1:2)
+madridRome[1:2, 'x'] <- c((360-3.6919444), 12.4964)
+madridRome[1:2, 'y'] <- c(40.41889, 41.9028)
+coordinates(madridRome) <- ~ x + y
+ 
 # plot the result
+#spplot(rt)
+windows(12,8)
 spplot(rt, sp.layout = list("sp.points", modeldataxy, pch = 16, cex = 2, col = "black"))
 
