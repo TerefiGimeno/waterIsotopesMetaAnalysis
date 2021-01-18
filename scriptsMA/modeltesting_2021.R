@@ -147,6 +147,7 @@ summary(mpev)###
 
 mpevA <- lmer(mean_offset ~ pev_annual + (1|study) , data=subset(modeldata, natural == 'natural'),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
 summary(mpevA) 
+hist(modeldata$aridUNEP)
 
 mpevD <- lmer(mean_offset ~ pev_dif + (1|study) , data=subset(modeldata, natural == 'natural'),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
 summary(mpevD) #.
@@ -179,6 +180,7 @@ summary(maridD) ###
 
 #climate effects combined
 
+visreg(mslt)
 
 #######biological model(modeldata)########
 
@@ -210,6 +212,7 @@ summary(mmyco) #
 
 mslt <- lmer(mean_offset ~ slt + (1|study) , data=modeldata,  weights = weightSWr, na.action = "na.omit",REML = TRUE)
 summary(mslt) ###
+anova(mslt)
 
 mmesxyl <- lmer(mean_offset ~ xylem_measurement_method + (1|study) , data=modeldata,  weights = weightSWr, na.action = "na.omit",REML = TRUE)
 summary(mmesxyl) ##
@@ -362,6 +365,9 @@ summary(smslt) ###
 smmessoil <- lmer(SWLslope ~ soil_measurement_method + (1|study) , data=modeldata,  weights = weightSWr, na.action = "na.omit",REML = TRUE)
 summary(smmessoil)###
 
+smlh <- lmer(SWLslope ~ leaf_habit + (1|study) , data=modeldata,  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(smlh) ###
+
 ########modeldata0#############
 
 modeldata0 <-subset(modeldata,mean_offset<20)
@@ -490,3 +496,384 @@ mlaihvA0 <- lmer(mean_offset ~ laiHV_annual + (1|study) , data=modeldata0,  weig
 summary(mlaihvA0) # looses effect
 
 #####combined model(modeldata)########
+
+
+
+###test of natural$position
+
+modeldata$position[modeldata$mean_lcexcess<0&modeldata$mean_offset<0]<-"neg_neg"
+modeldata$position[modeldata$mean_lcexcess>=0&modeldata$mean_offset>=0]<-"pos_pos"
+modeldata$position[modeldata$mean_lcexcess>=0&modeldata$mean_offset<0]<-"pos_neg"
+modeldata$position[modeldata$mean_lcexcess<0&modeldata$mean_offset>=0]<-"neg_pos"
+
+######null model(modeldata)##########
+
+null <- lmer(mean_offset ~ (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(null) ###overall existence of the offset (negative effect) WHAT WE WERE LOOKING
+
+#######climate model(modeldata)#########
+# this symbol(#) will appear in the ones with significant effects close to summary
+mmap <- lmer(mean_offset ~ map + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmap) ###
+
+mmat <- lmer(mean_offset ~ mat + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmat)###
+
+mtemp <- lmer(mean_offset ~ temp_C + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtemp)###
+
+mtempA <- lmer(mean_offset ~ temp_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtempA)###
+
+mtempD <- lmer(mean_offset ~ temp_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtempD)  ###
+
+mSWCa <- lmer(mean_offset ~ int_smwlA + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCa)##
+
+mSWCb <- lmer(mean_offset ~ int_smwlB + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCb) ##
+
+mSWCaA <- lmer(mean_offset ~ smIntA_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCaA) ###
+
+mSWCbA <- lmer(mean_offset ~ smIntB_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCbA) ###
+
+mSWCaD <- lmer(mean_offset ~ int_smwlA_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCaA) ###
+
+mSWCbD <- lmer(mean_offset ~ int_smwlB_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCbA) ###
+
+msmwl1 <- lmer(mean_offset ~ smwl1 + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1) ##
+
+msmwl2 <- lmer(mean_offset ~ smwl2 + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2) #
+
+msmwl3 <- lmer(mean_offset ~ smwl3 + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3) ##
+
+msmwl4 <- lmer(mean_offset ~ smwl4 + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4)###
+
+msmwl1A <- lmer(mean_offset ~ sm1_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1A)
+
+msmwl2A <- lmer(mean_offset ~ sm2_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2A)
+
+msmwl3A <- lmer(mean_offset ~ sm3_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3A)
+
+msmwl4A <- lmer(mean_offset ~ sm4_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4A)
+
+msmwl1D <- lmer(mean_offset ~ sm1_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1D) ###
+
+msmwl2D <- lmer(mean_offset ~ sm2_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2D) ###
+
+msmwl3D <- lmer(mean_offset ~ sm3_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3D) ###
+
+msmwl4D <- lmer(mean_offset ~ sm4_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4D) ###
+
+me <- lmer(mean_offset ~ e + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(me) ###
+
+
+meA <- lmer(mean_offset ~ e_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meA) ###
+
+
+meD <- lmer(mean_offset ~ e_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meD)###
+
+
+meS <- lmer(mean_offset ~ e_sum + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meS)###
+
+
+mpev <- lmer(mean_offset ~ pev + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpev)###
+
+mpevA <- lmer(mean_offset ~ pev_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevA) ##
+
+mpevD <- lmer(mean_offset ~ pev_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevD) ###
+
+mpevS <- lmer(mean_offset ~ pev_sum + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevS) ##
+
+mtp <- lmer(mean_offset ~ tp + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtp) ###
+
+mtpA <- lmer(mean_offset ~ tp_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpA) ###
+
+mtpD <- lmer(mean_offset ~ tp_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpD) ###
+
+mtpS <- lmer(mean_offset ~ tp_sum + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpS) ###
+
+
+marid <- lmer(mean_offset ~ aridUNEP + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(marid) ###
+
+maridA <- lmer(mean_offset ~ aridUNEP_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(maridA) ###
+
+maridD <- lmer(mean_offset ~ aridUNEP_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(maridD) ###
+
+
+#climate effects combined
+
+
+#######biological model(modeldata)########
+
+mpg <- lmer(mean_offset ~ plant_group + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpg) ###
+
+mwood <- lmer(mean_offset ~ woodiness + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mwood) ###
+
+mlh <- lmer(mean_offset ~ leaf_habit + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlh) ###
+
+mls <- lmer(mean_offset ~ leaf_shape + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mls) ###
+
+mwd <- lmer(mean_offset ~ wd + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mwd) ###
+
+mRAP <- lmer(mean_offset ~ RAP + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mRAP) ###
+
+mmyco <- lmer(mean_offset ~ myco + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmyco) ###
+
+
+#biological combined
+
+#######other (modeldata)######
+
+mslt <- lmer(mean_offset ~ slt + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mslt) ###
+
+mmesxyl <- lmer(mean_offset ~ xylem_measurement_method + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmesxyl) ###
+
+mmessoil <- lmer(mean_offset ~ soil_measurement_method + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmessoil) ###
+
+mlailv <- lmer(mean_offset ~ lai_lv + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailv) ###
+
+mlailvA <- lmer(mean_offset ~ laiLV_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailvA) ###
+
+mlailvD <- lmer(mean_offset ~ laiLV_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailvD) ###
+
+mlaihv <- lmer(mean_offset ~ lai_hv + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihv) ###
+
+mlaihvA <- lmer(mean_offset ~ laiHV_annual + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihvA) ###
+
+mlaihvD <- lmer(mean_offset ~ laiHV_dif + (1|study) , data=subset(modeldata,position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihvD) ###
+
+
+####### not neg neg
+
+null <- lmer(mean_offset ~ (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(null) ### but positive effect
+
+#######climate model(modeldata)#########
+# this symbol(#) will appear in the ones with significant effects close to summary
+mmap <- lmer(mean_offset ~ map + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmap) ###
+
+mmat <- lmer(mean_offset ~ mat + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmat)##
+
+mtemp <- lmer(mean_offset ~ temp_C + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtemp)#
+
+mtempA <- lmer(mean_offset ~ temp_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtempA)#
+
+mtempD <- lmer(mean_offset ~ temp_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtempD)  ##
+
+mSWCa <- lmer(mean_offset ~ int_smwlA + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCa)###
+
+mSWCb <- lmer(mean_offset ~ int_smwlB + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCb) ###
+
+mSWCaA <- lmer(mean_offset ~ smIntA_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCaA) ###
+
+mSWCbA <- lmer(mean_offset ~ smIntB_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCbA) ###
+
+mSWCaD <- lmer(mean_offset ~ int_smwlA_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCaA) ###
+
+mSWCbD <- lmer(mean_offset ~ int_smwlB_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mSWCbA) ###
+
+msmwl1 <- lmer(mean_offset ~ smwl1 + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1) ##
+
+msmwl2 <- lmer(mean_offset ~ smwl2 + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2) #
+
+msmwl3 <- lmer(mean_offset ~ smwl3 + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3) ##
+
+msmwl4 <- lmer(mean_offset ~ smwl4 + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4)###
+
+msmwl1A <- lmer(mean_offset ~ sm1_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1A)
+
+msmwl2A <- lmer(mean_offset ~ sm2_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2A)
+
+msmwl3A <- lmer(mean_offset ~ sm3_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3A)
+
+msmwl4A <- lmer(mean_offset ~ sm4_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4A)
+
+msmwl1D <- lmer(mean_offset ~ sm1_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl1D) ###
+
+msmwl2D <- lmer(mean_offset ~ sm2_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl2D) ###
+
+msmwl3D <- lmer(mean_offset ~ sm3_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl3D) ###
+
+msmwl4D <- lmer(mean_offset ~ sm4_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(msmwl4D) ###
+
+me <- lmer(mean_offset ~ e + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(me) ###
+
+
+meA <- lmer(mean_offset ~ e_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meA) ###
+
+
+meD <- lmer(mean_offset ~ e_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meD)###
+
+
+meS <- lmer(mean_offset ~ e_sum + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(meS)###
+
+
+mpev <- lmer(mean_offset ~ pev + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpev)#
+
+mpevA <- lmer(mean_offset ~ pev_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevA) 
+
+mpevD <- lmer(mean_offset ~ pev_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevD) ###
+
+mpevS <- lmer(mean_offset ~ pev_sum + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpevS) 
+
+mtp <- lmer(mean_offset ~ tp + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtp) ###
+
+mtpA <- lmer(mean_offset ~ tp_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpA) ###
+
+mtpD <- lmer(mean_offset ~ tp_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpD) ###
+
+mtpS <- lmer(mean_offset ~ tp_sum + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mtpS) ###
+
+
+marid <- lmer(mean_offset ~ aridUNEP + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(marid) ###
+
+maridA <- lmer(mean_offset ~ aridUNEP_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(maridA) ###
+
+maridD <- lmer(mean_offset ~ aridUNEP_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(maridD) ###
+
+
+#climate effects combined
+
+
+#######biological model(modeldata)########
+
+mpg <- lmer(mean_offset ~ plant_group + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mpg) ###
+
+mwood <- lmer(mean_offset ~ woodiness + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mwood) ###
+
+mlh <- lmer(mean_offset ~ leaf_habit + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlh) ###
+
+mls <- lmer(mean_offset ~ leaf_shape + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mls) ###
+
+mwd <- lmer(mean_offset ~ wd + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mwd) 
+
+mRAP <- lmer(mean_offset ~ RAP + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mRAP) #
+
+mmyco <- lmer(mean_offset ~ myco + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmyco) ###
+
+
+#biological combined
+
+#######other (modeldata)######
+
+mslt <- lmer(mean_offset ~ slt + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mslt) 
+
+mmesxyl <- lmer(mean_offset ~ xylem_measurement_method + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmesxyl) ##
+
+mmessoil <- lmer(mean_offset ~ soil_measurement_method + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mmessoil) ##
+
+mlailv <- lmer(mean_offset ~ lai_lv + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailv) ###
+
+mlailvA <- lmer(mean_offset ~ laiLV_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailvA) ###
+
+mlailvD <- lmer(mean_offset ~ laiLV_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlailvD) ###
+
+mlaihv <- lmer(mean_offset ~ lai_hv + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihv) ###
+
+mlaihvA <- lmer(mean_offset ~ laiHV_annual + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihvA) ###
+
+mlaihvD <- lmer(mean_offset ~ laiHV_dif + (1|study) , data=subset(modeldata,!position=="neg_neg"),  weights = weightSWr, na.action = "na.omit",REML = TRUE)
+summary(mlaihvD) ###
+

@@ -187,8 +187,11 @@ means_offset<-offset %>%
             se_lcexcess = s.err.na(lcexcess),
             mean_d2Hplant=mean(d2H_permil_plant, na.rm=T),
             se_d2Hplant = s.err.na(d2H_permil_plant),
+            var_d2Hplant = var(d2H_permil_plant),
             mean_d18Oplant=mean(d18O_permil_plant, na.rm=T),
             se_d18Oplant = s.err.na(d18O_permil_plant),
+           var_d18Oplant = var(d18O_permil_plant),
+           covar_plant = cov(d2H_permil_plant,d18O_permil_plant),
             mean_lcexcess=mean(lcexcess, na.rm=T), 
             count_offset=n(), natural=natural[1], meanvalue_plant=meanvalue_plant[1])
 
@@ -217,6 +220,7 @@ modeldata$authorYearPlot <- paste0(modeldata$author, '-', modeldata$year, '-', m
 # this is your random term
 modeldata$authorYear <- paste0(modeldata$author, '-', modeldata$year)
 meta_clim_short <- meta[, c('authorYearPlot', 'log', 'lat', 'elevation', 'mapWC', 'matWC', 
+                            'slope_LMWL','intercept_LMWL',
                             'climate_class','extraction_method_soil','extraction_method_plant',
                             'soil_measurement_method','xylem_measurement_method')]
 meta_clim_short <- rmDup(meta_clim_short, 'authorYearPlot')
@@ -248,7 +252,7 @@ modeldata<-modeldata %>%
   select(authorYear,campaign, species_plant_complete,natural,leaf_habit,leaf_shape,plant_group,growth_form,woodiness,
          climate_class,log,lat,elevation,date,mapWC,matWC, extraction_method_soil,extraction_method_plant,
          soil_measurement_method,xylem_measurement_method, mean_offset, count_offset, mean_d2Hplant, se_d2Hplant,  
-         mean_d18Oplant,  se_d18Oplant, mean_dexcess, mean_lcexcess, se_lcexcess, 
+         mean_d18Oplant,  se_d18Oplant,var_d2Hplant, var_d18Oplant, covar_plant, slope_LMWL.x,intercept_LMWL.x, mean_lcexcess, se_lcexcess, 
          estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,r.squared,n,dateInt)
 
 #give proper names
@@ -256,7 +260,8 @@ colnames(modeldata) <- c("study", "campaign", "species", "natural", "leaf_habit"
                          "growth_form", "woodiness", "climate_class", "log", "lat", "elevation","date",
                          "map", "mat","extraction_method_soil","extraction_method_plant",
                          "soil_measurement_method","xylem_measurement_method","mean_offset","n_offset"
-                         , "mean_d2Hplant", "se_d2Hplant","mean_d18Oplant",  "se_d18Oplant", "se_dexcess",
+                         , "mean_d2Hplant", "se_d2Hplant","mean_d18Oplant",  "se_d18Oplant",
+                         'var_d2Hplant', 'var_d18Oplant', 'covar_plant', 'slope_LMWL','intercept_LMWL',
                          "mean_lcexcess", "se_lcexcess" , "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLintercept",
                          "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL", "dateInt")
 
@@ -319,9 +324,11 @@ t2mERA5_2<- brick(x= "dataMA/era5_09.nc",
                   varname="t2m")
 t2mERA5_3<- brick(x = 'dataMA/era5_19.nc',
                   varname="t2m")
+t2mERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                  varname="t2m")
 
 #agrupas los rasterBricks en stacks
-t2mERA5list<- c(t2mERA5_1,t2mERA5_2,t2mERA5_3)
+t2mERA5list<- c(t2mERA5_1,t2mERA5_2,t2mERA5_3,t2mERA5_4)
 
 t2mERA5<-stack(t2mERA5list)
 
@@ -360,8 +367,11 @@ swvl1ERA5_2<- brick(x = 'dataMA/era5_09.nc',
                     varname="swvl1")
 swvl1ERA5_3<- brick(x = 'dataMA/era5_19.nc',
                     varname="swvl1")
+swvl1ERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                    varname="swvl1")
 
-swvl1ERA5list<- c(swvl1ERA5_1,swvl1ERA5_2,swvl1ERA5_3)
+
+swvl1ERA5list<- c(swvl1ERA5_1,swvl1ERA5_2,swvl1ERA5_3,swvl1ERA5_4)
 swvl1ERA5<-stack(swvl1ERA5list)
 
 smwl1ERA_data <-raster::extract(swvl1ERA5, modeldataxy)
@@ -408,8 +418,10 @@ swvl3ERA5_2<- brick(x = 'dataMA/era5_09.nc',
                     varname="swvl3")
 swvl3ERA5_3<- brick(x = 'dataMA/era5_19.nc',
                     varname="swvl3")
+swvl3ERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                    varname="swvl3")
 
-swvl3ERA5list<- c(swvl3ERA5_1,swvl3ERA5_2,swvl3ERA5_3)
+swvl3ERA5list<- c(swvl3ERA5_1,swvl3ERA5_2,swvl3ERA5_3,swvl3ERA5_4)
 swvl3ERA5<-stack(swvl3ERA5list)
 
 smwl3ERA_data <-raster::extract(swvl3ERA5, modeldataxy)
@@ -432,8 +444,10 @@ swvl4ERA5_2<- brick(x = 'dataMA/era5_09.nc',
                     varname="swvl4")
 swvl4ERA5_3<- brick(x = 'dataMA/era5_19.nc',
                     varname="swvl4")
+swvl4ERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                    varname="swvl4")
 
-swvl4ERA5list<- c(swvl4ERA5_1,swvl4ERA5_2,swvl4ERA5_3)
+swvl4ERA5list<- c(swvl4ERA5_1,swvl4ERA5_2,swvl4ERA5_3,swvl4ERA5_4)
 swvl4ERA5<-stack(swvl4ERA5list)
 
 smwl4ERA_data <-raster::extract(swvl4ERA5, modeldataxy)
@@ -463,8 +477,10 @@ lai_lvERA5_2<- brick(x = 'dataMA/era5_09.nc',
                      varname="lai_lv")
 lai_lvERA5_3<- brick(x = 'dataMA/era5_19.nc',
                      varname="lai_lv")
+lai_lvERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                     varname="lai_lv")
 
-lai_lvERA5list<- c(lai_lvERA5_1,lai_lvERA5_2,lai_lvERA5_3)
+lai_lvERA5list<- c(lai_lvERA5_1,lai_lvERA5_2,lai_lvERA5_3,lai_lvERA5_4)
 lai_lvERA5<-stack(lai_lvERA5list)
 
 lai_lvERA_data <-raster::extract(lai_lvERA5, modeldataxy)
@@ -487,8 +503,10 @@ lai_hvERA5_2<- brick(x = 'dataMA/era5_09.nc',
                      varname="lai_hv")
 lai_hvERA5_3<- brick(x = 'dataMA/era5_19.nc',
                      varname="lai_hv")
+lai_hvERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                     varname="lai_hv")
 
-lai_hvERA5list<- c(lai_hvERA5_1,lai_hvERA5_2,lai_hvERA5_3)
+lai_hvERA5list<- c(lai_hvERA5_1,lai_hvERA5_2,lai_hvERA5_3,lai_hvERA5_4)
 lai_hvERA5<-stack(lai_hvERA5list)
 
 lai_hvERA_data <-raster::extract(lai_hvERA5, modeldataxy)
@@ -511,8 +529,10 @@ pevERA5_2<- brick(x = 'dataMA/era5_09.nc',
                    varname="pev")
 pevERA5_3<- brick(x = 'dataMA/era5_19.nc',
                    varname="pev")
+pevERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                  varname="pev")
 
-pevERA5list<- c(pevERA5_1,pevERA5_2,pevERA5_3)
+pevERA5list<- c(pevERA5_1,pevERA5_2,pevERA5_3,pevERA5_4)
 pevERA5<-stack(pevERA5list)
 
 pevERA_data <-raster::extract(pevERA5, modeldataxy)
@@ -537,8 +557,10 @@ eERA5_2<- brick(x = 'dataMA/era5_09.nc',
                   varname="e")
 eERA5_3<- brick(x = 'dataMA/era5_19.nc',
                   varname="e")
+eERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                varname="e")
 
-eERA5list<- c(eERA5_1,eERA5_2,eERA5_3)
+eERA5list<- c(eERA5_1,eERA5_2,eERA5_3,eERA5_4)
 eERA5<-stack(eERA5list)
 
 eERA_data <-raster::extract(eERA5, modeldataxy)
@@ -563,8 +585,10 @@ tpERA5_2<- brick(x = 'dataMA/era5_09.nc',
                    varname="tp")
 tpERA5_3<- brick(x = 'dataMA/era5_19.nc',
                    varname="tp")
+tpERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                 varname="tp")
 
-tpERA5list<- c(tpERA5_1,tpERA5_2,tpERA5_3)
+tpERA5list<- c(tpERA5_1,tpERA5_2,tpERA5_3,tpERA5_4)
 tpERA5<-stack(tpERA5list)
 
 tpERA_data <-raster::extract(tpERA5, modeldataxy)
@@ -589,8 +613,10 @@ sltERA5_2<- brick(x = 'dataMA/era5_09.nc',
                   varname="slt")
 sltERA5_3<- brick(x = 'dataMA/era5_19.nc',
                   varname="slt")
+sltERA5_4<- brick(x = 'dataMA/era5_20.nc',
+                  varname="slt")
 
-sltERA5list<- c(sltERA5_1,sltERA5_2,sltERA5_3)
+sltERA5list<- c(sltERA5_1,sltERA5_2,sltERA5_3,sltERA5_4)
 sltERA5<-stack(sltERA5list)
 
 sltERA_data <-raster::extract(sltERA5, modeldataxy)
@@ -660,17 +686,17 @@ modeldata$pev_dif = modeldata$pev_annual - modeldata$pev
 modeldata$tp_dif = modeldata$tp_annual - modeldata$tp
 
 
-rm (eERA5,eERA5_1,eERA5_2,eERA5_3, eERA5list,
-    pevERA5,pevERA5_1,pevERA5_2,pevERA5_3, pevERA5list,
-    tpERA5,tpERA5_1,tpERA5_2,tpERA5_3, tpERA5list,
-    lai_lvERA5,lai_lvERA5_1,lai_lvERA5_2,lai_lvERA5_3, lai_lvERA5list,
-    lai_hvERA5,lai_hvERA5_1,lai_hvERA5_2,lai_hvERA5_3, lai_hvERA5list,
-    t2mERA5,t2mERA5_1,t2mERA5_2,t2mERA5_3, t2mERA5list,
-    sltERA5,sltERA5_1,sltERA5_2,sltERA5_3, sltERA5list,
-    swvl4ERA5,swvl4ERA5_1,swvl4ERA5_2,swvl4ERA5_3, swvl4ERA5list,
-    swvl3ERA5,swvl3ERA5_1,swvl3ERA5_2,swvl3ERA5_3, swvl3ERA5list,
-    swvl2ERA5,swvl2ERA5_1,swvl2ERA5_2,swvl2ERA5_3, swvl2ERA5list,
-    swvl1ERA5,swvl1ERA5_1,swvl1ERA5_2,swvl1ERA5_3, swvl1ERA5list,
+rm (eERA5,eERA5_1,eERA5_2,eERA5_3,eERA5_4, eERA5list,
+    pevERA5,pevERA5_1,pevERA5_2,pevERA5_3,pevERA5_4, pevERA5list,
+    tpERA5,tpERA5_1,tpERA5_2,tpERA5_3,tpERA5_4, tpERA5list,
+    lai_lvERA5,lai_lvERA5_1,lai_lvERA5_2,lai_lvERA5_3,lai_lvERA5_4, lai_lvERA5list,
+    lai_hvERA5,lai_hvERA5_1,lai_hvERA5_2,lai_hvERA5_3,lai_hvERA5_4, lai_hvERA5list,
+    t2mERA5,t2mERA5_1,t2mERA5_2,t2mERA5_3, t2mERA5_4, t2mERA5list,
+    sltERA5,sltERA5_1,sltERA5_2,sltERA5_3, sltERA5_4, sltERA5list,
+    swvl4ERA5,swvl4ERA5_1,swvl4ERA5_2,swvl4ERA5_3,swvl4ERA5_4, swvl4ERA5list,
+    swvl3ERA5,swvl3ERA5_1,swvl3ERA5_2,swvl3ERA5_3,swvl3ERA5_4, swvl3ERA5list,
+    swvl2ERA5,swvl2ERA5_1,swvl2ERA5_2,swvl2ERA5_3,swvl2ERA5_4, swvl2ERA5list,
+    swvl1ERA5,swvl1ERA5_1,swvl1ERA5_2,swvl1ERA5_3,swvl1ERA5_4, swvl1ERA5list,
     campNames,ERA5,lai_hv,lai_hvERA_data,lai_lv,lai_lvERA_data, means_rap,
    e, eERA_data,modeldataxy,modeldataxy1,pev, pevERA_data,
     myco,rap,slt,sltERA_data,smwl1,smwl1ERA_data,smwl2, smwl2ERA_data,smwl3,
@@ -688,24 +714,20 @@ modeldata$se_d2Hplant<- as.numeric(modeldata$se_d2Hplant)
 
 #######weights#####
 
-modeldata$weightSW <-sqrt(((modeldata$se_d2Hplant)^2) + 
+modeldata$seSW <-sqrt(((modeldata$se_d2Hplant)^2) + 
                             ((modeldata$SWLslope * modeldata$se_d18Oplant)^2) +
                             ((modeldata$SWLslope.std.error * modeldata$mean_d18Oplant)^2)+
                             ((modeldata$SWLintercept.std.error)^2)
                             )
 
-modeldata$weightLC <-sqrt(((modeldata$se_d2Hplant)^2) + 
+modeldata$seLC <-sqrt(((modeldata$se_d2Hplant)^2) + 
                             ((modeldata$SWLslope * modeldata$se_d18Oplant)^2)
                             )
 
-
-#oultlier fixing
-
-
-modeldataO <-subset(modeldata,mean_offset<20)
-modeldataO <-subset(modeldata,mean_offset>-25)
-modeldataO <-subset(modeldata,mean_lcexcess<20)
-modeldataO <-subset(modeldata,mean_lcexcess>-25)
+modeldata$varSW <- modeldata$var_d2Hplant + modeldata$SWLslope^2 * modeldata$var_d18Oplant + 2*modeldata$SWLslope* modeldata$covar_plant
 
 
+modeldata$varLC <- modeldata$var_d2Hplant + modeldata$slope_LMWL^2 * modeldata$var_d18Oplant + 2*modeldata$slope_LMWL* modeldata$covar_plant
+
+modeldata$varSWL<- modeldata$SWLslope.std.error^2 * modeldata$n_SWL
 
