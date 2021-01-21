@@ -127,27 +127,27 @@ rm(multiple, rsquared, length, slope, intercept, meta_lmwl, crap)
 
 ####lets screen the plots (put back the # after screening plots to use this script faster
 #when using genratemodeldata in the model script)
-
- swlplot <- left_join(source, swl, by = 'campaign')
- swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
-
-#split in groups to see the plots more clearly
- campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
- campNames$campaign <- unique(swlplot$campaign)
- campNames$crapNumber <- c(1:nrow(campNames))
- swlplot <- left_join(swlplot, campNames, by = 'campaign')
- swlplotL <- list()
-for(i in 1:ceiling((nrow(campNames)/20))){
-   swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
- }
- 
- windows(12, 8)
- #enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
- ggplot(data=swlplotL[[17]],aes(x=d18O_permil_source,y=d2H_permil_source))+
-   geom_point()+
-   geom_smooth(method=lm,se=F)+
-   facet_wrap(~campaign)+
-   stat_cor()
+# 
+#  swlplot <- left_join(source, swl, by = 'campaign')
+#  swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
+# 
+# #split in groups to see the plots more clearly
+#  campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
+#  campNames$campaign <- unique(swlplot$campaign)
+#  campNames$crapNumber <- c(1:nrow(campNames))
+#  swlplot <- left_join(swlplot, campNames, by = 'campaign')
+#  swlplotL <- list()
+# for(i in 1:ceiling((nrow(campNames)/20))){
+#    swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
+#  }
+#  
+#  windows(12, 8)
+#  #enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
+#  ggplot(data=swlplotL[[17]],aes(x=d18O_permil_source,y=d2H_permil_source))+
+#    geom_point()+
+#    geom_smooth(method=lm,se=F)+
+#    facet_wrap(~campaign)+
+#    stat_cor()
 
 
 ###########offset############################
@@ -166,6 +166,9 @@ plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
 offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'natural','meanvalue_plant')],
                      swl, by = 'campaign') #inner join because we dont want plant campaigns matching issin source ones (non significative)
 # the nrow of offset should be same as in plant
+
+# Optional
+source('scriptsMA/plot_LMWL_SWL.R')
 
 ###lets calculate the variance of 2H and 18O
 
