@@ -196,26 +196,41 @@ means_offset<-offset %>%
            var_d18Oplant = var(d18O_permil_plant),
            covar_plant = cov(d2H_permil_plant,d18O_permil_plant),
             mean_lcexcess=mean(lcexcess, na.rm=T), 
-            count_offset=n(), natural=natural[1], meanvalue_plant=meanvalue_plant[1])
+            count_offset=n(), natural=natural[1])#, meanvalue_plant=meanvalue_plant[1])
 
-meansoffsetraw<- subset(means_offset,!means_offset$meanvalue_plant=='yes') 
+se_means <- means_offset %>%
+  group_by(campaign, species_plant_complete) %>%
+  summarise(mean_se_d2H = mean(se_d2Hplant, na.rm = T),
+            mean_se_d18O = mean(se_d18Oplant, na.rm = T),
+            mean_var_d2H = mean(var_d2Hplant, na.rm = T),
+            mean_var_d18O = mean(var_d18Oplant, na.rm = T),
+            mean_cov = mean(covar_plant, na.rm = T),
+            mean_se_lc = mean(se_lcexcess, na.rm = T))
 
-meansoffsetraw$sed2H <- s.err.na(meansoffsetraw$mean_d2Hplant)
-meansoffsetraw$sed18O <- s.err.na(meansoffsetraw$mean_d18Oplant)
+means_offset <- left_join(means_offset, se_means, by = c('campaign', 'species_plant_complete'))
+means_offset[which(means_offset$count_offset < 2), c('se_d2Hplant', 'se_d18Oplant', 'covar_plant',
+                                                     'var_d2Hplant', 'var_d18Oplant', 'se_lcexcess')] <-
+  means_offset[which(means_offset$count_offset < 2), c('mean_se_d2H', 'mean_se_d18O', 'mean_cov',
+                                                       'mean_var_d2H', 'mean_var_d18O', 'mean_se_lc')]
 
-
-means_offset$se_d2Hplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
-                                  means_offset$se_d2Hplant, meansoffsetraw$sed2H)
-
-means_offset$se_d2Hplant<- ifelse( is.na(means_offset$se_d2Hplant), '0',
-                                  means_offset$se_d2Hplant)
-
-means_offset$se_d18Oplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
-                                   means_offset$se_d18Oplant, meansoffsetraw$sed18O)
-
-means_offset$se_d18Oplant<- ifelse( is.na(means_offset$se_d18Oplant), '0',
-                                    means_offset$se_d18Oplant)
-rm(meansoffsetraw)
+# meansoffsetraw<- subset(means_offset,!means_offset$meanvalue_plant=='yes') 
+# 
+# meansoffsetraw$sed2H <- s.err.na(meansoffsetraw$mean_d2Hplant)
+# meansoffsetraw$sed18O <- s.err.na(meansoffsetraw$mean_d18Oplant)
+# 
+# 
+# means_offset$se_d2Hplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
+#                                   means_offset$se_d2Hplant, meansoffsetraw$sed2H)
+# 
+# means_offset$se_d2Hplant<- ifelse( is.na(means_offset$se_d2Hplant), '0',
+#                                   means_offset$se_d2Hplant)
+# 
+# means_offset$se_d18Oplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
+#                                    means_offset$se_d18Oplant, meansoffsetraw$sed18O)
+# 
+# means_offset$se_d18Oplant<- ifelse( is.na(means_offset$se_d18Oplant), '0',
+#                                     means_offset$se_d18Oplant)
+# rm(meansoffsetraw)
 ######database######
 modeldata <- inner_join(means_offset, swl, by = 'campaign')
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
