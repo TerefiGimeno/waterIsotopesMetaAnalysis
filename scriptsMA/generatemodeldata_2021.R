@@ -658,7 +658,7 @@ ERA5year <- ERA5 %>%
   summarise(sm1_annual = mean.na(smwl1), sm2_annual = mean.na(smwl2), sm3_annual = mean.na(smwl3),
             sm4_annual = mean.na(smwl4), smIntA_annual = mean.na(int_smwlA), smIntB_annual = mean.na(int_smwlB),
             temp_annual = mean.na(temp_C), laiLV_annual = mean.na(lai_lv), laiHV_annual = mean.na(lai_hv),
-            pev_sum = sum(pev),  e_sum = sum(e), tp_sum = sum(tp),pev_annual = mean.na(pev), 
+            pev_sum = sum(pev, na.rm = T),  e_sum = sum(e, na.rm = T), tp_sum = sum(tp, na.rm = T),pev_annual = mean.na(pev), 
             e_annual = mean.na(e), tp_annual = mean.na(tp))
           
 
@@ -727,8 +727,8 @@ modeldata$AP[modeldata$AP=="NaN"]<-NA
 modeldata$RP[modeldata$RP=="NaN"]<-NA
 modeldata$RAP[modeldata$RAP=="NaN"]<-NA
 
-modeldata$se_d18Oplant<- as.numeric(modeldata$se_d18Oplant)
-modeldata$se_d2Hplant<- as.numeric(modeldata$se_d2Hplant)
+# modeldata$se_d18Oplant<- as.numeric(modeldata$se_d18Oplant)
+# modeldata$se_d2Hplant<- as.numeric(modeldata$se_d2Hplant)
 
 #######weights#####
 
