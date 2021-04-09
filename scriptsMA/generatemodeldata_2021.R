@@ -187,7 +187,7 @@ means_offset<-offset %>%
   summarise(mean_offset=mean(offset,na.rm=T),
             mean_dexcess=mean(dexcess, na.rm=T),
             mean_lcexcess=mean(lcexcess, na.rm=T),
-            se_lcexcess = s.err.na(lcexcess),
+            #se_lcexcess = s.err.na(lcexcess),
             mean_d2Hplant=mean(d2H_permil_plant, na.rm=T),
             se_d2Hplant = s.err.na(d2H_permil_plant),
             var_d2Hplant = var(d2H_permil_plant),
@@ -204,14 +204,14 @@ se_means <- means_offset %>%
             mean_se_d18O = mean(se_d18Oplant, na.rm = T),
             mean_var_d2H = mean(var_d2Hplant, na.rm = T),
             mean_var_d18O = mean(var_d18Oplant, na.rm = T),
-            mean_cov = mean(covar_plant, na.rm = T),
-            mean_se_lc = mean(se_lcexcess, na.rm = T))
+            mean_cov = mean(covar_plant, na.rm = T))
+            #mean_se_lc = mean(se_lcexcess, na.rm = T))
 
 means_offset <- left_join(means_offset, se_means, by = c('campaign', 'species_plant_complete'))
 means_offset[which(means_offset$count_offset < 2), c('se_d2Hplant', 'se_d18Oplant', 'covar_plant',
-                                                     'var_d2Hplant', 'var_d18Oplant', 'se_lcexcess')] <-
+                                                     'var_d2Hplant', 'var_d18Oplant')] <-
   means_offset[which(means_offset$count_offset < 2), c('mean_se_d2H', 'mean_se_d18O', 'mean_cov',
-                                                       'mean_var_d2H', 'mean_var_d18O', 'mean_se_lc')]
+                                                       'mean_var_d2H', 'mean_var_d18O')]
 
 # meansoffsetraw<- subset(means_offset,!means_offset$meanvalue_plant=='yes') 
 # 
@@ -738,6 +738,7 @@ modeldata$seSW <-sqrt(((modeldata$se_d2Hplant)^2) +
                             ((modeldata$SWLintercept.std.error)^2)
                             )
 
+# revisar esta fórmula!!!
 modeldata$seLC <-sqrt(((modeldata$se_d2Hplant)^2) + 
                             ((modeldata$SWLslope * modeldata$se_d18Oplant)^2)
                             )
