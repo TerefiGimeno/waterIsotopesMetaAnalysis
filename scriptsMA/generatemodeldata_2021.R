@@ -52,7 +52,7 @@ WCvars <- cbind.data.frame(coordinates(points),values)
 metaWC<- WCvars %>%
   dplyr::select(x,y,bio1,bio12)
 
-colnames(metaWC)<- c("log","lat","matWC","mapWC")
+ colnames(metaWC)<- c("log","lat","matWC","mapWC")
 #MAT data must be the same as meta database
 
 metaWC$matWC<- 0.1*metaWC$matWC
@@ -101,7 +101,7 @@ intercept<-subset(multiple,term=='(Intercept)')
 slope<-subset(multiple,term=='d18O_permil_source')
 
 swl<-merge(intercept,slope,by='campaign')   ###create a new table with separate columns for intercept and slope
-
+ 
 ###give proper names
 colnames(swl)<-c("campaign","term","estimate","std.error","statistic","p.value","term.slope","estimate.slope","std.error.slope",
                  "statistic.slope","p.value.slope")
@@ -127,29 +127,29 @@ rm(multiple, rsquared, length, slope, intercept, meta_lmwl, crap)
 
 ####lets screen the plots (put back the # after screening plots to use this script faster
 #when using genratemodeldata in the model script)
-# 
-#  swlplot <- left_join(source, swl, by = 'campaign')
-#  swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
-# 
-# #split in groups to see the plots more clearly
-#  campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
-#  campNames$campaign <- unique(swlplot$campaign)
-#  campNames$crapNumber <- c(1:nrow(campNames))
-#  swlplot <- left_join(swlplot, campNames, by = 'campaign')
-#  swlplotL <- list()
-# for(i in 1:ceiling((nrow(campNames)/20))){
-#    swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
-#  }
-#  
-#  windows(12, 8)
-#  #enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
-#  ggplot(data=swlplotL[[17]],aes(x=d18O_permil_source,y=d2H_permil_source))+
-#    geom_point()+
-#    geom_smooth(method=lm,se=F)+
-#    facet_wrap(~campaign)+
-#    stat_cor()
 
+ swlplot <- left_join(source, swl, by = 'campaign')
+ swlplot <- subset(swlplot, p.value.slope < 0.055 & n > 2 & estimate.slope > 0)
 
+#split in groups to see the plots more clearly
+ campNames <- data.frame(row.names = 1:length(unique(swlplot$campaign)))
+ campNames$campaign <- unique(swlplot$campaign)
+ campNames$crapNumber <- c(1:nrow(campNames))
+ swlplot <- left_join(swlplot, campNames, by = 'campaign')
+ swlplotL <- list()
+for(i in 1:ceiling((nrow(campNames)/20))){
+   swlplotL[[i]] <- swlplot[which(swlplot$crapNumber >= i*20-19 & swlplot$crapNumber <= i*20), ]
+ }
+ 
+ windows(12, 8)
+ #enter numbers from 1 to 9 where it says "i" to see batches of 20 plots
+ ggplot(data=swlplotL[[15]],aes(x=d18O_permil_source,y=d2H_permil_source))+
+   geom_point()+
+   geom_smooth(method=lm,se=F)+
+   facet_wrap(~campaign)+
+   stat_cor()
+
+length(unique(modeldata$species))
 ###########offset############################
 plant$authorYear <- paste0(plant$author, '-', plant$year)
 plant$authorYearPlot <- paste0(plant$author, '-', plant$year, '-', plant$plotR)
@@ -166,10 +166,11 @@ plant <- subset(plant, !plant_tissue == 'leaf' & pool_plant == 'yes')
 offset <- inner_join(plant[, c('campaign', 'd2H_permil_plant', 'd18O_permil_plant', 'species_plant_complete', 'natural','meanvalue_plant')],
                      swl, by = 'campaign') #inner join because we dont want plant campaigns matching issin source ones (non significative)
 # the nrow of offset should be same as in plant
+offset$study <- paste0(offset$author, '-', offset$year)
+swl$authorYear <- paste0(swl$author, '-', swl$year)
 
-# Optional
-source('scriptsMA/plot_LMWL_SWL.R')
-
+length(unique(offset$authorYear))
+length(unique(swl$authorYear))
 ###lets calculate the variance of 2H and 18O
 
 
@@ -187,7 +188,7 @@ means_offset<-offset %>%
   summarise(mean_offset=mean(offset,na.rm=T),
             mean_dexcess=mean(dexcess, na.rm=T),
             mean_lcexcess=mean(lcexcess, na.rm=T),
-            #se_lcexcess = s.err.na(lcexcess),
+            se_lcexcess = s.err.na(lcexcess),
             mean_d2Hplant=mean(d2H_permil_plant, na.rm=T),
             se_d2Hplant = s.err.na(d2H_permil_plant),
             var_d2Hplant = var(d2H_permil_plant),
@@ -196,7 +197,7 @@ means_offset<-offset %>%
            var_d18Oplant = var(d18O_permil_plant),
            covar_plant = cov(d2H_permil_plant,d18O_permil_plant),
             mean_lcexcess=mean(lcexcess, na.rm=T), 
-            count_offset=n(), natural=natural[1])#, meanvalue_plant=meanvalue_plant[1])
+            count_offset=n(), natural=natural[1], meanvalue_plant=meanvalue_plant[1])
 
 se_means <- means_offset %>%
   group_by(campaign, species_plant_complete) %>%
@@ -204,33 +205,53 @@ se_means <- means_offset %>%
             mean_se_d18O = mean(se_d18Oplant, na.rm = T),
             mean_var_d2H = mean(var_d2Hplant, na.rm = T),
             mean_var_d18O = mean(var_d18Oplant, na.rm = T),
-            mean_cov = mean(covar_plant, na.rm = T))
-            #mean_se_lc = mean(se_lcexcess, na.rm = T))
+            mean_cov = mean(covar_plant, na.rm = T),
+            mean_se_lc = mean(se_lcexcess, na.rm = T))
 
 means_offset <- left_join(means_offset, se_means, by = c('campaign', 'species_plant_complete'))
 means_offset[which(means_offset$count_offset < 2), c('se_d2Hplant', 'se_d18Oplant', 'covar_plant',
-                                                     'var_d2Hplant', 'var_d18Oplant')] <-
+                                                     'var_d2Hplant', 'var_d18Oplant', 'se_lcexcess')] <-
   means_offset[which(means_offset$count_offset < 2), c('mean_se_d2H', 'mean_se_d18O', 'mean_cov',
-                                                       'mean_var_d2H', 'mean_var_d18O')]
+                                                       'mean_var_d2H', 'mean_var_d18O', 'mean_se_lc')]
 
-# meansoffsetraw<- subset(means_offset,!means_offset$meanvalue_plant=='yes') 
-# 
-# meansoffsetraw$sed2H <- s.err.na(meansoffsetraw$mean_d2Hplant)
-# meansoffsetraw$sed18O <- s.err.na(meansoffsetraw$mean_d18Oplant)
-# 
-# 
-# means_offset$se_d2Hplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
-#                                   means_offset$se_d2Hplant, meansoffsetraw$sed2H)
-# 
-# means_offset$se_d2Hplant<- ifelse( is.na(means_offset$se_d2Hplant), '0',
-#                                   means_offset$se_d2Hplant)
-# 
-# means_offset$se_d18Oplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
-#                                    means_offset$se_d18Oplant, meansoffsetraw$sed18O)
-# 
-# means_offset$se_d18Oplant<- ifelse( is.na(means_offset$se_d18Oplant), '0',
-#                                     means_offset$se_d18Oplant)
-# rm(meansoffsetraw)
+means_offset$se_d2Hplant<- ifelse(is.nan(means_offset$se_d2Hplant), '0.0000001',
+                                  means_offset$se_d2Hplant)
+
+means_offset$se_d18Oplant<- ifelse(is.nan(means_offset$se_d18Oplant), '0.0000001',
+                                  means_offset$se_d18Oplant)
+
+means_offset$var_d2Hplant<- ifelse(is.nan(means_offset$var_d2Hplant), '0.0000001',
+                                  means_offset$var_d2Hplant)
+
+means_offset$var_d18Oplant<- ifelse(is.nan(means_offset$var_d18Oplant), '0.0000001',
+                                  means_offset$var_d18Oplant)
+
+means_offset$covar_plant<- ifelse(is.nan(means_offset$covar_plant), '0.0000001',
+                                  means_offset$covar_plant)
+
+means_offset$se_lcexcess<- ifelse(is.nan(means_offset$se_lcexcess), '0.0000001',
+                                  means_offset$se_lcexcess)
+
+
+
+
+
+#meansoffsetraw<- subset(means_offset,!means_offset$meanvalue_plant=='yes') 
+
+#meansoffsetraw$sed2H <- s.err.na(meansoffsetraw$mean_d2Hplant)
+#meansoffsetraw$sed18O <- s.err.na(meansoffsetraw$mean_d18Oplant)
+
+
+#means_offset$se_d2Hplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
+#means_offset$se_d2Hplant, meansoffsetraw$sed2H)
+
+#means_offset$mean_se_d2H<- ifelse(is.nan(means_offset$mean_se_d2H), '0.0000001',
+                                  #means_offset$mean_se_d2H)
+
+#means_offset$se_d18Oplant<- ifelse(means_offset$meanvalue_plant == 'no' , 
+#means_offset$se_d18Oplant, meansoffsetraw$sed18O)
+
+
 ######database######
 modeldata <- inner_join(means_offset, swl, by = 'campaign')
 modeldata[, c('author', 'year', 'date', 'plotR')] <- str_split_fixed(modeldata$campaign, '-', 4)
@@ -263,14 +284,14 @@ meta_spp_short[which(meta_spp_short$growth_form == 'liana'), c('woodiness', 'pft
 # here do left_join because otherwise you lose those for which the species is not defined in the plant_data file
 modeldata <- left_join(modeldata, meta_spp_short, by = 'species_meta_complete')
 
-rm(means_offset, meta_clim_short, meta_spp_short,
-   offset, swl)
+#rm(means_offset, meta_clim_short, meta_spp_short,
+   #offset, swl)
 
 modeldata<-modeldata %>%
   select(authorYear,campaign, species_plant_complete,natural,leaf_habit,leaf_shape,plant_group,growth_form,woodiness,
          climate_class,log,lat,elevation,date,mapWC,matWC, extraction_method_soil,extraction_method_plant,
          soil_measurement_method,xylem_measurement_method, mean_offset, count_offset, mean_d2Hplant, se_d2Hplant,  
-         mean_d18Oplant,  se_d18Oplant,var_d2Hplant, var_d18Oplant, covar_plant, slope_LMWL.x,intercept_LMWL.x, mean_lcexcess, se_lcexcess, 
+         mean_d18Oplant, se_d18Oplant, var_d2Hplant, var_d18Oplant, covar_plant, slope_LMWL.x,intercept_LMWL.x, mean_lcexcess, se_lcexcess, 
          estimate.slope,std.error.slope,p.value.slope,estimate,std.error,p.value,r.squared,n,dateInt)
 
 #give proper names
@@ -282,6 +303,7 @@ colnames(modeldata) <- c("study", "campaign", "species", "natural", "leaf_habit"
                          'var_d2Hplant', 'var_d18Oplant', 'covar_plant', 'slope_LMWL','intercept_LMWL',
                          "mean_lcexcess", "se_lcexcess" , "SWLslope", "SWLslope.std.error", "SWLslope.pvalue", "SWLintercept",
                          "SWLintercept.std.error", "SWLintercept.pvalue", "SWLrsquared", "n_SWL", "dateInt")
+
 
 
 ##########RAP, WOOD DENSITY, MYCO#######
@@ -658,7 +680,7 @@ ERA5year <- ERA5 %>%
   summarise(sm1_annual = mean.na(smwl1), sm2_annual = mean.na(smwl2), sm3_annual = mean.na(smwl3),
             sm4_annual = mean.na(smwl4), smIntA_annual = mean.na(int_smwlA), smIntB_annual = mean.na(int_smwlB),
             temp_annual = mean.na(temp_C), laiLV_annual = mean.na(lai_lv), laiHV_annual = mean.na(lai_hv),
-            pev_sum = sum(pev, na.rm = T),  e_sum = sum(e, na.rm = T), tp_sum = sum(tp, na.rm = T),pev_annual = mean.na(pev), 
+            pev_sum = sum(pev),  e_sum = sum(e), tp_sum = sum(tp),pev_annual = mean.na(pev), 
             e_annual = mean.na(e), tp_annual = mean.na(tp))
           
 
@@ -687,6 +709,12 @@ modeldata$slt[modeldata$slt=="5"]<-"very fine"
 modeldata$slt[modeldata$slt=="6"]<-"organic"
 modeldata$slt[modeldata$slt=="7"]<-"tropical organic"
 
+modeldata$e<- -1*modeldata$e
+modeldata$e_annual<- -1*modeldata$e_annual
+modeldata$e_sum<- -1*modeldata$e_sum
+modeldata$pev<- -1*modeldata$pev
+modeldata$pev_annual<- -1*modeldata$pev_annual
+modeldata$pev_sum<- -1*modeldata$pev_sum
 modeldata$aridUNEP = modeldata$tp/ modeldata$pev
 modeldata$aridUNEP_annual =modeldata$tp_sum/modeldata$pev_sum
 modeldata$aridUNEP_dif = modeldata$aridUNEP_annual- modeldata$aridUNEP
@@ -702,7 +730,11 @@ modeldata$laiHV_dif = modeldata$laiHV_annual - modeldata$lai_hv
 modeldata$e_dif = modeldata$e_annual - modeldata$e
 modeldata$pev_dif = modeldata$pev_annual - modeldata$pev
 modeldata$tp_dif = modeldata$tp_annual - modeldata$tp
+hist(modeldata$aridUNEP_annual)
 
+xxxx <- modeldata[, c('campaign', 'natural', 'pev', 'pev_sum', 'tp',
+                      'tp_sum', 'aridUNEP', 'aridUNEP_annual','covar_plant', 
+                      'var_d2Hplant','var_d18Oplant', 'varSW', 'varLC', 'slope_LMWL')]
 
 rm (eERA5,eERA5_1,eERA5_2,eERA5_3,eERA5_4, eERA5list,
     pevERA5,pevERA5_1,pevERA5_2,pevERA5_3,pevERA5_4, pevERA5list,
@@ -726,9 +758,13 @@ rm (eERA5,eERA5_1,eERA5_2,eERA5_3,eERA5_4, eERA5list,
 modeldata$AP[modeldata$AP=="NaN"]<-NA
 modeldata$RP[modeldata$RP=="NaN"]<-NA
 modeldata$RAP[modeldata$RAP=="NaN"]<-NA
+modeldata$mean_lcexcess[modeldata$mean_lcexcess=="NaN"]<-NA
 
-# modeldata$se_d18Oplant<- as.numeric(modeldata$se_d18Oplant)
-# modeldata$se_d2Hplant<- as.numeric(modeldata$se_d2Hplant)
+modeldata$se_d18Oplant<- as.numeric(modeldata$se_d18Oplant)
+modeldata$se_d2Hplant<- as.numeric(modeldata$se_d2Hplant)
+modeldata$var_d18Oplant<- as.numeric(modeldata$var_d18Oplant)
+modeldata$var_d2Hplant<- as.numeric(modeldata$var_d2Hplant)
+modeldata$covar_plant<- as.numeric(modeldata$covar_plant)
 
 #######weights#####
 
@@ -738,10 +774,11 @@ modeldata$seSW <-sqrt(((modeldata$se_d2Hplant)^2) +
                             ((modeldata$SWLintercept.std.error)^2)
                             )
 
-# revisar esta fórmula!!!
 modeldata$seLC <-sqrt(((modeldata$se_d2Hplant)^2) + 
-                            ((modeldata$SWLslope * modeldata$se_d18Oplant)^2)
+                            ((modeldata$slope_LMWL * modeldata$se_d18Oplant)^2)
                             )
+
+
 
 modeldata$varSW <- modeldata$var_d2Hplant + modeldata$SWLslope^2 * modeldata$var_d18Oplant + 2*modeldata$SWLslope* modeldata$covar_plant
 
@@ -750,3 +787,23 @@ modeldata$varLC <- modeldata$var_d2Hplant + modeldata$slope_LMWL^2 * modeldata$v
 
 modeldata$varSWL<- modeldata$SWLslope.std.error^2 * modeldata$n_SWL
 
+modeldata$varSW<- as.numeric(modeldata$varSW)
+modeldata$varLC<- as.numeric(modeldata$varLC)
+modeldata$varSWL<- as.numeric(modeldata$varSWL)
+
+
+write.csv(modeldata,"C:\\Users\\Javi\\Desktop\\modeldata090421.csv")
+
+write.csv(metas,"C:\\Users\\Javi\\Desktop\\methodsWATERISO.csv")
+
+length(unique(modeldata$study))
+
+
+
+meta$study <- paste0(meta$author, '-', meta$year)
+metas<- meta %>% select(study, extraction_method_soil, extraction_method_plant)
+metas<-unique(metas)
+
+metass<-left_join(IDmodplot, metas)
+
+table(unlist(modeldata$climate_class))
